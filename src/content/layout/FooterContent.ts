@@ -1,3 +1,8 @@
+export const footerContent = {
+  title: 'Gabriel Scheidt Eger',
+  description: '© 2024 MIT License.',
+}
+
 export const footerLinks = [
   {
     title: 'Website Sections',

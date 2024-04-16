@@ -1,13 +1,13 @@
-import { footerLinks } from '@/content/layout/FooterContent'
+import { footerContent, footerLinks } from '@/content/layout/FooterContent'
 
 const Footer = () => {
   return (
     <footer className="footer p-10 bg-base-200 text-base-content">
       <aside>
         <p>
-          Gabriel Scheidt Eger
+          {footerContent.title}
           <br />
-          MIT License © 2024
+          {footerContent.description}
         </p>
       </aside>
       {footerLinks.map((section, index) => (
