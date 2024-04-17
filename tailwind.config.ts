@@ -8,7 +8,17 @@ const config: Config = {
   ],
   plugins: [require('daisyui')],
   daisyui: {
-    themes: ['light'],
+    themes: [
+      'light',
+      'dark',
+      'corporate',
+      'synthwave',
+      'cyberpunk',
+      'forest',
+      'lofi',
+      'winter',
+      'sunset',
+    ],
   },
 }
 export default config
