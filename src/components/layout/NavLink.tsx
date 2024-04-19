@@ -3,7 +3,18 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 
-const NavLink = () => {
+interface content {
+  title: string
+  description: string
+  topics: { title: string; items: string[] }[]
+}
+
+interface NavLinkProps {
+  content: content
+  linkText: string
+}
+
+const NavLink = ({ content, linkText }: NavLinkProps) => {
   const [hovered, setHovered] = useState(false)
 
   return (
@@ -15,7 +26,7 @@ const NavLink = () => {
         className="cursor-pointer z-20"
         onHoverStart={() => setHovered(true)}
       >
-        <p className="text-lg translate-y-1">Home</p>
+        <p className="text-lg translate-y-1">{content.title}</p>
       </motion.a>
       <motion.span
         initial={{ scaleX: 0, originX: 0 }}
@@ -34,30 +45,27 @@ const NavLink = () => {
         <motion.div className="card card-side h-60 bg-base-100 border border-base-300">
           <figure className="bg-primary w-52">
             <div className="p-4 text-base-100 flex flex-col justify-between h-full">
-              <h1 className="text-xl font-semibold underline">Home</h1>
-              <p>
-                This is the home page. You can find all the information you need
-              </p>
-              <p>Find out more</p>
+              <div>
+                <h1 className="text-xl font-semibold underline">
+                  {content.title}
+                </h1>
+                <p className="mt-4">{content.description}</p>
+              </div>
+              <p>{linkText}</p>
             </div>
           </figure>
           <div className="card-body w-[28rem]">
-            <div className="w-full flex justify-between h-full items-center">
-              <ul>
-                <li>test</li>
-                <li>test</li>
-                <li>test</li>
-              </ul>
-              <ul>
-                <li>test</li>
-                <li>test</li>
-                <li>test</li>
-              </ul>
-              <ul>
-                <li>test</li>
-                <li>test</li>
-                <li>test</li>
-              </ul>
+            <div className="w-full flex justify-around h-full items-center">
+              {content.topics.map((topic) => (
+                <div key={topic.title} className="flex flex-col">
+                  <h1 className="text-lg font-semibold">{topic.title}</h1>
+                  <ul className="mt-2">
+                    {topic.items.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
           </div>
         </motion.div>
