@@ -1,7 +1,7 @@
 export const themeTitle = 'Theme'
 
 export const themeOptions = [
-  'default',
+  'system',
   'light',
   'dark',
   'corporate',

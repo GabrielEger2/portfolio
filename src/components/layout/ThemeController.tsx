@@ -1,10 +1,22 @@
+'use client'
+
 import {
   themeOptions,
   themeTitle,
 } from '@/content/layout/ThemeControllerContent'
+import Cookies from 'js-cookie'
+import { SetStateAction } from 'react'
 import { FaArrowDown } from 'react-icons/fa'
 
 const ThemeController = () => {
+  const handleThemeChange = (event: {
+    target: { value: SetStateAction<string> }
+  }) => {
+    if (Cookies.get('cookieConsent') === 'accepted') {
+      Cookies.set('theme', event.target.value as string)
+    }
+  }
+
   return (
     <div className="dropdown dropdown-end">
       <div tabIndex={0} role="button" className="btn m-1 btn-ghost">
@@ -21,8 +33,9 @@ const ThemeController = () => {
               type="radio"
               name="theme-dropdown"
               className="theme-controller btn btn-sm btn-block btn-ghost justify-start"
-              aria-label={theme}
+              aria-label={theme.charAt(0).toUpperCase() + theme.slice(1)}
               value={theme}
+              onChange={handleThemeChange}
             />
           </li>
         ))}

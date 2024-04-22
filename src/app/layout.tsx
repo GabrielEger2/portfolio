@@ -1,3 +1,5 @@
+import { cookies } from 'next/headers'
+
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
@@ -17,8 +19,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const theme = cookies().get('theme')
+
   return (
-    <html lang="en">
+    <html data-theme={theme?.value || 'default'} lang="en">
       <body className={inter.className}>
         <Navbar />
         <main className="min-h-screen overflow-x-hidden pt-16">{children}</main>
