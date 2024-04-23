@@ -1,14 +1,19 @@
 export const themeTitle = 'Theme'
 
 export const themeOptions = [
-  'system',
   'light',
   'dark',
   'corporate',
+  'lofi',
   'synthwave',
   'cyberpunk',
   'forest',
-  'lofi',
   'winter',
   'sunset',
+  'wireframe',
+  'retro',
+  'lemonade',
+  'luxury',
+  'dracula',
+  'black',
 ]

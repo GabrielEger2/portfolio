@@ -9,15 +9,39 @@ const config: Config = {
   plugins: [require('daisyui')],
   daisyui: {
     themes: [
-      'light',
-      'dark',
+      {
+        light: {
+          // eslint-disable-next-line @typescript-eslint/no-var-requires
+          ...require('daisyui/src/theming/themes').light,
+          primary: '#9333ea',
+          secondary: '#dc2626',
+
+          '--rounded-box': '0.5rem',
+          '--rounded-btn': '0.25rem',
+        },
+        dark: {
+          // eslint-disable-next-line @typescript-eslint/no-var-requires
+          ...require('daisyui/src/theming/themes').dark,
+          primary: '#facc15',
+          secondary: '#6366f1',
+
+          '--rounded-box': '0.5rem',
+          '--rounded-btn': '0.25rem',
+        },
+      },
       'corporate',
+      'lofi',
       'synthwave',
       'cyberpunk',
       'forest',
-      'lofi',
       'winter',
       'sunset',
+      'wireframe',
+      'retro',
+      'lemonade',
+      'luxury',
+      'dracula',
+      'black',
     ],
   },
 }
