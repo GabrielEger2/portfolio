@@ -14,6 +14,5 @@ export const themeOptions = [
   'retro',
   'lemonade',
   'luxury',
-  'dracula',
   'black',
 ]

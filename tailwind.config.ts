@@ -21,9 +21,7 @@ const config: Config = {
         },
         dark: {
           // eslint-disable-next-line @typescript-eslint/no-var-requires
-          ...require('daisyui/src/theming/themes').dark,
-          primary: '#facc15',
-          secondary: '#6366f1',
+          ...require('daisyui/src/theming/themes').dracula,
 
           '--rounded-box': '0.5rem',
           '--rounded-btn': '0.25rem',
@@ -40,7 +38,6 @@ const config: Config = {
       'retro',
       'lemonade',
       'luxury',
-      'dracula',
       'black',
     ],
   },
