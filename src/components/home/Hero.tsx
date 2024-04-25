@@ -9,8 +9,8 @@ const Hero = () => {
   return (
     <>
       <div className="min-h-screen overflow-hidden relative ">
-        <div className="flex flex-col h-[80vh] justify-end w-screen">
-          <div className="w-full bg-base-100">
+        <div className="flex flex-col h-[80vh] justify-end w-screen z-50">
+          <div className="w-full z-50 bg-base-100">
             <svg
               id="visual"
               viewBox="0 0 1920 1080"
