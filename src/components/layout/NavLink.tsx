@@ -23,7 +23,7 @@ const NavLink = ({ content, linkText }: NavLinkProps) => {
         e.stopPropagation()
         setHovered(false)
       }}
-      className="flex flex-col items-center relative"
+      className="flex flex-col items-center relative px-3"
     >
       <motion.a
         className="cursor-pointer z-20"
@@ -43,7 +43,7 @@ const NavLink = ({ content, linkText }: NavLinkProps) => {
       <AnimatePresence>
         {hovered && (
           <motion.div
-            className="flex flex-col items-center absolute mt-8 pt-6"
+            className="flex flex-col items-center absolute mt-8 pt-8 p-2"
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 15 }}
