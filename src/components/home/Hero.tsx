@@ -54,13 +54,13 @@ const Hero = () => {
                 className="w-full bg-primary"
                 initial={{
                   y: '30vh',
-                  height: '0.3rem',
+                  height: '0.6rem',
                 }}
                 animate={{ y: '0vh', height: '0.03rem' }}
                 transition={{
-                  duration: 10,
+                  duration: 8,
                   repeat: Infinity,
-                  delay: index,
+                  delay: index - 1,
                 }}
               />
             </div>
