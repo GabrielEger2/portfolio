@@ -10,7 +10,7 @@ const Hero = () => {
     <>
       <div className="min-h-screen overflow-hidden relative ">
         <div className="flex flex-col h-[80vh] justify-end w-screen z-40">
-          <div className="w-full z-40 bg-base-100">
+          <div className="w-full z-40">
             <svg
               id="visual"
               viewBox="0 0 1920 1080"
@@ -19,6 +19,10 @@ const Hero = () => {
               xmlns="http://www.w3.org/2000/svg"
               version="1.1"
             >
+              <path
+                d="M0 829L213 881L427 780L640 884L853 809L1067 743L1280 745L1493 688L1707 763L1920 847L1920 1081L1707 1081L1493 1081L1280 1081L1067 1081L853 1081L640 1081L427 1081L213 1081L0 1081Z"
+                fill="oklch(var(--b1))"
+              />
               <path
                 d="M0 829L213 881L427 780L640 884L853 809L1067 743L1280 745L1493 688L1707 763L1920 847L1920 1081L1707 1081L1493 1081L1280 1081L1067 1081L853 1081L640 1081L427 1081L213 1081L0 1081Z"
                 fill="oklch(var(--p))"
