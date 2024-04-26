@@ -10,6 +10,51 @@ const Hero = () => {
     <>
       <div className="min-h-screen overflow-hidden relative ">
         <div className="flex flex-col h-[80vh] justify-end w-screen z-40">
+          <div className="w-full flex justify-end absolute top-12">
+            <svg
+              width="500"
+              height="500"
+              viewBox="0 0 500 500"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" />
+                  <stop offset="100%" />
+                </linearGradient>
+              </defs>
+              <rect width="500" height="500" fill="oklch(var(--b1))" />
+              <circle cx="250" cy="250" r="200" fill="oklch(var(--s))" />
+              <rect
+                x="50"
+                y="300"
+                width="400"
+                height="20"
+                fill="oklch(var(--b1))"
+              />
+              <rect
+                x="50"
+                y="340"
+                width="400"
+                height="20"
+                fill="oklch(var(--b1))"
+              />
+              <rect
+                x="50"
+                y="380"
+                width="400"
+                height="20"
+                fill="oklch(var(--b1))"
+              />
+              <rect
+                x="50"
+                y="420"
+                width="400"
+                height="20"
+                fill="oklch(var(--b1))"
+              />
+            </svg>
+          </div>
           <div className="w-full z-40">
             <svg
               id="visual"
@@ -34,7 +79,7 @@ const Hero = () => {
                 fillOpacity={0.4}
               />
               <path
-                d="M0 970L213 962L427 1001L640 894L853 982L1067 922L1280 905L1493 973L1707 912L1920 959L1920 1081L1707 1081L1493 1081L1280 1081L1067 1081L853 1081L640 1081L427 1081L213 1081L0 1081Z"
+                d="M0 934L213 891L427 941L640 894L853 982L1067 922L1280 905L1493 973L1707 912L1920 959L1920 1081L1707 1081L1493 1081L1280 1081L1067 1081L853 1081L640 1081L427 1081L213 1081L0 1081Z"
                 fill="oklch(var(--p))"
                 fillOpacity={0.5}
               />
