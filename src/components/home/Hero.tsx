@@ -20,7 +20,7 @@ const Hero = () => {
               version="1.1"
             >
               <path
-                d="M0 829L213 881L427 780L640 884L853 829L1067 743L1280 745L1493 688L1707 763L1920 847L1920 1081L1707 1081L1493 1081L1280 1081L1067 1081L853 1081L640 1081L427 1081L213 1081L0 1081Z"
+                d="M0 829L213 881L427 780L640 884L853 809L1067 743L1280 745L1493 688L1707 763L1920 847L1920 1081L1707 1081L1493 1081L1280 1081L1067 1081L853 1081L640 1081L427 1081L213 1081L0 1081Z"
                 fill="oklch(var(--p))"
                 fillOpacity={0.4}
               />
@@ -54,13 +54,13 @@ const Hero = () => {
                 className="w-full bg-primary"
                 initial={{
                   y: '30vh',
-                  height: '0.6rem',
+                  height: '0.3rem',
                 }}
-                animate={{ y: '0vh', height: '0.03rem' }}
+                animate={{ y: '0vh', height: '0.01rem' }}
                 transition={{
                   duration: 8,
                   repeat: Infinity,
-                  delay: index - 1,
+                  delay: -index + 1,
                 }}
               />
             </div>
