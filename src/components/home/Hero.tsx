@@ -1,6 +1,13 @@
 'use client'
 
+import {
+  HeaderBeginning,
+  HeaderName,
+  HeaderSurname,
+  HeaderTitles,
+} from '@/content/home/Hero'
 import { motion } from 'framer-motion'
+import { ReactTyped } from 'react-typed'
 
 const Hero = () => {
   const numLines = 10
@@ -10,50 +17,72 @@ const Hero = () => {
     <>
       <div className="min-h-screen overflow-hidden relative ">
         <div className="flex flex-col h-[80vh] justify-end w-screen z-40">
-          <div className="w-full flex justify-end absolute top-12">
-            <svg
-              width="500"
-              height="500"
-              viewBox="0 0 500 500"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <defs>
-                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                  <stop offset="0%" />
-                  <stop offset="100%" />
-                </linearGradient>
-              </defs>
-              <rect width="500" height="500" fill="oklch(var(--b1))" />
-              <circle cx="250" cy="250" r="200" fill="oklch(var(--s))" />
-              <rect
-                x="50"
-                y="300"
-                width="400"
-                height="20"
-                fill="oklch(var(--b1))"
-              />
-              <rect
-                x="50"
-                y="340"
-                width="400"
-                height="20"
-                fill="oklch(var(--b1))"
-              />
-              <rect
-                x="50"
-                y="380"
-                width="400"
-                height="20"
-                fill="oklch(var(--b1))"
-              />
-              <rect
-                x="50"
-                y="420"
-                width="400"
-                height="20"
-                fill="oklch(var(--b1))"
-              />
-            </svg>
+          <div className="w-full flex justify-center absolute top-12">
+            <div className="flex justify-between w-full max-w-7xl mx-4">
+              <div className="flex flex-col justify-center">
+                <h1 className="text-xl">{HeaderBeginning}</h1>
+                <h1 className="text-7xl my-4 -translate-x-2">
+                  {HeaderName}{' '}
+                  <span className="text-primary">{HeaderSurname}</span>
+                </h1>
+                <ReactTyped
+                  className="lg:text-4xl sm:text-3xl text-2xl"
+                  strings={HeaderTitles}
+                  typeSpeed={80}
+                  backSpeed={100}
+                  loop
+                />
+              </div>
+              <svg
+                width="500"
+                height="500"
+                viewBox="0 0 500 500"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs>
+                  <linearGradient
+                    id="gradient"
+                    x1="0%"
+                    y1="0%"
+                    x2="0%"
+                    y2="100%"
+                  >
+                    <stop offset="0%" />
+                    <stop offset="100%" />
+                  </linearGradient>
+                </defs>
+                <rect width="500" height="500" fill="oklch(var(--b1))" />
+                <circle cx="250" cy="250" r="200" fill="oklch(var(--s))" />
+                <rect
+                  x="50"
+                  y="300"
+                  width="400"
+                  height="20"
+                  fill="oklch(var(--b1))"
+                />
+                <rect
+                  x="50"
+                  y="340"
+                  width="400"
+                  height="20"
+                  fill="oklch(var(--b1))"
+                />
+                <rect
+                  x="50"
+                  y="380"
+                  width="400"
+                  height="20"
+                  fill="oklch(var(--b1))"
+                />
+                <rect
+                  x="50"
+                  y="420"
+                  width="400"
+                  height="20"
+                  fill="oklch(var(--b1))"
+                />
+              </svg>
+            </div>
           </div>
           <div className="w-full z-40">
             <svg
@@ -116,6 +145,7 @@ const Hero = () => {
           ))}
         </div>
       </div>
+      <div className="h-screen" />
     </>
   )
 }
