@@ -1,0 +1,15 @@
+# Dependency directories
+node_modules
+.npm
+.yarn
+
+# Build output
+.next
+out
+
+# Logs
+*.log
+
+# Hidden files
+.*
+!.env
