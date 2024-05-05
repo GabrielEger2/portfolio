@@ -16,9 +16,9 @@ export const NavbarLinks = {
       ],
     },
     {
-      id: 'education',
-      title: 'Education',
-      href: '/education',
+      id: 'experience',
+      title: 'Experience',
+      href: '/experience',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit varius ipsum',
       topics: [

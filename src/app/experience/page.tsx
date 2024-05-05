@@ -1,6 +1,6 @@
 'use client'
 
-import ParallaxImage from '@/components/education/ParallaxImage'
+import ParallaxImage from '@/components/experience/ParallaxImage'
 import { educations } from '@/content/education/EducationContent'
 
 const education = () => {

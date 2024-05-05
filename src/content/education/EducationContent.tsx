@@ -1,19 +1,19 @@
-import Certified from '@/components/education/Certified'
-import Formal from '@/components/education/Formal'
-import Self from '@/components/education/Self'
+import Formal from '@/components/experience/Formal'
+import Self from '@/components/experience/Self'
+import Work from '@/components/experience/Work'
 
 export const educations = [
+  {
+    image: 'futureImage.jpg',
+    subTitle: 'My Professional Background',
+    Title: 'Work Experience',
+    chield: <Work />,
+  },
   {
     image: 'futureImage.jpg',
     subTitle: 'My Theoretical Background',
     Title: 'Formal Education',
     chield: <Formal />,
-  },
-  {
-    image: 'futureImage.jpg',
-    subTitle: 'Certified Courses and Bootcamps',
-    Title: 'Certified Education',
-    chield: <Certified />,
   },
   {
     image: 'futureImage.jpg',

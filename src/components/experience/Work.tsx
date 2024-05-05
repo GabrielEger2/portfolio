@@ -1,6 +1,6 @@
 import { BiSolidCheckCircle } from 'react-icons/bi'
 
-const Formal = () => {
+const Work = () => {
   return (
     <div className="flex flex-col md:flex-row w-full min-h-screen items-center justify-between">
       <div className="w-full md:w-1/2 flex justify-center">
@@ -80,4 +80,4 @@ const Formal = () => {
   )
 }
 
-export default Formal
+export default Work
