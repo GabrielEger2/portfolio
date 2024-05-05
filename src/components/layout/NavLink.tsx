@@ -1,11 +1,13 @@
 'use client'
 
 import { AnimatePresence, motion } from 'framer-motion'
+import Link from 'next/link'
 import { useState } from 'react'
 
 interface content {
   title: string
   description: string
+  href: string
   topics: { title: string; items: string[] }[]
 }
 
@@ -25,15 +27,17 @@ const NavLink = ({ content, linkText }: NavLinkProps) => {
       }}
       className="flex flex-col items-center relative px-3"
     >
-      <motion.a
-        className="cursor-pointer z-20"
-        onHoverStart={(event) => {
-          event.stopPropagation()
-          setHovered(true)
-        }}
-      >
-        <p className="text-lg translate-y-1">{content.title}</p>
-      </motion.a>
+      <Link href={content.href}>
+        <motion.div
+          className="cursor-pointer z-20"
+          onHoverStart={(event) => {
+            event.stopPropagation()
+            setHovered(true)
+          }}
+        >
+          <p className="text-lg translate-y-1">{content.title}</p>
+        </motion.div>
+      </Link>
       <motion.span
         initial={{ scaleX: 0, originX: 0 }}
         animate={{ scaleX: hovered ? 1 : 0 }}
