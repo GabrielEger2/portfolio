@@ -1,25 +1,25 @@
 'use client'
 
 import ParallaxImage from '@/components/experience/ParallaxImage'
-import { educations } from '@/content/education/EducationContent'
+import { experiences } from '@/content/experience/ExperienceContent'
 
-const education = () => {
+const experience = () => {
   return (
     <div className="mt-14">
-      {educations.map((education, index) => (
+      {experiences.map((experience, index) => (
         <div key={index}>
           <div className="relative min-h-screen">
             <ParallaxImage
-              imgUrl={education.image}
-              subheading={education.subTitle}
-              heading={education.Title}
+              imgUrl={experience.image}
+              subheading={experience.subTitle}
+              heading={experience.Title}
             />
           </div>
-          {education.chield}
+          {experience.chield}
         </div>
       ))}
     </div>
   )
 }
 
-export default education
+export default experience

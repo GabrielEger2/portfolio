@@ -2,7 +2,7 @@ import Formal from '@/components/experience/Formal'
 import Self from '@/components/experience/Self'
 import Work from '@/components/experience/Work'
 
-export const educations = [
+export const experiences = [
   {
     image: 'futureImage.jpg',
     subTitle: 'My Professional Background',
