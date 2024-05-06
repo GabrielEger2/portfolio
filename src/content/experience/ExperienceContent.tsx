@@ -7,18 +7,18 @@ export const experiences = [
     image: 'futureImage.jpg',
     subTitle: 'My Professional Background',
     Title: 'Work Experience',
-    chield: <Work />,
+    child: <Work />,
   },
   {
     image: 'futureImage.jpg',
     subTitle: 'My Theoretical Background',
     Title: 'Formal Education',
-    chield: <Formal />,
+    child: <Formal />,
   },
   {
     image: 'futureImage.jpg',
     subTitle: 'My Self-Taught Journey',
     Title: 'Self-Learning Education',
-    chield: <Self />,
+    child: <Self />,
   },
 ]

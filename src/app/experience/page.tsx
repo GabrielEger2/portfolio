@@ -15,7 +15,7 @@ const experience = () => {
               heading={experience.Title}
             />
           </div>
-          {experience.chield}
+          {experience.child}
         </div>
       ))}
     </div>
