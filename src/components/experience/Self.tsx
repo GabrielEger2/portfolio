@@ -1,5 +1,6 @@
 import { courses } from '@/content/experience/SelfExperience'
 import { AnimatePresence, motion } from 'framer-motion'
+import Image from 'next/image'
 import { useState } from 'react'
 
 interface courses {
@@ -41,10 +42,7 @@ const Self = () => {
           </div>
         </label>
       </div>
-      <motion.div
-        layout
-        className="grid grid-cols-[repeat(auto-fit,minmax(300px,.5fr))] sm:grid-cols-[repeat(auto-fit,minmax(400px,.5fr))] md:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-6"
-      >
+      <motion.div layout className="grid md:grid-cols-2 xl:grid-cols-3 gap-y-6">
         {filteredCourses.map((element: courses) => {
           return (
             <motion.div
@@ -56,17 +54,22 @@ const Self = () => {
               transition={{ duration: 0.25 }}
             >
               <AnimatePresence>
-                <div className="card w-96 bg-base-100 shadow-xl">
-                  <div className="card-body">
-                    <h2 className="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div className="flex justify-center">
+                  <div className="card w-96 bg-base-100 shadow-xl">
+                    <div className="card-body">
+                      <h2 className="card-title">Shoes!</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                    </div>
+                    <figure>
+                      <Image
+                        src="url(https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg)"
+                        alt="Picture of the author"
+                        width={384}
+                        height={256}
+                        className="object-cover"
+                      />
+                    </figure>
                   </div>
-                  <figure>
-                    <img
-                      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                      alt="Shoes"
-                    />
-                  </figure>
                 </div>
               </AnimatePresence>
             </motion.div>
