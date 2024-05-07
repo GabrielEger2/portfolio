@@ -25,7 +25,7 @@ export default function RootLayout({
     <html data-theme={theme?.value || 'default'} lang="en">
       <body className={inter.className}>
         <Navbar />
-        <main className="overflow-x-hidden">{children}</main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>

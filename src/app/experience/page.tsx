@@ -15,7 +15,9 @@ const experience = () => {
               heading={experience.Title}
             />
           </div>
-          {experience.child}
+          <div className="max-w-7xl w-full min-h-screen mx-auto justify-center px-2">
+            {experience.child}
+          </div>
         </div>
       ))}
     </div>
