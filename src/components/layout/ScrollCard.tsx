@@ -1,32 +1,69 @@
-import ExempleImage from '@/assets/imgs/experience/FormalExperience1.jpg'
-import { motion } from 'framer-motion'
+import ExempleImage from '@/assets/imgs/experience/WorkExperience1.jpg'
+import { motion, useScroll, useTransform } from 'framer-motion'
 import Image from 'next/image'
+import { useRef } from 'react'
 
 interface ScrollCardProps {
   title: string
-  subTitle: string
+  time: string
+  local: string
+  description: string
+  technologies: string[] | null
   image: string
   index: number
 }
 
 const ScrollCard: React.FC<ScrollCardProps> = ({
   title,
-  subTitle,
+  time,
+  local,
+  description,
+  technologies,
   image,
   index,
 }) => {
+  const container = useRef(null)
+
+  const { scrollYProgress } = useScroll({
+    target: container,
+
+    offset: ['start end', 'start start'],
+  })
+
+  const imageScale = useTransform(scrollYProgress, [0, 1], [2, 1])
+
   return (
-    <div className="flex w-full h-screen items-center justify-center">
-      <div className="card shadow-xl w-full h-96 bg-base-200 border border-base-300">
-        <div className="card-body">
-          <h2 className="card-title">{title}</h2>
-          <p>{subTitle}</p>
+    <div
+      ref={container}
+      className="sticky z-10"
+      style={{ top: `calc(-5vh + ${index * 25}px)` }}
+    >
+      <div className="flex w-full h-screen items-center justify-center">
+        <div className="card shadow-xl w-full h-96 bg-base-100 border border-base-300">
+          <div className="card-body h-96">
+            <h2 className="card-title">{title}</h2>
+            <time className="text-sm italic">{time}</time>
+            <time className="text-sm italic">{local}</time>
+            <p>{description}</p>
+            <div className="w-full flex">
+              {technologies?.map((tech, index) => (
+                <span key={index} className="badge badge-primary mr-2">
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
+          <figure>
+            <motion.div style={{ scale: imageScale }}>
+              <Image
+                width={1920}
+                layout="responsive"
+                src={ExempleImage}
+                alt="image"
+              />
+            </motion.div>
+          </figure>
         </div>
-        <figure>
-          <motion.div>
-            <Image src={ExempleImage} alt="image" />
-          </motion.div>
-        </figure>
       </div>
     </div>
   )
