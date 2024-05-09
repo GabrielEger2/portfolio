@@ -35,10 +35,10 @@ const ScrollCard: React.FC<ScrollCardProps> = ({
   return (
     <div
       ref={container}
-      className="sticky z-10"
-      style={{ top: `calc(-5vh + ${index * 25}px)` }}
+      className="flex sticky z-10 h-screen items-center top-"
+      style={{ top: `calc(${index * 1 + 2}rem)` }}
     >
-      <div className="flex w-full h-screen items-center justify-center">
+      <div className="flex w-full justify-center">
         <div className="card shadow-xl w-full bg-base-100 border border-base-300">
           <div className="card-body h-52">
             <h2 className="card-title">{title}</h2>

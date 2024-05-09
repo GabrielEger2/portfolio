@@ -19,7 +19,7 @@ const Self = () => {
   )
 
   return (
-    <div className="max-w-7xl w-full min-h-screen mx-auto justify-center px-2">
+    <div className="max-w-7xl w-full min-h-screen mx-auto justify-center px-2 mb-10 md:mb-0">
       <div className="mb-10">
         <label className="form-control w-full">
           <div className="label">
@@ -32,7 +32,7 @@ const Self = () => {
               className="input input-bordered w-full rounded-r-none"
               onChange={(e) => setSearchTerm(e.target.value)}
             />
-            <select className="select select-primary w-full max-w-xs rounded-l-none">
+            <select className="select select-primary md:w-full md:max-w-xs rounded-l-none">
               <option selected>All Stacks</option>
               <option>Frontend</option>
               <option>Backend</option>
