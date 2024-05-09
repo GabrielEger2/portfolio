@@ -20,10 +20,20 @@ export const NavbarLinks = {
       title: 'Experience',
       href: '/experience',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit varius ipsum',
+        'Explore my career, education, and self-learning experiences in this comprehensive overview',
       topics: [
-        { title: 'Topics 1', items: ['Topic 1', 'Topic 2', 'Topic 3'] },
-        { title: 'Topics 2', items: ['Topic 1', 'Topic 2', 'Topic 3'] },
+        {
+          title: 'Work Experience',
+          items: ['FreeLance', 'ClearViction', 'MundialMix'],
+        },
+        {
+          title: 'Formal Education',
+          items: ['Technical School', 'Bsc CS'],
+        },
+        {
+          title: 'Self-Learning',
+          items: ['Courses', 'Certificates', 'Bootcamps'],
+        },
       ],
     },
     {

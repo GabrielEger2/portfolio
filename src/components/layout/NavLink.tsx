@@ -3,6 +3,7 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import Link from 'next/link'
 import { useState } from 'react'
+import { FiArrowUpRight } from 'react-icons/fi'
 
 interface content {
   title: string
@@ -62,12 +63,12 @@ const NavLink = ({ content, linkText }: NavLinkProps) => {
               <figure className="bg-primary w-52">
                 <div className="p-4 text-base-100 flex flex-col justify-between h-full">
                   <div>
-                    <h1 className="text-xl font-semibold underline">
-                      {content.title}
-                    </h1>
+                    <h1 className="text-xl font-semibold">{content.title}</h1>
                     <p className="mt-4">{content.description}</p>
                   </div>
-                  <p>{linkText}</p>
+                  <Link className="underline" href={content.href}>
+                    {linkText} <FiArrowUpRight className="inline-block" />
+                  </Link>
                 </div>
               </figure>
               <div className="card-body w-[28rem]">
