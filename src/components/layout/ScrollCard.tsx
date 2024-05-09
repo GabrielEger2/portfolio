@@ -39,13 +39,13 @@ const ScrollCard: React.FC<ScrollCardProps> = ({
       style={{ top: `calc(-5vh + ${index * 25}px)` }}
     >
       <div className="flex w-full h-screen items-center justify-center">
-        <div className="card shadow-xl w-full h-96 bg-base-100 border border-base-300">
-          <div className="card-body h-96">
+        <div className="card shadow-xl w-full bg-base-100 border border-base-300">
+          <div className="card-body h-52">
             <h2 className="card-title">{title}</h2>
             <time className="text-sm italic">{time}</time>
             <time className="text-sm italic">{local}</time>
             <p>{description}</p>
-            <div className="w-full flex">
+            <div>
               {technologies?.map((tech, index) => (
                 <span key={index} className="badge badge-primary mr-2">
                   {tech}
@@ -53,7 +53,7 @@ const ScrollCard: React.FC<ScrollCardProps> = ({
               ))}
             </div>
           </div>
-          <figure>
+          <figure className="h-60 mt-10">
             <motion.div style={{ scale: imageScale }}>
               <Image
                 width={1920}

@@ -42,10 +42,7 @@ const Self = () => {
           </div>
         </label>
       </div>
-      <motion.div
-        layout
-        className="grid md:grid-cols-2 xl:grid-cols-3 gap-y-12"
-      >
+      <motion.div layout className="grid md:grid-cols-2 xl:grid-cols-3 gap-12">
         {filteredCourses.map((element: courses) => {
           return (
             <motion.div

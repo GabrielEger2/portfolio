@@ -18,7 +18,7 @@ const FlipCard = () => {
       style={{ perspective: '1000px' }}
     >
       <motion.div
-        className="card w-96 shadow-lg"
+        className="card shadow-lg"
         style={{ transformStyle: 'preserve-3d', transition: 'transform 0.3s' }}
         initial={false}
         animate={{ rotateY: isFlipped ? 180 : 360 }}
