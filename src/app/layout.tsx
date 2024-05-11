@@ -6,6 +6,7 @@ import './globals.css'
 
 import Footer from '@/components/core/Footer'
 import Navbar from '@/components/core/Navbar'
+import CookiesConsent from '@/components/layout/CookiesConsent'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,7 +26,10 @@ export default function RootLayout({
     <html data-theme={theme?.value || 'default'} lang="en">
       <body className={inter.className}>
         <Navbar />
-        <main>{children}</main>
+        <main>
+          {children}
+          <CookiesConsent />
+        </main>
         <Footer />
       </body>
     </html>
