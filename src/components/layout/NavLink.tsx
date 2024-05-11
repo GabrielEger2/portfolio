@@ -72,9 +72,9 @@ const NavLink = ({ content, linkText }: NavLinkProps) => {
                 </div>
               </figure>
               <div className="card-body w-[28rem]">
-                <div className="w-full flex justify-around h-full items-center">
+                <div className="w-full flex h-full text-center">
                   {content.topics.map((topic) => (
-                    <div key={topic.title} className="flex flex-col">
+                    <div key={topic.title} className="flex flex-col h-full p-4">
                       <h1 className="text-lg font-semibold">{topic.title}</h1>
                       <ul className="mt-2">
                         {topic.items.map((item) => (
