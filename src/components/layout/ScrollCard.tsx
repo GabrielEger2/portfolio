@@ -1,4 +1,3 @@
-import ExempleImage from '@/assets/imgs/experience/WorkExperience1.jpg'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import Image from 'next/image'
 import { useRef } from 'react'
@@ -47,7 +46,10 @@ const ScrollCard: React.FC<ScrollCardProps> = ({
             <p>{description}</p>
             <div>
               {technologies?.map((tech, index) => (
-                <span key={index} className="badge badge-primary mr-2">
+                <span
+                  key={index}
+                  className="badge badge-primary text-base-100 mr-2"
+                >
                   {tech}
                 </span>
               ))}
@@ -56,9 +58,10 @@ const ScrollCard: React.FC<ScrollCardProps> = ({
           <figure className="h-60 mt-10">
             <motion.div style={{ scale: imageScale }}>
               <Image
-                width={1920}
+                width={900}
+                height={600}
                 layout="responsive"
-                src={ExempleImage}
+                src={image}
                 alt="image"
               />
             </motion.div>

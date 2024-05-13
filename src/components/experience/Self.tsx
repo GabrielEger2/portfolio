@@ -4,18 +4,17 @@ import { useState } from 'react'
 import FlipCard from '../layout/FlipCard'
 
 interface courses {
-  projectTitle: string
-  projectDescription: string
-  projectTechStack: string
-  projectGithubLink: string
-  projectWebLink: string
+  courseImage: string
+  courseTitle: string
+  courseDescription: string
+  courseTags: string[]
 }
 
 const Self = () => {
   const [searchTerm, setSearchTerm] = useState('')
 
   const filteredCourses = courses.filter((course) =>
-    course.projectTitle.toLowerCase().includes(searchTerm.toLowerCase()),
+    course.courseTitle.toLowerCase().includes(searchTerm.toLowerCase()),
   )
 
   return (
@@ -43,10 +42,10 @@ const Self = () => {
         </label>
       </div>
       <motion.div layout className="grid md:grid-cols-2 xl:grid-cols-3 gap-12">
-        {filteredCourses.map((element: courses) => {
+        {filteredCourses.map((course: courses) => {
           return (
             <motion.div
-              key={element.projectTitle}
+              key={course.courseTitle}
               layout
               animate={{ opacity: 1, scale: 1 }}
               initial={{ opacity: 0, scale: 0 }}
@@ -55,7 +54,7 @@ const Self = () => {
             >
               <AnimatePresence>
                 <div className="flex justify-center">
-                  <FlipCard />
+                  <FlipCard {...course} />
                 </div>
               </AnimatePresence>
             </motion.div>

@@ -1,6 +1,6 @@
 export const workExperiences = [
   {
-    image: 'futureImage.jpg',
+    image: '/imgs/experience/freeLanceWork.jpg',
     title: 'FreeLance Work',
     time: '2023 - On going',
     local: 'Remote',
@@ -9,7 +9,7 @@ export const workExperiences = [
     technologies: ['React', 'Next.js', 'TailwindCSS', 'Node.js', 'DevOps'],
   },
   {
-    image: 'futureImage.jpg',
+    image: '/imgs/experience/clearVictionWork.jpg',
     title: 'ClearViction',
     time: '2023 - 2024 (10 months)',
     local: 'Remote, Washington, USA',
@@ -18,12 +18,12 @@ export const workExperiences = [
     technologies: ['Agile', 'Next.js', 'TypeScript', 'Material-UI'],
   },
   {
-    image: 'futureImage.jpg',
+    image: '/imgs/experience/mundialMixWork.jpg',
     title: 'MundialMix',
     time: '2023 - On going',
     local: 'Santa Catarina, Brazil',
     description:
-      'MundialMix is a holding company that owns several businesses in different sectors.',
+      'MundialMix is a holding company that owns several businesses in different sectors. Including retail, banking, radio, and more',
     technologies: [
       'React',
       'TypeScript',

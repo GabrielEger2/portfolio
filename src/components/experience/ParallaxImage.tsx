@@ -30,6 +30,8 @@ const ParallaxImage: React.FC<ParallaxImageProps> = ({
   const opacityImage = useTransform(scrollYImageProgress, [0, 1], [1, 0])
   const opacity = useTransform(scrollYProgress, [0.25, 0.5, 0.75], [0, 1, 0])
 
+  console.log(imgUrl)
+
   return (
     <div className="relative min-h-screen overflow-hidden">
       <motion.div

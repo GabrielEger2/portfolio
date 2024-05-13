@@ -1,6 +1,6 @@
 export const educationExperiences = [
   {
-    image: 'futureImage.jpg',
+    image: '/imgs/experience/technicalSchoolEducation.jpg',
     title: 'Technical High School',
     time: '2017 - 2021',
     local: 'IFSC (Federal Institute of Santa Catarina)',
@@ -8,7 +8,7 @@ export const educationExperiences = [
       'IFSC is a public federal institution that offers free technical high school courses, considered one of the best educational centers in Brazil.',
   },
   {
-    image: 'futureImage.jpg',
+    image: '/imgs/experience/universityEducation.jpg',
     title: 'Bsc Computer Science',
     time: '2023 - 2026 (Probably)',
     local: 'GoldSmith - University of London',
