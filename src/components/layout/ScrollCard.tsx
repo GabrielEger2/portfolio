@@ -39,7 +39,7 @@ const ScrollCard: React.FC<ScrollCardProps> = ({
     >
       <div className="flex w-full justify-center">
         <div className="card shadow-xl w-full bg-base-100 border border-base-300">
-          <div className="card-body h-52">
+          <div className="card-body min-h-52">
             <h2 className="card-title">{title}</h2>
             <time className="text-sm italic">{time}</time>
             <time className="text-sm italic">{local}</time>
@@ -55,15 +55,9 @@ const ScrollCard: React.FC<ScrollCardProps> = ({
               ))}
             </div>
           </div>
-          <figure className="h-60 mt-10">
+          <figure className="h-60">
             <motion.div style={{ scale: imageScale }}>
-              <Image
-                width={900}
-                height={600}
-                layout="responsive"
-                src={image}
-                alt="image"
-              />
+              <Image width={900} height={600} src={image} alt="image" />
             </motion.div>
           </figure>
         </div>

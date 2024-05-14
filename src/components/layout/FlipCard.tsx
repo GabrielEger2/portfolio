@@ -32,7 +32,7 @@ const FlipCard: React.FC<FlipCardProps> = ({
       style={{ perspective: '1000px' }}
     >
       <motion.div
-        className="shadow-lg"
+        className="shadow-lg max-w-96"
         style={{ transformStyle: 'preserve-3d', transition: 'transform 0.3s' }}
         initial={false}
         animate={{ rotateY: isFlipped ? 180 : 360 }}
