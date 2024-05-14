@@ -5,7 +5,7 @@ import { experiences } from '@/content/experience/ExperienceContent'
 
 const experience = () => {
   return (
-    <div className="mt-14">
+    <div>
       {experiences.map((experience, index) => (
         <div key={index}>
           <div className="relative min-h-screen">
