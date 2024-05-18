@@ -1,4 +1,4 @@
-import { courses } from '@/content/experience/SelfExperience'
+import { courses, coursesTags } from '@/content/experience/SelfExperience'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useState } from 'react'
 import FlipCard from '../layout/FlipCard'
@@ -8,13 +8,17 @@ interface courses {
   courseTitle: string
   courseDescription: string
   courseTags: string[]
+  tags: string[]
 }
 
 const Self = () => {
   const [searchTerm, setSearchTerm] = useState('')
+  const [searchTag, setSearchTag] = useState('')
 
-  const filteredCourses = courses.filter((course) =>
-    course.courseTitle.toLowerCase().includes(searchTerm.toLowerCase()),
+  const filteredCourses = courses.filter(
+    (course) =>
+      course.courseTitle.toLowerCase().includes(searchTerm.toLowerCase()) &&
+      (course.tags.includes(searchTag) || searchTag === ''),
   )
 
   return (
@@ -31,12 +35,18 @@ const Self = () => {
               className="input input-bordered w-full rounded-r-none"
               onChange={(e) => setSearchTerm(e.target.value)}
             />
-            <select className="select select-primary md:w-full md:max-w-xs rounded-l-none">
-              <option selected>All Stacks</option>
-              <option>Frontend</option>
-              <option>Backend</option>
-              <option>UI/UX</option>
-              <option>WebDev</option>
+            <select
+              onChange={(event) => setSearchTag(event.target.value)}
+              className="select select-primary md:w-full md:max-w-xs rounded-l-none"
+            >
+              <option value={''} selected>
+                All Options
+              </option>
+              {coursesTags.map((tag, index) => (
+                <option key={index} value={tag}>
+                  {tag}
+                </option>
+              ))}
             </select>
           </div>
         </label>

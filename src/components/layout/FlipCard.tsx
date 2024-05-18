@@ -8,6 +8,7 @@ interface FlipCardProps {
   courseTitle: string
   courseDescription: string
   courseTags: string[]
+  tags: string[]
 }
 
 const FlipCard: React.FC<FlipCardProps> = ({

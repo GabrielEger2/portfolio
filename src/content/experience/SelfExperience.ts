@@ -1,3 +1,11 @@
+export const coursesTags = [
+  'Computer Science',
+  'Backend',
+  'Frontend',
+  'UI/UX',
+  'DevOps',
+]
+
 export const courses = [
   {
     courseImage: '/imgs/experience/CS50Self.jpg',
@@ -11,6 +19,7 @@ export const courses = [
       'C',
       'Python',
     ],
+    tags: ['Computer Science', 'Backend'],
   },
   {
     courseImage: '/imgs/experience/daysOfCode100Self.jpg',
@@ -23,6 +32,7 @@ export const courses = [
       'Programming Logic',
       'Data Science',
     ],
+    tags: ['Computer Science', 'Backend'],
   },
   {
     courseImage: '/imgs/experience/nubankSelf.jpg',
@@ -30,6 +40,7 @@ export const courses = [
     courseDescription:
       'Nubank is the fourth largest bank in Latin America, in 2023 they offered to a select group of students a bootcamp to learn about their Frontend Stack.',
     courseTags: ['HTML/CSS', 'React', 'TypeScript', 'Design Systems'],
+    tags: ['Frontend', 'UI/UX'],
   },
   {
     courseImage: '/imgs/experience/googleSelf.jpg',
@@ -44,6 +55,7 @@ export const courses = [
       'Linux',
       'Cryptography',
     ],
+    tags: ['DevOps'],
   },
   {
     courseImage: '/imgs/experience/algorithmsSelf.jpg',
@@ -51,6 +63,7 @@ export const courses = [
     courseDescription:
       'NeetCode teaches the basics of Algorithms and Data Structures, including Big O Notation, Sorting Algorithms, and more.',
     courseTags: ['Algorithms', 'Data Structures', 'Big O Notation'],
+    tags: ['Computer Science'],
   },
   {
     courseImage: '/imgs/experience/systemDesignSelf.jpg',
@@ -66,6 +79,7 @@ export const courses = [
       'APIs',
       'Big Data',
     ],
+    tags: ['Backend', 'DevOps'],
   },
   {
     courseImage: '/imgs/experience/cloudSelf.jpg',
@@ -73,5 +87,6 @@ export const courses = [
     courseDescription:
       'Amazon AWS Practitioner certification validates fluency in the core AWS services, uses, and basic AWS architecture best practices.',
     courseTags: ['AWS', 'Cloud Computing', 'Networking', 'Security'],
+    tags: ['DevOps'],
   },
 ]
