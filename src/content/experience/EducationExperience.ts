@@ -4,6 +4,7 @@ export const educationExperiences = [
     title: 'Technical High School',
     time: '2017 - 2021',
     local: 'IFSC (Federal Institute of Santa Catarina)',
+    technologies: null,
     description:
       'IFSC is a public federal institution that offers free technical high school courses, considered one of the best educational centers in Brazil.',
   },
@@ -12,6 +13,7 @@ export const educationExperiences = [
     title: 'Bsc Computer Science',
     time: '2023 - 2026 (Probably)',
     local: 'GoldSmith - University of London',
+    technologies: null,
     description:
       'Goldsmiths, University of London, is a public research university in London, England, specialising in the arts, design, humanities, and social sciences.',
   },
