@@ -1,5 +1,3 @@
-'use client'
-
 import ParallaxImage from '@/components/experience/ParallaxImage'
 import { experiences } from '@/content/experience/ExperienceContent'
 

@@ -1,3 +1,5 @@
+'use client'
+
 import { courses, coursesTags } from '@/content/experience/SelfExperience'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useState } from 'react'
