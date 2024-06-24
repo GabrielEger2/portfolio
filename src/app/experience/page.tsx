@@ -3,7 +3,7 @@ import { experiences } from '@/content/experience/ExperienceContent'
 
 const experience = () => {
   return (
-    <div>
+    <section>
       {experiences.map((experience, index) => (
         <div key={index}>
           <div className="relative min-h-screen">
@@ -18,7 +18,7 @@ const experience = () => {
           </div>
         </div>
       ))}
-    </div>
+    </section>
   )
 }
 
