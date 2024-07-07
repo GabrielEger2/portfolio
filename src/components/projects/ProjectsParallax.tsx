@@ -1,10 +1,8 @@
 'use client'
 
-import { motion, useScroll, useTransform } from 'framer-motion'
-import { useEffect, useRef, useState } from 'react'
-import testImage from '../../../public/imgs/projects/teste.jpg'
-
-import Image from 'next/image'
+import { useTransform } from 'framer-motion'
+import { useEffect, useState } from 'react'
+import ParallaxColumn from './ParallaxColumn'
 
 const images = [
   '1.jpg',
@@ -21,44 +19,16 @@ const images = [
   '12.jpg',
 ]
 
-const Column = ({ images, y }) => {
-  return (
-    <motion.div
-      className="flex relative h-screen w-1/3 min-w-64 flex-col gap-2 flex-nowrap"
-      style={{ y }}
-    >
-      {images.map((src, i) => {
-        return (
-          <div
-            key={i}
-            className="absolute h-1/2 w-full border border-1 overflow-hidden object-cover"
-          >
-            <Image src={testImage} alt="image" fill />
-          </div>
-        )
-      })}
-    </motion.div>
-  )
-}
-
-const ProjectsParallax = () => {
-  const gallery = useRef(null)
-
+const ProjectsParallax = ({ scrollYProgress }) => {
   const [dimension, setDimension] = useState({ width: 0, height: 0 })
-
-  const { scrollYProgress } = useScroll({
-    target: gallery,
-
-    offset: ['start end', 'end start'],
-  })
 
   const { height } = dimension
 
-  const y = useTransform(scrollYProgress, [0, 1], [0, height * 2])
+  const y = useTransform(scrollYProgress, [0, 1], [0, height * 1])
 
-  const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 3.3])
+  const y2 = useTransform(scrollYProgress, [0, 1], [0, height * -0.6])
 
-  const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 1.25])
+  const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 0.2])
 
   useEffect(() => {
     const resize = () => {
@@ -75,19 +45,43 @@ const ProjectsParallax = () => {
   }, [])
 
   return (
-    <main>
-      <div className="h-screen" />
-
-      <div className="h-[175%] overflow-hidden bg-primary">
-        <div className="flex h-[200%] -top-24 gap-2 p-2 relative">
-          <Column images={[images[0], images[1], images[2]]} y={y} />
-          <Column images={[images[3], images[4], images[5]]} y={y2} />
-          <Column images={[images[6], images[7], images[8]]} y={y3} />
-        </div>
+    <div className="overflow-hidden h-[200vh]">
+      <div className="flex gap-2 p-2 relative -translate-y-96">
+        <ParallaxColumn
+          images={[
+            images[0],
+            images[1],
+            images[2],
+            images[0],
+            images[1],
+            images[2],
+          ]}
+          y={y}
+        />
+        <ParallaxColumn
+          images={[
+            images[0],
+            images[1],
+            images[2],
+            images[0],
+            images[1],
+            images[2],
+          ]}
+          y={y2}
+        />
+        <ParallaxColumn
+          images={[
+            images[0],
+            images[1],
+            images[2],
+            images[0],
+            images[1],
+            images[2],
+          ]}
+          y={y3}
+        />
       </div>
-
-      <div className="h-screen" />
-    </main>
+    </div>
   )
 }
 

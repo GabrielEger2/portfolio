@@ -40,10 +40,9 @@ const Self = () => {
             <select
               onChange={(event) => setSearchTag(event.target.value)}
               className="select select-primary md:w-full md:max-w-xs rounded-l-none"
+              defaultValue={''}
             >
-              <option value={''} selected>
-                All Options
-              </option>
+              <option value={''}>All Options</option>
               {coursesTags.map((tag, index) => (
                 <option key={index} value={tag}>
                   {tag}

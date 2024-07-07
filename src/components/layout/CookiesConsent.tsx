@@ -28,7 +28,7 @@ const CookiesConsent = () => {
   }
 
   return (
-    <div className="fixed bottom-4 z-50 w-full flex">
+    <div className="fixed bottom-0 p-2 z-50 w-full flex">
       <AnimatePresence>
         {showCookieBanner && (
           <motion.div
