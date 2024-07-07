@@ -61,7 +61,7 @@ const NavLink = ({ content, linkText }: NavLinkProps) => {
             <div className="h-5 w-5 bg-base-100 z-10 rotate-45 absolute -translate-y-2.5 border-l border-t border-base-300" />
             <motion.div className="card card-side h-60 bg-base-100 border border-base-300">
               <figure className="bg-primary w-52">
-                <div className="p-4 text-base-100 flex flex-col justify-between h-full">
+                <div className="p-4 flex text-primary-content flex-col justify-between h-full">
                   <div>
                     <h1 className="text-xl font-semibold">{content.title}</h1>
                     <p className="mt-4">{content.description}</p>

@@ -41,7 +41,7 @@ const FlipCard: React.FC<FlipCardProps> = ({
         onAnimationComplete={() => setIsAnimating(false)}
       >
         <span
-          className="badge badge-primary text-base-100 z-10 absolute right-1 top-1 items-center"
+          className="badge badge-primary text-primary-content z-10 absolute right-1 top-1 items-center"
           style={{ backfaceVisibility: 'hidden' }}
         >
           Click Me! <MdOutlineAdsClick size={20} className="inline-block" />
@@ -65,7 +65,7 @@ const FlipCard: React.FC<FlipCardProps> = ({
               {courseTags.map((tag: string, index: number) => (
                 <span
                   key={index}
-                  className="badge badge-primary text-base-100 mr-2"
+                  className="badge badge-primary text-primary-content mr-2"
                 >
                   {tag}
                 </span>

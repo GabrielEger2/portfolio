@@ -50,7 +50,7 @@ const ScrollCard: React.FC<ScrollCardProps> = ({
               {technologies?.map((tech, index) => (
                 <span
                   key={index}
-                  className="badge badge-primary text-base-100 mr-2"
+                  className="badge badge-primary text-primary-content mr-2"
                 >
                   {tech}
                 </span>
