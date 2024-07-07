@@ -42,10 +42,20 @@ export const NavbarLinks = {
       title: 'Projects',
       href: '/projects',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit varius ipsum',
+        'Discover a curated selection of my projects, showcasing my skills in software development.',
       topics: [
-        { title: 'Topics 1', items: ['Topic 1', 'Topic 2', 'Topic 3'] },
-        { title: 'Topics 2', items: ['Topic 1', 'Topic 2', 'Topic 3'] },
+        {
+          title: 'Projects List',
+          items: ['GitHub Link', 'Projects Display'],
+        },
+        {
+          title: 'Top Projects',
+          items: ['Projects Carousel', 'Showcase'],
+        },
+        {
+          title: 'All Projects',
+          items: ['Stack Filter', 'Language Filter'],
+        },
       ],
     },
     {
