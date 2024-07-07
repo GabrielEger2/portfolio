@@ -1,13 +1,13 @@
 import Hero from '@/components/projects/Hero'
+import { ProjectsCarousel } from '@/components/projects/ProjectsCarousel'
 
 const projects = () => {
   return (
     <section className="w-full flex-col items-center">
-      <div className="relative w-full min-h-screen">
+      <div className="relative w-full h-[200vh]">
         <Hero />
       </div>
-      <div className="flex w-full justify-center max-w-[88rem] mx-2">21</div>
-      <div className="h-[300vh]" />
+      <ProjectsCarousel />
     </section>
   )
 }

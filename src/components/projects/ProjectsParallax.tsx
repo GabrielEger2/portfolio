@@ -28,7 +28,7 @@ const ProjectsParallax = ({ scrollYProgress }) => {
 
   const y2 = useTransform(scrollYProgress, [0, 1], [0, height * -0.6])
 
-  const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 0.2])
+  const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 0.3])
 
   useEffect(() => {
     const resize = () => {

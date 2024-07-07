@@ -1,4 +1,5 @@
-export const NavbarTitle = 'GSEDev'
+export const NavbarTitle = 'GEDev'
+export const NavbarTitleLink = '/'
 
 export const NavbarLinks = {
   linkText: 'Find out more',
