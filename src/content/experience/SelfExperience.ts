@@ -82,6 +82,21 @@ export const courses = [
     tags: ['Backend', 'DevOps'],
   },
   {
+    courseImage: '/imgs/experience/ibmBackend.jpg',
+    courseTitle: 'Application Development using Microservices and Serverless',
+    courseDescription:
+      'IBM offers a complete course of Microservices and Serverless, best practices and architecture.',
+    courseTags: [
+      'Microservices',
+      'Serverless',
+      'APIs',
+      'Docker',
+      'Kubernetes',
+      'Cloud Computing',
+    ],
+    tags: ['Backend', 'DevOps'],
+  },
+  {
     courseImage: '/imgs/experience/cloudSelf.jpg',
     courseTitle: 'AWS Certified - Practitioner',
     courseDescription:
