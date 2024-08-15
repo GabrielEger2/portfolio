@@ -26,7 +26,7 @@ const Hero = () => {
       <div className="w-[30%]">
         <motion.div
           style={{ opacity: opacityFadeOut, y: yFadeOut }}
-          className="flex h-screen w-full flex-col items-start justify-end sticky top-0 pb-4"
+          className="flex h-screen w-full flex-col items-start justify-end sticky top-0 pb-20"
         >
           <p className="text-4xl font-bold md:text-7xl">
             Explore All the Projects I&apos;ve Built so Far

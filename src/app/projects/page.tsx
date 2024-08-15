@@ -3,7 +3,7 @@ import { ProjectsCarousel } from '@/components/projects/ProjectsCarousel'
 
 const projects = () => {
   return (
-    <section className="w-full flex-col items-center">
+    <section className="w-full flex-col items-center pt-16">
       <div className="relative w-full h-[200vh]">
         <Hero />
       </div>

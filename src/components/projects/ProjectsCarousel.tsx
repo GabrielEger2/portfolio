@@ -1,10 +1,10 @@
 'use client'
 
 import {
-    motion,
-    useMotionValueEvent,
-    useScroll,
-    useTransform,
+  motion,
+  useMotionValueEvent,
+  useScroll,
+  useTransform,
 } from 'framer-motion'
 import { useMemo, useRef, useState } from 'react'
 import { useWindowSize } from 'react-use'
@@ -28,27 +28,15 @@ export const ProjectsCarousel = () => {
 
   const scale = useTransform(
     scrollYProgress,
-    [0.3, 0.5, 0.66],
+    [0, 0.1, 0.6],
     [maximumScale * 1.1, maximumScale, 1],
-  )
-
-  const postersOpacity = useTransform(scrollYProgress, [0.64, 0.66], [0, 1])
-  const posterTranslateXLeft = useTransform(
-    scrollYProgress,
-    [0.64, 0.66],
-    [-20, 0],
-  )
-  const posterTranslateXRight = useTransform(
-    scrollYProgress,
-    [0.64, 0.66],
-    [20, 0],
   )
 
   const [carouselVariant, setCarouselVariant] = useState<'inactive' | 'active'>(
     'inactive',
   )
   useMotionValueEvent(scrollYProgress, 'change', (progress) => {
-    if (progress >= 0.67) {
+    if (progress >= 0.61) {
       setCarouselVariant('active')
     } else {
       setCarouselVariant('inactive')
@@ -56,20 +44,10 @@ export const ProjectsCarousel = () => {
   })
 
   return (
-    <motion.div animate={carouselVariant} className="">
+    <motion.div animate={carouselVariant}>
       <div ref={carouselWrapperRef} className="h-[300vh] overflow-clip card">
-        <div className="sticky top-0 flex h-screen items-center">
-          <div className="relative left-1/2 mb-5 flex -translate-x-1/2 gap-5">
-            <motion.div
-              style={{ opacity: postersOpacity, x: posterTranslateXLeft }}
-              className="aspect-[9/16] w-[300px] shrink-0 overflow-clip card md:aspect-video md:w-[60vw]"
-            >
-              <img
-                className="h-full w-full object-cover"
-                src={movies[0].poster}
-                alt={movies[0].name}
-              />
-            </motion.div>
+        <div className="sticky top-11 flex h-screen items-center">
+          <div className="relative flex w-full justify-center gap-5">
             <motion.div
               style={{ scale }}
               className="relative aspect-[9/16] w-[300px] shrink-0 overflow-clip card md:aspect-video md:w-[60vw]"
@@ -90,16 +68,6 @@ export const ProjectsCarousel = () => {
                 <button className="btn btn-primary">TERSDTE</button>
               </motion.div>
             </motion.div>
-            <motion.div
-              style={{ opacity: postersOpacity, x: posterTranslateXRight }}
-              className="aspect-[9/16] w-[300px] shrink-0 overflow-clip card md:aspect-video md:w-[60vw]"
-            >
-              <img
-                className="h-full w-full object-cover"
-                src={movies[2].poster}
-                alt={movies[2].name}
-              />
-            </motion.div>
           </div>
         </div>
       </div>
@@ -109,7 +77,7 @@ export const ProjectsCarousel = () => {
           inactive: { opacity: 0, y: 20 },
         }}
         transition={{ duration: 0.4 }}
-        className="-mt-[calc((100vh-(300px*(16/9)))/2)] space-y-3 pt-4 md:-mt-[calc((100vh-(60vw*(9/16)))/2)]"
+        className="-mt-[calc((100vh-(300px*(16/9)))/2)] pt-10 space-y-3 md:-mt-[calc((100vh-(60vw*(9/16)))/2)]"
       >
         <Self />
       </motion.div>
