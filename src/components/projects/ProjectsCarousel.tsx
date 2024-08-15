@@ -45,15 +45,15 @@ export const ProjectsCarousel = () => {
 
   return (
     <motion.div animate={carouselVariant}>
-      <div ref={carouselWrapperRef} className="h-[300vh] overflow-clip card">
-        <div className="sticky top-11 flex h-screen items-center">
-          <div className="relative flex w-full justify-center gap-5">
+      <div ref={carouselWrapperRef} className="h-[300vh] overflow-clip">
+        <div className="sticky top-8 flex h-screen items-center">
+          <div className="relative flex w-full justify-center">
             <motion.div
               style={{ scale }}
-              className="relative aspect-[9/16] w-[300px] shrink-0 overflow-clip card md:aspect-video md:w-[60vw]"
+              className="relative aspect-[9/16] shrink-0 overflow-clip md:aspect-video w-full max-w-7xl px-2"
             >
               <img
-                className="h-full w-full object-cover"
+                className="h-full w-full object-cover card"
                 src={movies[1].poster}
                 alt={movies[1].name}
               />
@@ -71,16 +71,9 @@ export const ProjectsCarousel = () => {
           </div>
         </div>
       </div>
-      <motion.div
-        variants={{
-          active: { opacity: 1, y: 0 },
-          inactive: { opacity: 0, y: 20 },
-        }}
-        transition={{ duration: 0.4 }}
-        className="-mt-[calc((100vh-(300px*(16/9)))/2)] pt-10 space-y-3 md:-mt-[calc((100vh-(60vw*(9/16)))/2)]"
-      >
+      <div className="translate-y-6 md:-translate-y-52 lg:-translate-y-24 xl:-translate-y-28">
         <Self />
-      </motion.div>
+      </div>
     </motion.div>
   )
 }
