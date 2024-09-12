@@ -1,15 +1,39 @@
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 
-import testImage from '../../../public/imgs/projects/teste.jpg'
-
-const ParallaxColumn = ({ images, y }) => {
+const ParallaxColumn = ({ projects, y }) => {
   return (
-    <motion.div className="flex gap-4 w-1/3 min-w-64 flex-col" style={{ y }}>
-      {images.map((src, i) => {
+    <motion.div className="flex gap-4 w-1/3 min-w-96 flex-col" style={{ y }}>
+      {projects.map((project, index) => {
         return (
-          <div key={i} className="h-full w-full border border-1">
-            <Image src={testImage} alt="image" />
+          <div
+            key={index}
+            className="card h-[600px] p-10 border border-base-300 shadow-lg"
+          >
+            <div className="h-full flex flex-col justify-between">
+              <div>
+                <h1 className="text-2xl font-semibold underline">
+                  {project.title}
+                </h1>
+                <p className="mt-7 text-lg">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{project.description}
+                </p>
+              </div>
+              <div className="flex flex-col">
+                <div className="space-x-1">
+                  {project.technologies.map((technology, index) => {
+                    return (
+                      <div className="badge badge-secondary">{technology}</div>
+                    )
+                  })}
+                </div>
+                <button className="btn btn-primary btn-outline mt-4">
+                  Github Link
+                </button>
+                <button className="btn btn-primary btn-outline mt-2">
+                  Live Preview
+                </button>
+              </div>
+            </div>
           </div>
         )
       })}

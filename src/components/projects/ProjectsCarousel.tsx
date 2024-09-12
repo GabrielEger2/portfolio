@@ -71,7 +71,7 @@ export const ProjectsCarousel = () => {
           </div>
         </div>
       </div>
-      <div className="translate-y-6 md:-translate-y-52 lg:-translate-y-24 xl:-translate-y-28">
+      <div className="translate-y-6 md:-translate-y-52 lg:-translate-y-24">
         <Self />
       </div>
     </motion.div>
