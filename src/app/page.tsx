@@ -4,6 +4,7 @@ const page = () => {
   return (
     <div>
       <Hero />
+      <div className="h-screen" />
     </div>
   )
 }

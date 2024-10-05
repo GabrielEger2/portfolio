@@ -5,9 +5,8 @@ export const HeaderName = 'Gabriel'
 export const HeaderSurname = 'Eger'
 
 export const HeaderTitles = [
-  'A JS/TS Developer!',
   'A Software Engineer!',
-  'A Python Developer!',
-  'A Full Stack Developer!',
-  'A GOlang Developer!',
+  'A DevOps Engineer!',
+  'A Full-Stack Developer!',
+  'A Cloud Architect!',
 ]
