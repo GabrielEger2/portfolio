@@ -19,12 +19,11 @@ const Hero = () => {
     offset: ['start start', 'end start'],
   })
 
-  const sunY = useTransform(scrollYProgress, [0, 0.5], ['0%', '75%'])
-  const sunOpacity = useTransform(scrollYProgress, [0.05, 1], [1, 0])
+  const sunY = useTransform(scrollYProgress, [0, 0.6], ['0%', '85%'])
   const mountainY = useTransform(scrollYProgress, [0, 1], ['0%', '5%'])
   const mountain2Y = useTransform(scrollYProgress, [0, 1], ['0%', '10%'])
-  const mountain3Y = useTransform(scrollYProgress, [0, 1], ['0%', '20%'])
-  const mountain4Y = useTransform(scrollYProgress, [0, 1], ['0%', '30%'])
+  const mountain3Y = useTransform(scrollYProgress, [0, 1], ['0%', '25%'])
+  const mountain4Y = useTransform(scrollYProgress, [0, 1], ['0%', '35%'])
 
   return (
     <div ref={ref} className="min-h-screen">
@@ -153,13 +152,13 @@ const Hero = () => {
           </svg>
         </div>
       </div>
-      <div className="h-[20vh] w-full Z-10 bg-base-100">
+      <div className="h-[20vh] w-full z-10 bg-base-100 absolute">
         {lines.map((line, index) => (
           <div key={line} className="absolute top-100 w-full">
             <motion.div
               className="w-full bg-primary"
               initial={{
-                y: '30vh',
+                y: '20vh',
                 height: '0.3rem',
               }}
               animate={{ y: '0vh', height: '0.01rem' }}
