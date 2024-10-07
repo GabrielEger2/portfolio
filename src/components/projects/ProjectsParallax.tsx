@@ -1,11 +1,17 @@
 'use client'
 
 import { projects } from '@/content/projects/ParallaxColumn'
-import { useTransform } from 'framer-motion'
+import { MotionValue, useTransform } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import ParallaxColumn from './ParallaxColumn'
 
-const ProjectsParallax = ({ scrollYProgress }) => {
+interface ProjectsParallaxProps {
+  scrollYProgress: MotionValue<number>
+}
+
+const ProjectsParallax: React.FC<ProjectsParallaxProps> = ({
+  scrollYProgress,
+}) => {
   const [dimension, setDimension] = useState({ width: 0, height: 0 })
 
   const { height } = dimension

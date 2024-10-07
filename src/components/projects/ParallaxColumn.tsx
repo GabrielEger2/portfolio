@@ -1,6 +1,17 @@
-import { motion } from 'framer-motion'
+import { motion, MotionValue } from 'framer-motion'
 
-const ParallaxColumn = ({ projects, y }) => {
+interface Project {
+  title: string
+  description: string
+  technologies: string[]
+}
+
+interface ParallaxColumnProps {
+  projects: Project[]
+  y: MotionValue<number>
+}
+
+const ParallaxColumn: React.FC<ParallaxColumnProps> = ({ projects, y }) => {
   return (
     <motion.div className="flex gap-4 w-1/3 min-w-96 flex-col" style={{ y }}>
       {projects.map((project, index) => {
@@ -22,7 +33,9 @@ const ParallaxColumn = ({ projects, y }) => {
                 <div className="space-x-1">
                   {project.technologies.map((technology, index) => {
                     return (
-                      <div className="badge badge-secondary">{technology}</div>
+                      <div key={index} className="badge badge-secondary">
+                        {technology}
+                      </div>
                     )
                   })}
                 </div>

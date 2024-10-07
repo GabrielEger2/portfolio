@@ -37,7 +37,7 @@ const Hero = () => {
                 <span className="text-primary">{HeaderSurname}</span>
               </h1>
               <ReactTyped
-                className="lg:text-4xl sm:text-3xl text-2xl"
+                className="lg:text-4xl sm:text-3xl text-2xl font-semibold"
                 strings={HeaderTitles}
                 typeSpeed={80}
                 backSpeed={100}
