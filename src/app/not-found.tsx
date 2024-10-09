@@ -1,11 +1,11 @@
 'use client'
 
 import {
-    HomeLink,
-    NotFoundButton,
-    NotFoundText,
-    NotFoundTitle,
-    noiseImage,
+  HomeLink,
+  NotFoundButton,
+  NotFoundText,
+  NotFoundTitle,
+  noiseImage,
 } from '@/content/notFound/NotFound'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
