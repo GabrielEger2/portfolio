@@ -8,16 +8,6 @@ export const movies = [
     poster: '/imgs/experience/educationWallpaper.jpg',
     name: 'Laboratory',
   },
-  { poster: '/imgs/experience/educationWallpaper.jpg', name: 'Napoleon' },
-  {
-    poster: '/imgs/experience/educationWallpaper.jpg',
-    name: 'Person in Darkness',
-  },
-  {
-    poster: '/imgs/experience/educationWallpaper.jpg',
-    name: 'Scary Building',
-  },
-  { poster: '/imgs/experience/educationWallpaper.jpg', name: 'Stars' },
 ]
 
 export const randomMoviesSet1 = movies
