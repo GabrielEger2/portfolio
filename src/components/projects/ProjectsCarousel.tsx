@@ -43,7 +43,7 @@ export const ProjectsCarousel = () => {
     }
   })
 
-  const x = useTransform(scrollYProgress, [0.31, 1], ['66%', '-80%'])
+  const x = useTransform(scrollYProgress, [0.31, 0.8], ['66%', '-66%'])
 
   return (
     <>
@@ -53,13 +53,13 @@ export const ProjectsCarousel = () => {
             <div className="sticky top-8 flex h-screen items-center">
               <motion.div
                 style={{ x }}
-                className="relative flex w-full justify-center"
+                className="relative flex w-full justify-center gap-4"
               >
                 {movies.map((movie, index) => {
                   return (
                     <motion.div
                       key={index}
-                      className="relative aspect-[9/16] shrink-0 overflow-clip md:aspect-video w-full max-w-7xl px-2"
+                      className="relative aspect-[9/16] shrink-0 overflow-clip md:aspect-video w-full max-w-7xl"
                     >
                       <img
                         className="h-full w-full object-cover card"
