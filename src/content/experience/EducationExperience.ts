@@ -10,12 +10,12 @@ export const educationExperiences = [
   },
   {
     image: '/imgs/experience/universityEducation.jpg',
-    title: 'Bsc Computer Science',
+    title: 'Bsc Information Systems',
     time: '2023 - 2026 (Probably)',
-    local: 'GoldSmith - University of London',
+    local: 'PUC - Minas Gerais',
     technologies: null,
     description:
-      'Goldsmiths, University of London, is a public research university in London, England, specialising in the arts, design, humanities, and social sciences.',
+      'PUC is one of the oldest and most traditional universities in Brazil, with a strong focus on research and innovation. The Information Systems course is one of the most sought after in the country.',
   },
 ]
 
@@ -29,7 +29,7 @@ export const educationTimeline = [
   {
     title: 'Bsc Computer Science',
     time: '2023 - 2026 (Probably)',
-    local: 'GoldSmith - University of London',
+    local: 'PUC - Minas Gerais',
     position: 'GPA: ????',
   },
   {
