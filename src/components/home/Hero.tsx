@@ -5,7 +5,7 @@ import {
   HeaderName,
   HeaderSurname,
   HeaderTitles,
-} from '@/content/home/HeroContent'
+} from '@/content/home/Hero'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react'
 import { ReactTyped } from 'react-typed'

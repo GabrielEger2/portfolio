@@ -1,5 +1,5 @@
 import ParallaxImage from '@/components/experience/ParallaxImage'
-import { experiences } from '@/content/experience/ExperienceContent'
+import { experiences } from '@/content/experience/Experience'
 
 const experience = () => {
   return (

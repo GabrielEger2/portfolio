@@ -1,9 +1,6 @@
 'use client'
 
-import {
-  themeOptions,
-  themeTitle,
-} from '@/content/layout/ThemeControllerContent'
+import { themeOptions, themeTitle } from '@/content/layout/ThemeController'
 import Cookies from 'js-cookie'
 import { SetStateAction } from 'react'
 import { FaArrowDown } from 'react-icons/fa'

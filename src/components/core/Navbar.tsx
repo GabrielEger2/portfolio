@@ -2,7 +2,7 @@ import {
   NavbarLinks,
   NavbarTitle,
   NavbarTitleLink,
-} from '@/content/core/NavbarContent'
+} from '@/content/core/Navbar'
 import Link from 'next/link'
 import LanguageController from '../layout/LanguageController'
 import NavLink from '../layout/NavLink'

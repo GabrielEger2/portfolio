@@ -1,4 +1,4 @@
-import { footerContent, footerLinks } from '@/content/core/FooterContent'
+import { footerContent, footerLinks } from '@/content/core/Footer'
 
 const Footer = () => {
   return (
