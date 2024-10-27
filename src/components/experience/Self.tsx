@@ -1,21 +1,42 @@
 'use client'
 
-import { courses, coursesTags } from '@/content/experience/SelfExperience'
 import { AnimatePresence, motion } from 'framer-motion'
+import { useTranslations } from 'next-intl'
 import { useState } from 'react'
 import FlipCard from '../layout/FlipCard'
 
-interface courses {
-  courseImage: string
-  courseTitle: string
-  courseDescription: string
-  courseTags: string[]
-  tags: string[]
-}
-
 const Self = () => {
+  const t = useTranslations('experience.courses')
+
   const [searchTerm, setSearchTerm] = useState('')
   const [searchTag, setSearchTag] = useState('')
+
+  const coursesData = [
+    { key: 'course1', courseTagsCount: 5, tagsCount: 2 },
+    { key: 'course2', courseTagsCount: 4, tagsCount: 2 },
+    { key: 'course3', courseTagsCount: 4, tagsCount: 2 },
+    { key: 'course4', courseTagsCount: 6, tagsCount: 1 },
+    { key: 'course5', courseTagsCount: 3, tagsCount: 1 },
+    { key: 'course6', courseTagsCount: 7, tagsCount: 2 },
+    { key: 'course7', courseTagsCount: 6, tagsCount: 2 },
+    { key: 'course8', courseTagsCount: 4, tagsCount: 1 },
+  ]
+
+  const courses = coursesData.map(({ key, courseTagsCount, tagsCount }) => ({
+    courseImage: t(`${key}.courseImage`),
+    courseTitle: t(`${key}.courseTitle`),
+    courseDescription: t(`${key}.courseDescription`),
+    courseTags: Array.from({ length: courseTagsCount }, (_, i) =>
+      t(`${key}.courseTags.tag${i + 1}`),
+    ),
+    tags: Array.from({ length: tagsCount }, (_, i) =>
+      t(`${key}.tags.tag${i + 1}`),
+    ),
+  }))
+
+  const coursesTags = Array.from({ length: 5 }, (_, i) =>
+    t(`courseTags.tag${i + 1}`),
+  )
 
   const filteredCourses = courses.filter(
     (course) =>
@@ -53,24 +74,28 @@ const Self = () => {
         </label>
       </div>
       <motion.div layout className="grid md:grid-cols-2 xl:grid-cols-3 gap-12">
-        {filteredCourses.map((course: courses) => {
-          return (
-            <motion.div
-              key={course.courseTitle}
-              layout
-              animate={{ opacity: 1, scale: 1 }}
-              initial={{ opacity: 0, scale: 0 }}
-              exit={{ opacity: 0, scale: 0 }}
-              transition={{ duration: 0.25 }}
-            >
-              <AnimatePresence>
-                <div className="flex justify-center">
-                  <FlipCard {...course} />
-                </div>
-              </AnimatePresence>
-            </motion.div>
-          )
-        })}
+        {filteredCourses.map((course, index) => (
+          <motion.div
+            key={course.courseTitle}
+            layout
+            animate={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, scale: 0 }}
+            exit={{ opacity: 0, scale: 0 }}
+            transition={{ duration: 0.25 }}
+          >
+            <AnimatePresence>
+              <div className="flex justify-center">
+                <FlipCard
+                  courseImage={course.courseImage}
+                  courseTitle={course.courseTitle}
+                  courseDescription={course.courseDescription}
+                  courseTags={course.courseTags}
+                  tags={course.tags}
+                />
+              </div>
+            </AnimatePresence>
+          </motion.div>
+        ))}
       </motion.div>
     </div>
   )

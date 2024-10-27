@@ -1,12 +1,7 @@
 'use client'
 
-import {
-  HeaderBeginning,
-  HeaderName,
-  HeaderSurname,
-  HeaderTitles,
-} from '@/content/home/Hero'
 import { motion, useScroll, useTransform } from 'framer-motion'
+import { useTranslations } from 'next-intl'
 import { useRef } from 'react'
 import { ReactTyped } from 'react-typed'
 
@@ -24,6 +19,11 @@ const Hero = () => {
   const mountain2Y = useTransform(scrollYProgress, [0, 1], ['0%', '10%'])
   const mountain3Y = useTransform(scrollYProgress, [0, 1], ['0%', '25%'])
   const mountain4Y = useTransform(scrollYProgress, [0, 1], ['0%', '35%'])
+  const t = useTranslations('home.hero')
+
+  const headerTitles = Array.from({ length: 4 }, (_, i) =>
+    t(`headerTitles.title${i + 1}`),
+  )
 
   return (
     <div ref={ref} className="min-h-screen">
@@ -31,14 +31,14 @@ const Hero = () => {
         <div className="w-full flex justify-center absolute top-12">
           <div className="flex justify-between w-full max-w-7xl mx-4">
             <div className="flex flex-col justify-center">
-              <h1 className="text-xl font-semibold">{HeaderBeginning}</h1>
+              <h1 className="text-xl font-semibold">{t('headerBeginning')}</h1>
               <h1 className="text-7xl my-4 -translate-x-2 font-semibold">
-                {HeaderName}{' '}
-                <span className="text-primary">{HeaderSurname}</span>
+                {t('headerName')}{' '}
+                <span className="text-primary">{t('headerSurname')}</span>
               </h1>
               <ReactTyped
                 className="lg:text-4xl sm:text-3xl text-2xl font-semibold"
-                strings={HeaderTitles}
+                strings={headerTitles}
                 typeSpeed={80}
                 backSpeed={100}
                 loop

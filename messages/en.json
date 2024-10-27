@@ -1,6 +1,278 @@
 {
-    "HomePage": {
-      "title": "Hello world!",
-      "about": "Go to the about page"
-    }
+  "home":{
+     "hero":{
+        "headerBeginning":"Hello World! I'm",
+        "headerName":"Gabriel",
+        "headerSurname":"Eger",
+        "headerTitles":{
+           "title1":"A Software Engineer!",
+           "title2":"A DevOps Engineer!",
+           "title3":"A Full-Stack Developer!",
+           "title4":"A Cloud Architect!"
+        }
+     }
+  },
+  "experience":{
+     "work":{
+        "subTitle":"My Professional Background",
+        "title":"Work Experience",
+        "image":"/imgs/experience/workingWallpaper.jpg",
+        "experiences":{
+           "experience1":{
+              "image":"/imgs/experience/freeLanceWork.jpg",
+              "title":"FreeLance Work",
+              "time":"2023 - On going",
+              "local":"Remote",
+              "description":"I have been working as a freelancer for the past 2 years...",
+              "technologies":[
+                 "React",
+                 "Next.js",
+                 "TailwindCSS",
+                 "Node.js",
+                 "DevOps"
+              ]
+           },
+           "experience2":{
+              "image":"/imgs/experience/clearVictionWork.jpg",
+              "title":"ClearViction",
+              "time":"2023 - 2024 (10 months)",
+              "local":"Remote, Washington, USA",
+              "description":"Clearviction was a startup dedicated to helping individuals...",
+              "technologies":[
+                 "Agile",
+                 "Next.js",
+                 "TypeScript",
+                 "Material-UI"
+              ]
+           },
+           "experience3":{
+              "image":"/imgs/experience/mundialMixWork.jpg",
+              "title":"MundialMix",
+              "time":"2023 - On going",
+              "local":"Santa Catarina, Brazil",
+              "description":"MundialMix is a holding company that owns several businesses...",
+              "technologies":[
+                 "React",
+                 "TypeScript",
+                 "TailwindCSS",
+                 "Flask",
+                 "Django",
+                 "Java"
+              ]
+           }
+        },
+        "workTimeLine":{
+           "timeLine1":{
+              "title":"FreeLance Work",
+              "time":"2023 - On going",
+              "local":"Remote",
+              "position":"Full Stack Developer"
+           },
+           "timeLine2":{
+              "title":"ClearViction",
+              "time":"2023 - 2024 (10 months)",
+              "local":"Remote, Washington, USA",
+              "position":"Frontend Developer"
+           },
+           "timeLine3":{
+              "title":"MundialMix",
+              "time":"2023 - On going",
+              "local":"Santa Catarina, Brazil",
+              "position":"Junior Full Stack Developer"
+           }
+        }
+     },
+     "formal":{
+        "subTitle":"My Theoretical Background",
+        "title":"Formal Education",
+        "image":"/imgs/experience/educationWallpaper.jpg",
+        "experiences":{
+           "experience1":{
+              "image":"/imgs/experience/technicalSchoolEducation.jpg",
+              "title":"Technical High School",
+              "time":"2017 - 2021",
+              "local":"IFSC (Federal Institute of Santa Catarina)",
+              "description":"IFSC is a public federal institution that offers free technical high school courses, considered one of the best educational centers in Brazil."
+           },
+           "experience2":{
+              "image":"/imgs/experience/universityEducation.jpg",
+              "title":"Bsc Information Systems",
+              "time":"2023 - 2026 (Probably)",
+              "local":"PUC - Minas Gerais",
+              "description":"PUC is one of the oldest and most traditional universities in Brazil, with a strong focus on research and innovation. The Information Systems course is one of the most sought after in the country."
+           }
+        },
+        "formalTimeLine":{
+           "timeLine1":{
+              "title":"Technical High School",
+              "time":"2017 - 2021",
+              "local":"IFSC (Federal Institute of Santa Catarina)",
+              "position":"GPA: 8.9 - 10"
+           },
+           "timeLine2":{
+              "title":"Bsc Computer Science",
+              "time":"2023 - 2026 (Probably)",
+              "local":"PUC - Minas Gerais",
+              "position":"GPA: ????"
+           },
+           "timeLine3":{
+              "title":"Master in Computer Science",
+              "time":"2027 - 2028 (Probably)",
+              "local":"????",
+              "position":"GPA: ????"
+           },
+           "timeLine4":{
+              "title":"Phd Computer Science",
+              "time":"2029 - 2031 (Probably)",
+              "local":"????",
+              "position":"GPA: ????"
+           }
+        }
+     },
+     "self":{
+        "subTitle":"My Self-Taught Journey",
+        "title":"Self-Learning Education",
+        "image":"/imgs/experience/selfWallpaper.jpg",
+        "coursesTags":{
+           "tag1":"Computer Science",
+           "tag2":"Backend",
+           "tag3":"Frontend",
+           "tag4":"UI/UX",
+           "tag5":"DevOps"
+        }
+     },
+     "courses":{
+        "courseTags":{
+           "tag1":"Computer Science",
+           "tag2":"Backend",
+           "tag3":"Frontend",
+           "tag4":"UI/UX",
+           "tag5":"DevOps"
+        },
+        "course1":{
+           "courseImage":"/imgs/experience/CS50Self.jpg",
+           "courseTitle":"CS50 - Introduction to Computer Science",
+           "courseDescription":"CS50 is Harvard University’s introduction to the intellectual enterprises of Computer Science and the Art of Programming.",
+           "courseTags":{
+              "tag1":"Computer Science",
+              "tag2":"Algorithms",
+              "tag3":"Data Structures",
+              "tag4":"C",
+              "tag5":"Python"
+           },
+           "tags":{
+              "tag1":"Computer Science",
+              "tag2":"Backend"
+           }
+        },
+        "course2":{
+           "courseImage":"/imgs/experience/daysOfCode100Self.jpg",
+           "courseTitle":"100 Days of Code - The Complete Python Bootcamp",
+           "courseDescription":"Angela Yu teaches Python, including Data Science, Web Development, and Machine Learning.",
+           "courseTags":{
+              "tag1":"Python",
+              "tag2":"Computer Science",
+              "tag3":"Programming Logic",
+              "tag4":"Data Science"
+           },
+           "tags":{
+              "tag1":"Computer Science",
+              "tag2":"Backend"
+           }
+        },
+        "course3":{
+           "courseImage":"/imgs/experience/nubankSelf.jpg",
+           "courseTitle":"Nubank Frontend Bootcamp",
+           "courseDescription":"Nubank is the fourth largest bank in Latin America, in 2023 they offered to a select group of students a bootcamp to learn about their Frontend Stack.",
+           "courseTags":{
+              "tag1":"HTML/CSS",
+              "tag2":"React",
+              "tag3":"TypeScript",
+              "tag4":"Design Systems"
+           },
+           "tags":{
+              "tag1":"Frontend",
+              "tag2":"UI/UX"
+           }
+        },
+        "course4":{
+           "courseImage":"/imgs/experience/googleSelf.jpg",
+           "courseTitle":"Google - Foundations of Cybersecurity",
+           "courseDescription":"Google offers a complete course of Cybersecurity and DevOps, including Linux, Networking, and Cryptography.",
+           "courseTags":{
+              "tag1":"Python",
+              "tag2":"Cybersecurity",
+              "tag3":"SQL",
+              "tag4":"Cloud Computing",
+              "tag5":"Linux",
+              "tag6":"Cryptography"
+           },
+           "tags":{
+              "tag1":"DevOps"
+           }
+        },
+        "course5":{
+           "courseImage":"/imgs/experience/algorithmsSelf.jpg",
+           "courseTitle":"Algorithms and Data Structures for Beginners",
+           "courseDescription":"NeetCode teaches the basics of Algorithms and Data Structures, including Big O Notation, Sorting Algorithms, and more.",
+           "courseTags":{
+              "tag1":"Algorithms",
+              "tag2":"Data Structures",
+              "tag3":"Big O Notation"
+           },
+           "tags":{
+              "tag1":"Computer Science"
+           }
+        },
+        "course6":{
+           "courseImage":"/imgs/experience/systemDesignSelf.jpg",
+           "courseTitle":"System Design for Beginners",
+           "courseDescription":"NeetCode courses teach the basics of System Design, including Scalability, System Flow, Maintainability, User Experience and more.",
+           "courseTags":{
+              "tag1":"System Design",
+              "tag2":"Storage",
+              "tag3":"Proxies",
+              "tag4":"Caching",
+              "tag5":"Networking",
+              "tag6":"APIs",
+              "tag7":"Big Data"
+           },
+           "tags":{
+              "tag1":"Backend",
+              "tag2":"DevOps"
+           }
+        },
+        "course7":{
+           "courseImage":"/imgs/experience/ibmBackend.jpg",
+           "courseTitle":"Application Development using Microservices and Serverless",
+           "courseDescription":"IBM offers a complete course of Microservices and Serverless, best practices and architecture.",
+           "courseTags":{
+              "tag1":"Microservices",
+              "tag2":"Serverless",
+              "tag3":"APIs",
+              "tag4":"Docker",
+              "tag5":"Kubernetes",
+              "tag6":"Cloud Computing"
+           },
+           "tags":{
+              "tag1":"Backend",
+              "tag2":"DevOps"
+           }
+        },
+        "course8":{
+           "courseImage":"/imgs/experience/cloudSelf.jpg",
+           "courseTitle":"AWS Certified - Practitioner",
+           "courseDescription":"Amazon AWS Practitioner certification validates fluency in the core AWS services, uses, and basic AWS architecture best practices.",
+           "courseTags":{
+              "tag1":"AWS",
+              "tag2":"Cloud Computing",
+              "tag3":"Networking",
+              "tag4":"Security"
+           },
+           "tags":{
+              "tag1":"DevOps"
+           }
+        }
+     }
+  }
 }
