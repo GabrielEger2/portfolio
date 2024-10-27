@@ -1,22 +1,13 @@
+import { Link } from '@/i18n/routing';
 import { useTranslations } from 'next-intl';
+
+interface FooterLink {
+  title: string;
+  links: { title: string; href: string }[];
+}
 
 const Footer = () => {
   const t = useTranslations('core.footer');
-
-  const footerLinksData = [
-    {
-      key: 'link1',
-      linksCount: 4
-    },
-    {
-      key: 'link2',
-      linksCount: 4
-    },
-    {
-      key: 'link3',
-      linksCount: 3
-    }
-  ];
 
   return (
     <div className="w-full flex justify-center bg-base-200">
@@ -28,25 +19,25 @@ const Footer = () => {
             {t('description')}
           </p>
         </aside>
-        {footerLinksData.map(({ key, linksCount }, index) => (
+        {t.raw('footerLinks').map((footerLink: FooterLink, index: number) => (
           <nav key={index}>
-            <h6 className="footer-title">{t(`footerLinks.${key}.title`)}</h6>
-            {Array.from({ length: linksCount }, (_, i) => (
-              <a
+            <h6 className="footer-title">{footerLink.title}</h6>
+            {footerLink.links.map((linkItem, i) => (
+              <Link
                 key={i}
                 className="link link-hover"
                 target="_blank"
                 rel="noopener noreferrer"
-                href={t(`footerLinks.${key}.links.link${i + 1}.href`)}
+                href={linkItem.href as any}
               >
-                {t(`footerLinks.${key}.links.link${i + 1}.title`)}
-              </a>
+                {linkItem.title}
+              </Link>
             ))}
           </nav>
         ))}
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

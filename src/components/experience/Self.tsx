@@ -5,44 +5,27 @@ import { useTranslations } from 'next-intl'
 import { useState } from 'react'
 import FlipCard from '../layout/FlipCard'
 
+interface Course {
+  courseImage: string
+  courseTitle: string
+  courseDescription: string
+  courseTags: string[]
+  tags: string[]
+}
+
 const Self = () => {
-  const t = useTranslations('experience.courses')
+  const t = useTranslations('experience.self')
 
   const [searchTerm, setSearchTerm] = useState('')
   const [searchTag, setSearchTag] = useState('')
 
-  const coursesData = [
-    { key: 'course1', courseTagsCount: 5, tagsCount: 2 },
-    { key: 'course2', courseTagsCount: 4, tagsCount: 2 },
-    { key: 'course3', courseTagsCount: 4, tagsCount: 2 },
-    { key: 'course4', courseTagsCount: 6, tagsCount: 1 },
-    { key: 'course5', courseTagsCount: 3, tagsCount: 1 },
-    { key: 'course6', courseTagsCount: 7, tagsCount: 2 },
-    { key: 'course7', courseTagsCount: 6, tagsCount: 2 },
-    { key: 'course8', courseTagsCount: 4, tagsCount: 1 },
-  ]
-
-  const courses = coursesData.map(({ key, courseTagsCount, tagsCount }) => ({
-    courseImage: t(`${key}.courseImage`),
-    courseTitle: t(`${key}.courseTitle`),
-    courseDescription: t(`${key}.courseDescription`),
-    courseTags: Array.from({ length: courseTagsCount }, (_, i) =>
-      t(`${key}.courseTags.tag${i + 1}`),
-    ),
-    tags: Array.from({ length: tagsCount }, (_, i) =>
-      t(`${key}.tags.tag${i + 1}`),
-    ),
-  }))
-
-  const coursesTags = Array.from({ length: 5 }, (_, i) =>
-    t(`courseTags.tag${i + 1}`),
-  )
-
-  const filteredCourses = courses.filter(
-    (course) =>
-      course.courseTitle.toLowerCase().includes(searchTerm.toLowerCase()) &&
-      (course.tags.includes(searchTag) || searchTag === ''),
-  )
+  const filteredCourses = t
+    .raw('courses.courses')
+    .filter(
+      (course: Course) =>
+        course.courseTitle.toLowerCase().includes(searchTerm.toLowerCase()) &&
+        (course.tags.includes(searchTag) || searchTag === ''),
+    )
 
   return (
     <div className="max-w-7xl w-full min-h-screen mx-auto justify-center px-2 mb-10 md:mb-0">
@@ -64,7 +47,7 @@ const Self = () => {
               defaultValue={''}
             >
               <option value={''}>All Options</option>
-              {coursesTags.map((tag, index) => (
+              {t.raw('courses.courseTags').map((tag: string, index: number) => (
                 <option key={index} value={tag}>
                   {tag}
                 </option>
@@ -74,9 +57,9 @@ const Self = () => {
         </label>
       </div>
       <motion.div layout className="grid md:grid-cols-2 xl:grid-cols-3 gap-12">
-        {filteredCourses.map((course, index) => (
+        {filteredCourses.map((course: Course, index: number) => (
           <motion.div
-            key={course.courseTitle}
+            key={index}
             layout
             animate={{ opacity: 1, scale: 1 }}
             initial={{ opacity: 0, scale: 0 }}

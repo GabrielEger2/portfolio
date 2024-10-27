@@ -4,46 +4,44 @@ import Self from '@/components/experience/Self'
 import Work from '@/components/experience/Work'
 import { useTranslations } from 'next-intl'
 
-const Experience = () => {
-  const t = useTranslations('experience')
+interface ExperienceItem {
+  image: string
+  subTitle: string
+  title: string
+  child: 'Work' | 'Formal' | 'Self'
+}
 
-  const experiences = [
-    {
-      image: t('work.image'),
-      subTitle: t('work.subTitle'),
-      title: t('work.title'),
-      child: <Work />,
-    },
-    {
-      image: t('formal.image'),
-      subTitle: t('formal.subTitle'),
-      title: t('formal.title'),
-      child: <Formal />,
-    },
-    {
-      image: t('self.image'),
-      subTitle: t('self.subTitle'),
-      title: t('self.title'),
-      child: <Self />,
-    },
-  ]
+const Experience = () => {
+  const t = useTranslations()
+
+  const experiences = t.raw('experience') as Record<string, ExperienceItem>
+
+  const componentMapping: Record<string, React.ComponentType> = {
+    Work,
+    Formal,
+    Self,
+  }
 
   return (
     <section>
-      {experiences.map((experience, index) => (
-        <div key={index}>
-          <div className="relative min-h-screen">
-            <ParallaxImage
-              imgUrl={experience.image}
-              subheading={experience.subTitle}
-              heading={experience.title}
-            />
+      {Object.values(experiences).map((experience, index) => {
+        const ChildComponent = componentMapping[experience.child]
+
+        return (
+          <div key={index}>
+            <div className="relative min-h-screen">
+              <ParallaxImage
+                imgUrl={experience.image}
+                subheading={experience.subTitle}
+                heading={experience.title}
+              />
+            </div>
+            <div className="max-w-7xl w-full min-h-screen mx-auto justify-center px-2">
+              <ChildComponent />
+            </div>
           </div>
-          <div className="max-w-7xl w-full min-h-screen mx-auto justify-center px-2">
-            {experience.child}
-          </div>
-        </div>
-      ))}
+        )
+      })}
     </section>
   )
 }

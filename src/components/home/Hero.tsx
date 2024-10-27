@@ -21,10 +21,6 @@ const Hero = () => {
   const mountain4Y = useTransform(scrollYProgress, [0, 1], ['0%', '35%'])
   const t = useTranslations('home.hero')
 
-  const headerTitles = Array.from({ length: 4 }, (_, i) =>
-    t(`headerTitles.title${i + 1}`),
-  )
-
   return (
     <div ref={ref} className="min-h-screen">
       <div className="flex flex-col h-[80vh] justify-end z-40">
@@ -38,7 +34,7 @@ const Hero = () => {
               </h1>
               <ReactTyped
                 className="lg:text-4xl sm:text-3xl text-2xl font-semibold"
-                strings={headerTitles}
+                strings={t.raw('headerTitles')}
                 typeSpeed={80}
                 backSpeed={100}
                 loop
