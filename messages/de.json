@@ -1,278 +1,356 @@
 {
-  "home": {
-    "hero": {
-      "headerBeginning": "Hallo Welt! Ich bin",
-      "headerName": "Gabriel",
-      "headerSurname": "Eger",
-      "headerTitles": {
-        "title1": "Ein Software-Ingenieur!",
-        "title2": "Ein DevOps-Ingenieur!",
-        "title3": "Ein Full-Stack-Entwickler!",
-        "title4": "Ein Cloud-Architekt!"
-      }
-    }
+  "core":{
+     "footer":{
+        "title":"Gabriel Eger",
+        "description":"© 2024 MIT-Lizenz.",
+        "footerLinks":{
+           "link1":{
+              "title":"Webseiten-Bereiche",
+              "links":{
+                 "link1":{
+                    "title":"Startseite",
+                    "href":"/"
+                 },
+                 "link2":{
+                    "title":"Erfahrung",
+                    "href":"/experience"
+                 },
+                 "link3":{
+                    "title":"Projekte",
+                    "href":"/projects"
+                 },
+                 "link4":{
+                    "title":"Kontakt",
+                    "href":"/contact"
+                 }
+              }
+           },
+           "link2":{
+              "title":"Verwendete Technologien",
+              "links":{
+                 "link1":{
+                    "title":"Next.js",
+                    "href":"https://nextjs.org/"
+                 },
+                 "link2":{
+                    "title":"Tailwind CSS",
+                    "href":"https://tailwindcss.com/"
+                 },
+                 "link3":{
+                    "title":"TypeScript",
+                    "href":"https://www.typescriptlang.org/"
+                 },
+                 "link4":{
+                    "title":"Docker",
+                    "href":"https://www.docker.com/"
+                 }
+              }
+           },
+           "link3":{
+              "title":"Soziale Konten",
+              "links":{
+                 "link1":{
+                    "title":"LinkedIn",
+                    "href":"https://www.linkedin.com/in/gabrieleger/"
+                 },
+                 "link2":{
+                    "title":"GitHub",
+                    "href":"https://github.com/GabrielEger2"
+                 },
+                 "link3":{
+                    "title":"LeetCode",
+                    "href":"https://leetcode.com/GabrielEger2"
+                 }
+              }
+           }
+        }
+     }
   },
-  "experience": {
-    "work": {
-      "subTitle": "Mein beruflicher Hintergrund",
-      "title": "Berufserfahrung",
-      "image": "/imgs/experience/workingWallpaper.jpg",
-      "experiences": {
-        "experience1": {
-          "image": "/imgs/experience/freeLanceWork.jpg",
-          "title": "Freiberufliche Tätigkeit",
-          "time": "2023 - laufend",
-          "local": "Remote",
-          "description": "Ich arbeite seit 2 Jahren als Freiberufler...",
-          "technologies": [
-            "React",
-            "Next.js",
-            "TailwindCSS",
-            "Node.js",
-            "DevOps"
-          ]
-        },
-        "experience2": {
-          "image": "/imgs/experience/clearVictionWork.jpg",
-          "title": "ClearViction",
-          "time": "2023 - 2024 (10 Monate)",
-          "local": "Remote, Washington, USA",
-          "description": "ClearViction war ein Startup, das Menschen half...",
-          "technologies": [
-            "Agile",
-            "Next.js",
-            "TypeScript",
-            "Material-UI"
-          ]
-        },
-        "experience3": {
-          "image": "/imgs/experience/mundialMixWork.jpg",
-          "title": "MundialMix",
-          "time": "2023 - laufend",
-          "local": "Santa Catarina, Brasilien",
-          "description": "MundialMix ist eine Holding, die mehrere Unternehmen besitzt...",
-          "technologies": [
-            "React",
-            "TypeScript",
-            "TailwindCSS",
-            "Flask",
-            "Django",
-            "Java"
-          ]
+  "home":{
+     "hero":{
+        "headerBeginning":"Hallo Welt! Ich bin",
+        "headerName":"Gabriel",
+        "headerSurname":"Eger",
+        "headerTitles":{
+           "title1":"Ein Software-Ingenieur!",
+           "title2":"Ein DevOps-Ingenieur!",
+           "title3":"Ein Full-Stack-Entwickler!",
+           "title4":"Ein Cloud-Architekt!"
         }
-      },
-      "workTimeLine": {
-        "timeLine1": {
-          "title": "Freiberufliche Tätigkeit",
-          "time": "2023 - laufend",
-          "local": "Remote",
-          "position": "Full-Stack-Entwickler"
+     }
+  },
+  "experience":{
+     "work":{
+        "subTitle":"Mein beruflicher Hintergrund",
+        "title":"Berufserfahrung",
+        "image":"/imgs/experience/workingWallpaper.jpg",
+        "experiences":{
+           "experience1":{
+              "image":"/imgs/experience/freeLanceWork.jpg",
+              "title":"Freiberufliche Tätigkeit",
+              "time":"2023 - laufend",
+              "local":"Remote",
+              "description":"Ich arbeite seit 2 Jahren als Freiberufler...",
+              "technologies":[
+                 "React",
+                 "Next.js",
+                 "TailwindCSS",
+                 "Node.js",
+                 "DevOps"
+              ]
+           },
+           "experience2":{
+              "image":"/imgs/experience/clearVictionWork.jpg",
+              "title":"ClearViction",
+              "time":"2023 - 2024 (10 Monate)",
+              "local":"Remote, Washington, USA",
+              "description":"ClearViction war ein Startup, das Menschen half...",
+              "technologies":[
+                 "Agile",
+                 "Next.js",
+                 "TypeScript",
+                 "Material-UI"
+              ]
+           },
+           "experience3":{
+              "image":"/imgs/experience/mundialMixWork.jpg",
+              "title":"MundialMix",
+              "time":"2023 - laufend",
+              "local":"Santa Catarina, Brasilien",
+              "description":"MundialMix ist eine Holding, die mehrere Unternehmen besitzt...",
+              "technologies":[
+                 "React",
+                 "TypeScript",
+                 "TailwindCSS",
+                 "Flask",
+                 "Django",
+                 "Java"
+              ]
+           }
         },
-        "timeLine2": {
-          "title": "ClearViction",
-          "time": "2023 - 2024 (10 Monate)",
-          "local": "Remote, Washington, USA",
-          "position": "Frontend-Entwickler"
-        },
-        "timeLine3": {
-          "title": "MundialMix",
-          "time": "2023 - laufend",
-          "local": "Santa Catarina, Brasilien",
-          "position": "Junior Full-Stack-Entwickler"
+        "workTimeLine":{
+           "timeLine1":{
+              "title":"Freiberufliche Tätigkeit",
+              "time":"2023 - laufend",
+              "local":"Remote",
+              "position":"Full-Stack-Entwickler"
+           },
+           "timeLine2":{
+              "title":"ClearViction",
+              "time":"2023 - 2024 (10 Monate)",
+              "local":"Remote, Washington, USA",
+              "position":"Frontend-Entwickler"
+           },
+           "timeLine3":{
+              "title":"MundialMix",
+              "time":"2023 - laufend",
+              "local":"Santa Catarina, Brasilien",
+              "position":"Junior Full-Stack-Entwickler"
+           }
         }
-      }
-    },
-    "formal": {
-      "subTitle": "Mein theoretischer Hintergrund",
-      "title": "Formale Ausbildung",
-      "image": "/imgs/experience/educationWallpaper.jpg",
-      "experiences": {
-        "experience1": {
-          "image": "/imgs/experience/technicalSchoolEducation.jpg",
-          "title": "Technische Oberschule",
-          "time": "2017 - 2021",
-          "local": "IFSC (Bundesinstitut von Santa Catarina)",
-          "description": "IFSC ist eine öffentliche Bundesinstitution, die kostenlose technische Oberschulkurse anbietet und als eines der besten Bildungszentren Brasiliens gilt."
+     },
+     "formal":{
+        "subTitle":"Mein theoretischer Hintergrund",
+        "title":"Formale Ausbildung",
+        "image":"/imgs/experience/educationWallpaper.jpg",
+        "experiences":{
+           "experience1":{
+              "image":"/imgs/experience/technicalSchoolEducation.jpg",
+              "title":"Technische Oberschule",
+              "time":"2017 - 2021",
+              "local":"IFSC (Bundesinstitut von Santa Catarina)",
+              "description":"IFSC ist eine öffentliche Bundesinstitution, die kostenlose technische Oberschulkurse anbietet und als eines der besten Bildungszentren Brasiliens gilt."
+           },
+           "experience2":{
+              "image":"/imgs/experience/universityEducation.jpg",
+              "title":"BSc Informationssysteme",
+              "time":"2023 - 2026 (voraussichtlich)",
+              "local":"PUC - Minas Gerais",
+              "description":"PUC ist eine der ältesten und traditionsreichsten Universitäten in Brasilien mit einem starken Fokus auf Forschung und Innovation. Der Studiengang Informationssysteme ist einer der gefragtesten im Land."
+           }
         },
-        "experience2": {
-          "image": "/imgs/experience/universityEducation.jpg",
-          "title": "BSc Informationssysteme",
-          "time": "2023 - 2026 (voraussichtlich)",
-          "local": "PUC - Minas Gerais",
-          "description": "PUC ist eine der ältesten und traditionsreichsten Universitäten in Brasilien mit einem starken Fokus auf Forschung und Innovation. Der Studiengang Informationssysteme ist einer der gefragtesten im Land."
+        "formalTimeLine":{
+           "timeLine1":{
+              "title":"Technische Oberschule",
+              "time":"2017 - 2021",
+              "local":"IFSC (Bundesinstitut von Santa Catarina)",
+              "position":"Durchschnittsnote: 8.9 - 10"
+           },
+           "timeLine2":{
+              "title":"BSc Informatik",
+              "time":"2023 - 2026 (voraussichtlich)",
+              "local":"PUC - Minas Gerais",
+              "position":"Durchschnittsnote: ????"
+           },
+           "timeLine3":{
+              "title":"Master in Informatik",
+              "time":"2027 - 2028 (voraussichtlich)",
+              "local":"????",
+              "position":"Durchschnittsnote: ????"
+           },
+           "timeLine4":{
+              "title":"PhD in Informatik",
+              "time":"2029 - 2031 (voraussichtlich)",
+              "local":"????",
+              "position":"Durchschnittsnote: ????"
+           }
         }
-      },
-      "formalTimeLine": {
-        "timeLine1": {
-          "title": "Technische Oberschule",
-          "time": "2017 - 2021",
-          "local": "IFSC (Bundesinstitut von Santa Catarina)",
-          "position": "Durchschnittsnote: 8.9 - 10"
-        },
-        "timeLine2": {
-          "title": "BSc Informatik",
-          "time": "2023 - 2026 (voraussichtlich)",
-          "local": "PUC - Minas Gerais",
-          "position": "Durchschnittsnote: ????"
-        },
-        "timeLine3": {
-          "title": "Master in Informatik",
-          "time": "2027 - 2028 (voraussichtlich)",
-          "local": "????",
-          "position": "Durchschnittsnote: ????"
-        },
-        "timeLine4": {
-          "title": "PhD in Informatik",
-          "time": "2029 - 2031 (voraussichtlich)",
-          "local": "????",
-          "position": "Durchschnittsnote: ????"
+     },
+     "self":{
+        "subTitle":"Mein autodidaktischer Weg",
+        "title":"Selbstlernende Ausbildung",
+        "image":"/imgs/experience/selfWallpaper.jpg",
+        "coursesTags":{
+           "tag1":"Informatik",
+           "tag2":"Backend",
+           "tag3":"Frontend",
+           "tag4":"UI/UX",
+           "tag5":"DevOps"
         }
-      }
-    },
-    "self": {
-      "subTitle": "Mein autodidaktischer Weg",
-      "title": "Selbstlernende Ausbildung",
-      "image": "/imgs/experience/selfWallpaper.jpg",
-      "coursesTags": {
-        "tag1": "Informatik",
-        "tag2": "Backend",
-        "tag3": "Frontend",
-        "tag4": "UI/UX",
-        "tag5": "DevOps"
-      }
-    },
-    "courses": {
-      "courseTags": {
-        "tag1": "Informatik",
-        "tag2": "Backend",
-        "tag3": "Frontend",
-        "tag4": "UI/UX",
-        "tag5": "DevOps"
-      },
-      "course1": {
-        "courseImage": "/imgs/experience/CS50Self.jpg",
-        "courseTitle": "CS50 - Einführung in die Informatik",
-        "courseDescription": "CS50 ist Harvard Universitys Einführung in die intellektuellen Unternehmen der Informatik und der Programmierkunst.",
-        "courseTags": {
-          "tag1": "Informatik",
-          "tag2": "Algorithmen",
-          "tag3": "Datenstrukturen",
-          "tag4": "C",
-          "tag5": "Python"
+     },
+     "courses":{
+        "courseTags":{
+           "tag1":"Informatik",
+           "tag2":"Backend",
+           "tag3":"Frontend",
+           "tag4":"UI/UX",
+           "tag5":"DevOps"
         },
-        "tags": {
-          "tag1": "Informatik",
-          "tag2": "Backend"
-        }
-      },
-      "course2": {
-        "courseImage": "/imgs/experience/daysOfCode100Self.jpg",
-        "courseTitle": "100 Tage Code - Das komplette Python Bootcamp",
-        "courseDescription": "Angela Yu lehrt Python, einschließlich Data Science, Webentwicklung und Machine Learning.",
-        "courseTags": {
-          "tag1": "Python",
-          "tag2": "Informatik",
-          "tag3": "Programmierlogik",
-          "tag4": "Data Science"
+        "course1":{
+           "courseImage":"/imgs/experience/CS50Self.jpg",
+           "courseTitle":"CS50 - Einführung in die Informatik",
+           "courseDescription":"CS50 ist Harvard Universitys Einführung in die intellektuellen Unternehmen der Informatik und der Programmierkunst.",
+           "courseTags":{
+              "tag1":"Informatik",
+              "tag2":"Algorithmen",
+              "tag3":"Datenstrukturen",
+              "tag4":"C",
+              "tag5":"Python"
+           },
+           "tags":{
+              "tag1":"Informatik",
+              "tag2":"Backend"
+           }
         },
-        "tags": {
-          "tag1": "Informatik",
-          "tag2": "Backend"
-        }
-      },
-      "course3": {
-        "courseImage": "/imgs/experience/nubankSelf.jpg",
-        "courseTitle": "Nubank Frontend Bootcamp",
-        "courseDescription": "Nubank ist die viertgrößte Bank in Lateinamerika und bot 2023 einer ausgewählten Gruppe von Studenten ein Bootcamp an, um ihren Frontend-Stack zu erlernen.",
-        "courseTags": {
-          "tag1": "HTML/CSS",
-          "tag2": "React",
-          "tag3": "TypeScript",
-          "tag4": "Design-Systeme"
+        "course2":{
+           "courseImage":"/imgs/experience/daysOfCode100Self.jpg",
+           "courseTitle":"100 Tage Code - Das komplette Python Bootcamp",
+           "courseDescription":"Angela Yu lehrt Python, einschließlich Data Science, Webentwicklung und Machine Learning.",
+           "courseTags":{
+              "tag1":"Python",
+              "tag2":"Informatik",
+              "tag3":"Programmierlogik",
+              "tag4":"Data Science"
+           },
+           "tags":{
+              "tag1":"Informatik",
+              "tag2":"Backend"
+           }
         },
-        "tags": {
-          "tag1": "Frontend",
-          "tag2": "UI/UX"
-        }
-      },
-      "course4": {
-        "courseImage": "/imgs/experience/googleSelf.jpg",
-        "courseTitle": "Google - Grundlagen der Cybersicherheit",
-        "courseDescription": "Google bietet einen vollständigen Kurs zur Cybersicherheit und DevOps an, einschließlich Linux, Netzwerke und Kryptografie.",
-        "courseTags": {
-          "tag1": "Python",
-          "tag2": "Cybersicherheit",
-          "tag3": "SQL",
-          "tag4": "Cloud Computing",
-          "tag5": "Linux",
-          "tag6": "Kryptografie"
+        "course3":{
+           "courseImage":"/imgs/experience/nubankSelf.jpg",
+           "courseTitle":"Nubank Frontend Bootcamp",
+           "courseDescription":"Nubank ist die viertgrößte Bank in Lateinamerika und bot 2023 einer ausgewählten Gruppe von Studenten ein Bootcamp an, um ihren Frontend-Stack zu erlernen.",
+           "courseTags":{
+              "tag1":"HTML/CSS",
+              "tag2":"React",
+              "tag3":"TypeScript",
+              "tag4":"Design-Systeme"
+           },
+           "tags":{
+              "tag1":"Frontend",
+              "tag2":"UI/UX"
+           }
         },
-        "tags": {
-          "tag1": "DevOps"
-        }
-      },
-      "course5": {
-        "courseImage": "/imgs/experience/algorithmsSelf.jpg",
-        "courseTitle": "Algorithmen und Datenstrukturen für Anfänger",
-        "courseDescription": "NeetCode lehrt die Grundlagen von Algorithmen und Datenstrukturen, einschließlich Big O-Notation, Sortieralgorithmen und mehr.",
-        "courseTags": {
-          "tag1": "Algorithmen",
-          "tag2": "Datenstrukturen",
-          "tag3": "Big O-Notation"
+        "course4":{
+           "courseImage":"/imgs/experience/googleSelf.jpg",
+           "courseTitle":"Google - Grundlagen der Cybersicherheit",
+           "courseDescription":"Google bietet einen vollständigen Kurs zur Cybersicherheit und DevOps an, einschließlich Linux, Netzwerke und Kryptografie.",
+           "courseTags":{
+              "tag1":"Python",
+              "tag2":"Cybersicherheit",
+              "tag3":"SQL",
+              "tag4":"Cloud Computing",
+              "tag5":"Linux",
+              "tag6":"Kryptografie"
+           },
+           "tags":{
+              "tag1":"DevOps"
+           }
         },
-        "tags": {
-          "tag1": "Informatik"
-        }
-      },
-      "course6": {
-        "courseImage": "/imgs/experience/systemDesignSelf.jpg",
-        "courseTitle": "Systemdesign für Anfänger",
-        "courseDescription": "NeetCode-Kurse lehren die Grundlagen des Systemdesigns, einschließlich Skalierbarkeit, Systemfluss, Wartbarkeit, Benutzererfahrung und mehr.",
-        "courseTags": {
-          "tag1": "Systemdesign",
-          "tag2": "Speicherung",
-          "tag3": "Proxys",
-          "tag4": "Caching",
-          "tag5": "Netzwerke",
-          "tag6": "APIs",
-          "tag7": "Big Data"
+        "course5":{
+           "courseImage":"/imgs/experience/algorithmsSelf.jpg",
+           "courseTitle":"Algorithmen und Datenstrukturen für Anfänger",
+           "courseDescription":"NeetCode lehrt die Grundlagen von Algorithmen und Datenstrukturen, einschließlich Big O-Notation, Sortieralgorithmen und mehr.",
+           "courseTags":{
+              "tag1":"Algorithmen",
+              "tag2":"Datenstrukturen",
+              "tag3":"Big O-Notation"
+           },
+           "tags":{
+              "tag1":"Informatik"
+           }
         },
-        "tags": {
-          "tag1": "Backend",
-          "tag2": "DevOps"
-        }
-      },
-      "course7": {
-        "courseImage": "/imgs/experience/ibmBackend.jpg",
-        "courseTitle": "Anwendungsentwicklung mit Microservices und Serverless",
-        "courseDescription": "IBM bietet einen vollständigen Kurs zu Microservices und Serverless an, einschließlich Best Practices und Architektur.",
-        "courseTags": {
-          "tag1": "Microservices",
-          "tag2": "Serverless",
-          "tag3": "APIs",
-          "tag4": "Docker",
-          "tag5": "Kubernetes",
-          "tag6": "Cloud Computing"
+        "course6":{
+           "courseImage":"/imgs/experience/systemDesignSelf.jpg",
+           "courseTitle":"Systemdesign für Anfänger",
+           "courseDescription":"NeetCode-Kurse lehren die Grundlagen des Systemdesigns, einschließlich Skalierbarkeit, Systemfluss, Wartbarkeit, Benutzererfahrung und mehr.",
+           "courseTags":{
+              "tag1":"Systemdesign",
+              "tag2":"Speicherung",
+              "tag3":"Proxys",
+              "tag4":"Caching",
+              "tag5":"Netzwerke",
+              "tag6":"APIs",
+              "tag7":"Big Data"
+           },
+           "tags":{
+              "tag1":"Backend",
+              "tag2":"DevOps"
+           }
         },
-        "tags": {
-          "tag1": "Backend",
-          "tag2": "DevOps"
-        }
-      },
-      "course8": {
-        "courseImage": "/imgs/experience/cloudSelf.jpg",
-        "courseTitle": "AWS Zertifizierung - Practitioner",
-        "courseDescription": "Die Amazon AWS Practitioner-Zertifizierung bestätigt die Kenntnisse über die grundlegenden AWS-Dienste, Verwendungen und grundlegende AWS-Architekturbest Practices.",
-        "courseTags": {
-          "tag1": "AWS",
-          "tag2": "Cloud Computing",
-          "tag3": "Netzwerke",
-          "tag4": "Sicherheit"
+        "course7":{
+           "courseImage":"/imgs/experience/ibmBackend.jpg",
+           "courseTitle":"Anwendungsentwicklung mit Microservices und Serverless",
+           "courseDescription":"IBM bietet einen vollständigen Kurs zu Microservices und Serverless an, einschließlich Best Practices und Architektur.",
+           "courseTags":{
+              "tag1":"Microservices",
+              "tag2":"Serverless",
+              "tag3":"APIs",
+              "tag4":"Docker",
+              "tag5":"Kubernetes",
+              "tag6":"Cloud Computing"
+           },
+           "tags":{
+              "tag1":"Backend",
+              "tag2":"DevOps"
+           }
         },
-        "tags": {
-          "tag1": "DevOps"
+        "course8":{
+           "courseImage":"/imgs/experience/cloudSelf.jpg",
+           "courseTitle":"AWS Zertifizierung - Practitioner",
+           "courseDescription":"Die Amazon AWS Practitioner-Zertifizierung bestätigt die Kenntnisse über die grundlegenden AWS-Dienste, Verwendungen und grundlegende AWS-Architekturbest Practices.",
+           "courseTags":{
+              "tag1":"AWS",
+              "tag2":"Cloud Computing",
+              "tag3":"Netzwerke",
+              "tag4":"Sicherheit"
+           },
+           "tags":{
+              "tag1":"DevOps"
+           }
         }
-      }
-    }
+     }
+  },
+  "projects":{
+     "parallaxCollumn":{
+        "hero":{
+           "title":"Erkunde alle Projekte, die ich bisher erstellt habe",
+           "github":"GitHub-Link",
+           "githubLink":"https://github.com/GabrielEger2",
+           "japanesePhrase":"塵も積もれば山となる",
+           "japaneseTranslation":"-Auch Staub wird, wenn er sich anhäuft, zu einem Berg"
+        }
+     }
   }
 }
