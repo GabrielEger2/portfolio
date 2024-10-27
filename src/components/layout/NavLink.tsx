@@ -1,7 +1,7 @@
 'use client'
 
+import { Link } from '@/i18n/routing'
 import { AnimatePresence, motion } from 'framer-motion'
-import Link from 'next/link'
 import { useState } from 'react'
 import { FiArrowUpRight } from 'react-icons/fi'
 
