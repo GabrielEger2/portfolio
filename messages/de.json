@@ -534,5 +534,49 @@
             "japaneseTranslation":"-Auch Staub wird zu einem Berg, wenn er sich anhäuft"
          }
       }
+   },
+   "contact": {
+      "contactHeader": "Kontaktieren Sie mich",
+      "contactTitle": "Seien Sie nicht schüchtern, sagen Sie hallo!",
+      "contactText": "Ich würde mich freuen, von Ihnen zu hören! Bitte füllen Sie das Formular aus oder verbinden Sie sich über soziale Medien mit mir.",
+      "socialLinks": [
+        {
+          "icon": "BiMailSend",
+          "title": "E-Mail",
+          "text": "Persönliche und berufliche Anfragen",
+          "link": "gabriel_eger01@hotmail.com"
+        },
+        {
+          "icon": "BiLogoLinkedin",
+          "title": "LinkedIn",
+          "text": "Berufliches Netzwerk",
+          "link": "https://www.linkedin.com/in/gabrieleger/"
+        },
+        {
+          "icon": "BiLogoGithub",
+          "title": "GitHub",
+          "text": "Open-Source-Projekte und Beiträge",
+          "link": "https://github.com/GabrielEger2"
+        }
+      ],
+      "contactForm": {
+        "name": {
+          "label": "Name",
+          "placeholder": "Ihr Name"
+        },
+        "surname": {
+          "label": "Nachname",
+          "placeholder": "Ihr Nachname"
+        },
+        "email": {
+          "label": "E-Mail",
+          "placeholder": "Ihre E-Mail"
+        },
+        "message": {
+          "label": "Nachricht",
+          "placeholder": "Ich würde gerne mehr wissen über..."
+        },
+        "submit": "Nachricht senden"
+      }
    }
 }

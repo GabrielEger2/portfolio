@@ -534,5 +534,49 @@
             "japaneseTranslation":"-Even dust, when piled up, becomes a mountain"
          }
       }
+   },
+   "contact": {
+      "contactHeader": "Contact Me",
+      "contactTitle": "Don't be shy, say hello!",
+      "contactText": "I would love to hear from you! Please fill out the form or connect with me on social media.",
+      "socialLinks": [
+        {
+          "icon": "BiMailSend",
+          "title": "Email",
+          "text": "Personal and professional inquiries",
+          "link": "gabriel_eger01@hotmail.com"
+        },
+        {
+          "icon": "BiLogoLinkedin",
+          "title": "LinkedIn",
+          "text": "Professional networking",
+          "link": "https://www.linkedin.com/in/gabrieleger/"
+        },
+        {
+          "icon": "BiLogoGithub",
+          "title": "GitHub",
+          "text": "Open-source projects and contributions",
+          "link": "https://github.com/GabrielEger2"
+        }
+      ],
+      "contactForm": {
+        "name": {
+          "label": "Name",
+          "placeholder": "Your Name"
+        },
+        "surname": {
+          "label": "Surname",
+          "placeholder": "Your Surname"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "Your Email"
+        },
+        "message": {
+          "label": "Message",
+          "placeholder": "I would like to know more about..."
+        },
+        "submit": "Send Message"
+      }
    }
 }
