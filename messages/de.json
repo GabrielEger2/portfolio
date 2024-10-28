@@ -1,97 +1,282 @@
 {
-   "core": {
-      "footer": {
-         "title": "Gabriel Eger",
-         "description": "© 2024 MIT Lizenz.",
-         "footerLinks": [
+   "core":{
+      "footer":{
+         "title":"Gabriel Eger",
+         "description":"© 2024 MIT Lizenz.",
+         "footerLinks":[
             {
-               "title": "Website-Bereiche",
-               "links": [
+               "title":"Website-Bereiche",
+               "links":[
                   {
-                     "title": "Startseite",
-                     "href": "/"
+                     "title":"Startseite",
+                     "href":"/"
                   },
                   {
-                     "title": "Erfahrung",
-                     "href": "/experience"
+                     "title":"Erfahrung",
+                     "href":"/experience"
                   },
                   {
-                     "title": "Projekte",
-                     "href": "/projects"
+                     "title":"Projekte",
+                     "href":"/projects"
                   },
                   {
-                     "title": "Kontaktieren Sie mich",
-                     "href": "/contact"
+                     "title":"Kontaktieren Sie mich",
+                     "href":"/contact"
                   }
                ]
             },
             {
-               "title": "Verwendete Technologien",
-               "links": [
+               "title":"Verwendete Technologien",
+               "links":[
                   {
-                     "title": "Next.js",
-                     "href": "https://nextjs.org/"
+                     "title":"Next.js",
+                     "href":"https://nextjs.org/"
                   },
                   {
-                     "title": "Tailwind CSS",
-                     "href": "https://tailwindcss.com/"
+                     "title":"Tailwind CSS",
+                     "href":"https://tailwindcss.com/"
                   },
                   {
-                     "title": "TypeScript",
-                     "href": "https://www.typescriptlang.org/"
+                     "title":"TypeScript",
+                     "href":"https://www.typescriptlang.org/"
                   },
                   {
-                     "title": "Docker",
-                     "href": "https://www.docker.com/"
+                     "title":"Docker",
+                     "href":"https://www.docker.com/"
                   }
                ]
             },
             {
-               "title": "Soziale Konten",
-               "links": [
+               "title":"Soziale Konten",
+               "links":[
                   {
-                     "title": "LinkedIn",
-                     "href": "https://www.linkedin.com/in/gabrieleger/"
+                     "title":"LinkedIn",
+                     "href":"https://www.linkedin.com/in/gabrieleger/"
                   },
                   {
-                     "title": "GitHub",
-                     "href": "https://github.com/GabrielEger2"
+                     "title":"GitHub",
+                     "href":"https://github.com/GabrielEger2"
                   },
                   {
-                     "title": "LeetCode",
-                     "href": "https://leetcode.com/GabrielEger2"
+                     "title":"LeetCode",
+                     "href":"https://leetcode.com/GabrielEger2"
                   }
                ]
             }
          ]
+      },
+      "header":{
+         "NavbarTitle":"GEDev",
+         "NavbarTitleLink":"/",
+         "NavbarLinks":{
+            "linkText":"Mehr erfahren",
+            "content":[
+               {
+                  "id":"home",
+                  "title":"Startseite",
+                  "href":"/",
+                  "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit varius ipsum",
+                  "topics":[
+                     {
+                        "title":"Themen 1",
+                        "items":[
+                           "Thema 1",
+                           "Thema 2",
+                           "Thema 3"
+                        ]
+                     },
+                     {
+                        "title":"Themen 2",
+                        "items":[
+                           "Thema 1",
+                           "Thema 2",
+                           "Thema 3"
+                        ]
+                     },
+                     {
+                        "title":"Themen 3",
+                        "items":[
+                           "Thema 1",
+                           "Thema 2",
+                           "Thema 3"
+                        ]
+                     }
+                  ]
+               },
+               {
+                  "id":"experience",
+                  "title":"Erfahrung",
+                  "href":"/experience",
+                  "description":"Erkunde meinen Karriereweg, meine Ausbildung und meine autodidaktischen Erfahrungen in dieser umfassenden Übersicht",
+                  "topics":[
+                     {
+                        "title":"Berufserfahrung",
+                        "items":[
+                           "Freelance",
+                           "ClearViction",
+                           "MundialMix"
+                        ]
+                     },
+                     {
+                        "title":"Formale Ausbildung",
+                        "items":[
+                           "Fachschule",
+                           "Bsc Informatik"
+                        ]
+                     },
+                     {
+                        "title":"Selbststudium",
+                        "items":[
+                           "Kurse",
+                           "Zertifikate",
+                           "Bootcamps"
+                        ]
+                     }
+                  ]
+               },
+               {
+                  "id":"projects",
+                  "title":"Projekte",
+                  "href":"/projects",
+                  "description":"Entdecken Sie eine kuratierte Auswahl meiner Projekte, die meine Fähigkeiten in der Softwareentwicklung zeigen.",
+                  "topics":[
+                     {
+                        "title":"Projektliste",
+                        "items":[
+                           "GitHub-Link",
+                           "Projektanzeige"
+                        ]
+                     },
+                     {
+                        "title":"Top-Projekte",
+                        "items":[
+                           "Projekt-Karussell",
+                           "Showcase"
+                        ]
+                     },
+                     {
+                        "title":"Alle Projekte",
+                        "items":[
+                           "Stack-Filter",
+                           "Sprachen-Filter"
+                        ]
+                     }
+                  ]
+               },
+               {
+                  "id":"contactMe",
+                  "title":"Kontakt",
+                  "href":"/contact"
+               }
+            ]
+         }
       }
    },
-   "home": {
-      "hero": {
-         "headerBeginning": "Hallo Welt! Ich bin",
-         "headerName": "Gabriel",
-         "headerSurname": "Eger",
-         "headerTitles": [
+   "layout":{
+      "themesTitle":"Thema",
+      "themes":[
+         {
+            "name":"Hell",
+            "value":"light"
+         },
+         {
+            "name":"Dunkel",
+            "value":"dark"
+         },
+         {
+            "name":"Unternehmen",
+            "value":"corporate"
+         },
+         {
+            "name":"Lo-Fi",
+            "value":"lofi"
+         },
+         {
+            "name":"SynthWave",
+            "value":"synthwave"
+         },
+         {
+            "name":"Cyberpunk",
+            "value":"cyberpunk"
+         },
+         {
+            "name":"Wald",
+            "value":"forest"
+         },
+         {
+            "name":"Winter",
+            "value":"winter"
+         },
+         {
+            "name":"Sonnenuntergang",
+            "value":"sunset"
+         },
+         {
+            "name":"Drahtgitter",
+            "value":"wireframe"
+         },
+         {
+            "name":"Retro",
+            "value":"retro"
+         },
+         {
+            "name":"Limonade",
+            "value":"lemonade"
+         },
+         {
+            "name":"Luxus",
+            "value":"luxury"
+         },
+         {
+            "name":"Pechschwarz",
+            "value":"black"
+         }
+      ],
+      "languagesOptions":[
+         {
+            "name":"English",
+            "value":"en"
+         },
+         {
+            "name":"Português",
+            "value":"pt"
+         },
+         {
+            "name":"Español",
+            "value":"es"
+         },
+         {
+            "name":"日本語",
+            "value":"ja"
+         }
+      ]
+   },
+   "home":{
+      "hero":{
+         "headerBeginning":"Hallo Welt! Ich bin",
+         "headerName":"Gabriel",
+         "headerSurname":"Eger",
+         "headerTitles":[
             "Full Stack Entwickler",
             "Informatik Student",
             "Autodidakt"
          ]
       }
    },
-   "experience": {
-      "work": {
-         "subTitle": "Mein Beruflicher Hintergrund",
-         "title": "Berufserfahrung",
-         "image": "/imgs/experience/workingWallpaper.jpg",
-         "child": "Work",
-         "experiences": [
+   "experience":{
+      "work":{
+         "subTitle":"Mein Beruflicher Hintergrund",
+         "title":"Berufserfahrung",
+         "image":"/imgs/experience/workingWallpaper.jpg",
+         "child":"Work",
+         "experiences":[
             {
-               "image": "/imgs/experience/freeLanceWork.jpg",
-               "title": "Freiberufliche Arbeit",
-               "time": "2023 - Laufend",
-               "local": "Remote",
-               "description": "Ich arbeite seit 2 Jahren als Freelancer...",
-               "technologies": [
+               "image":"/imgs/experience/freeLanceWork.jpg",
+               "title":"Freiberufliche Arbeit",
+               "time":"2023 - Laufend",
+               "local":"Remote",
+               "description":"Ich arbeite seit 2 Jahren als Freelancer...",
+               "technologies":[
                   "React",
                   "Next.js",
                   "TailwindCSS",
@@ -100,12 +285,12 @@
                ]
             },
             {
-               "image": "/imgs/experience/clearVictionWork.jpg",
-               "title": "ClearViction",
-               "time": "2023 - 2024 (10 Monate)",
-               "local": "Remote, Washington, USA",
-               "description": "Clearviction war ein Startup, das darauf abzielte, Einzelpersonen zu helfen...",
-               "technologies": [
+               "image":"/imgs/experience/clearVictionWork.jpg",
+               "title":"ClearViction",
+               "time":"2023 - 2024 (10 Monate)",
+               "local":"Remote, Washington, USA",
+               "description":"Clearviction war ein Startup, das darauf abzielte, Einzelpersonen zu helfen...",
+               "technologies":[
                   "Agil",
                   "Next.js",
                   "TypeScript",
@@ -113,12 +298,12 @@
                ]
             },
             {
-               "image": "/imgs/experience/mundialMixWork.jpg",
-               "title": "MundialMix",
-               "time": "2023 - Laufend",
-               "local": "Santa Catarina, Brasilien",
-               "description": "MundialMix ist eine Holdinggesellschaft, die mehrere Unternehmen besitzt...",
-               "technologies": [
+               "image":"/imgs/experience/mundialMixWork.jpg",
+               "title":"MundialMix",
+               "time":"2023 - Laufend",
+               "local":"Santa Catarina, Brasilien",
+               "description":"MundialMix ist eine Holdinggesellschaft, die mehrere Unternehmen besitzt...",
+               "technologies":[
                   "React",
                   "TypeScript",
                   "TailwindCSS",
@@ -128,140 +313,140 @@
                ]
             }
          ],
-         "workTimeLine": [
+         "workTimeLine":[
             {
-               "title": "Freiberufliche Arbeit",
-               "time": "2023 - Laufend",
-               "local": "Remote",
-               "position": "Full Stack Entwickler"
+               "title":"Freiberufliche Arbeit",
+               "time":"2023 - Laufend",
+               "local":"Remote",
+               "position":"Full Stack Entwickler"
             },
             {
-               "title": "ClearViction",
-               "time": "2023 - 2024 (10 Monate)",
-               "local": "Remote, Washington, USA",
-               "position": "Frontend Entwickler"
+               "title":"ClearViction",
+               "time":"2023 - 2024 (10 Monate)",
+               "local":"Remote, Washington, USA",
+               "position":"Frontend Entwickler"
             },
             {
-               "title": "MundialMix",
-               "time": "2023 - Laufend",
-               "local": "Santa Catarina, Brasilien",
-               "position": "Junior Full Stack Entwickler"
+               "title":"MundialMix",
+               "time":"2023 - Laufend",
+               "local":"Santa Catarina, Brasilien",
+               "position":"Junior Full Stack Entwickler"
             }
          ]
       },
-      "formal": {
-         "subTitle": "Mein Theoretischer Hintergrund",
-         "title": "Formale Ausbildung",
-         "image": "/imgs/experience/educationWallpaper.jpg",
-         "child": "Formal",
-         "experiences": [
+      "formal":{
+         "subTitle":"Mein Theoretischer Hintergrund",
+         "title":"Formale Ausbildung",
+         "image":"/imgs/experience/educationWallpaper.jpg",
+         "child":"Formal",
+         "experiences":[
             {
-               "image": "/imgs/experience/technicalSchoolEducation.jpg",
-               "title": "Technische Oberschule",
-               "time": "2017 - 2021",
-               "local": "IFSC (Bundesinstitut von Santa Catarina)",
-               "description": "Das IFSC ist eine öffentliche Bundesinstitution, die kostenlose technische Oberschulkurse anbietet und als eines der besten Bildungszentren in Brasilien gilt."
+               "image":"/imgs/experience/technicalSchoolEducation.jpg",
+               "title":"Technische Oberschule",
+               "time":"2017 - 2021",
+               "local":"IFSC (Bundesinstitut von Santa Catarina)",
+               "description":"Das IFSC ist eine öffentliche Bundesinstitution, die kostenlose technische Oberschulkurse anbietet und als eines der besten Bildungszentren in Brasilien gilt."
             },
             {
-               "image": "/imgs/experience/universityEducation.jpg",
-               "title": "B.Sc. Informationssysteme",
-               "time": "2023 - 2026 (Voraussichtlich)",
-               "local": "PUC - Minas Gerais",
-               "description": "Die PUC ist eine der ältesten und traditionsreichsten Universitäten Brasiliens, mit starkem Fokus auf Forschung und Innovation. Der Studiengang Informationssysteme ist einer der gefragtesten im Land."
+               "image":"/imgs/experience/universityEducation.jpg",
+               "title":"B.Sc. Informationssysteme",
+               "time":"2023 - 2026 (Voraussichtlich)",
+               "local":"PUC - Minas Gerais",
+               "description":"Die PUC ist eine der ältesten und traditionsreichsten Universitäten Brasiliens, mit starkem Fokus auf Forschung und Innovation. Der Studiengang Informationssysteme ist einer der gefragtesten im Land."
             }
          ],
-         "formalTimeLine": [
+         "formalTimeLine":[
             {
-               "title": "Technische Oberschule",
-               "time": "2017 - 2021",
-               "local": "IFSC (Bundesinstitut von Santa Catarina)",
-               "position": "GPA: 8,9 - 10"
+               "title":"Technische Oberschule",
+               "time":"2017 - 2021",
+               "local":"IFSC (Bundesinstitut von Santa Catarina)",
+               "position":"GPA: 8,9 - 10"
             },
             {
-               "title": "B.Sc. Informatik",
-               "time": "2023 - 2026 (Voraussichtlich)",
-               "local": "PUC - Minas Gerais",
-               "position": "GPA: ????"
+               "title":"B.Sc. Informatik",
+               "time":"2023 - 2026 (Voraussichtlich)",
+               "local":"PUC - Minas Gerais",
+               "position":"GPA: ????"
             },
             {
-               "title": "Master in Informatik",
-               "time": "2027 - 2028 (Voraussichtlich)",
-               "local": "????",
-               "position": "GPA: ????"
+               "title":"Master in Informatik",
+               "time":"2027 - 2028 (Voraussichtlich)",
+               "local":"????",
+               "position":"GPA: ????"
             },
             {
-               "title": "Ph.D. Informatik",
-               "time": "2029 - 2031 (Voraussichtlich)",
-               "local": "????",
-               "position": "GPA: ????"
+               "title":"Ph.D. Informatik",
+               "time":"2029 - 2031 (Voraussichtlich)",
+               "local":"????",
+               "position":"GPA: ????"
             }
          ]
       },
-      "self": {
-         "subTitle": "Mein Selbstlernprozess",
-         "title": "Selbstlernende Ausbildung",
-         "image": "/imgs/experience/selfWallpaper.jpg",
-         "child": "Self",
-         "courses": {
-            "courseTags": [
+      "self":{
+         "subTitle":"Mein Selbstlernprozess",
+         "title":"Selbstlernende Ausbildung",
+         "image":"/imgs/experience/selfWallpaper.jpg",
+         "child":"Self",
+         "courses":{
+            "courseTags":[
                "Informatik",
                "Backend",
                "Frontend",
                "UI/UX",
                "DevOps"
             ],
-            "courses": [
+            "courses":[
                {
-                  "courseImage": "/imgs/experience/CS50Self.jpg",
-                  "courseTitle": "CS50 - Einführung in die Informatik",
-                  "courseDescription": "CS50 ist die Einführung der Harvard University in die intellektuellen Unternehmensbereiche der Informatik und die Kunst der Programmierung.",
-                  "courseTags": [
+                  "courseImage":"/imgs/experience/CS50Self.jpg",
+                  "courseTitle":"CS50 - Einführung in die Informatik",
+                  "courseDescription":"CS50 ist die Einführung der Harvard University in die intellektuellen Unternehmensbereiche der Informatik und die Kunst der Programmierung.",
+                  "courseTags":[
                      "Informatik",
                      "Algorithmen",
                      "Datenstrukturen",
                      "C",
                      "Python"
                   ],
-                  "tags": [
+                  "tags":[
                      "Informatik",
                      "Backend"
                   ]
                },
                {
-                  "courseImage": "/imgs/experience/daysOfCode100Self.jpg",
-                  "courseTitle": "100 Days of Code - Der vollständige Python Bootcamp",
-                  "courseDescription": "Angela Yu lehrt Python, einschließlich Data Science, Webentwicklung und maschinelles Lernen.",
-                  "courseTags": [
+                  "courseImage":"/imgs/experience/daysOfCode100Self.jpg",
+                  "courseTitle":"100 Days of Code - Der vollständige Python Bootcamp",
+                  "courseDescription":"Angela Yu lehrt Python, einschließlich Data Science, Webentwicklung und maschinelles Lernen.",
+                  "courseTags":[
                      "Python",
                      "Informatik",
                      "Programmierungslogik",
                      "Data Science"
                   ],
-                  "tags": [
+                  "tags":[
                      "Informatik",
                      "Backend"
                   ]
                },
                {
-                  "courseImage": "/imgs/experience/nubankSelf.jpg",
-                  "courseTitle": "Nubank Frontend Bootcamp",
-                  "courseDescription": "Nubank ist die viertgrößte Bank in Lateinamerika, und 2023 bot sie einer ausgewählten Gruppe von Studierenden ein Bootcamp an, um deren Frontend-Stack zu erlernen.",
-                  "courseTags": [
+                  "courseImage":"/imgs/experience/nubankSelf.jpg",
+                  "courseTitle":"Nubank Frontend Bootcamp",
+                  "courseDescription":"Nubank ist die viertgrößte Bank in Lateinamerika, und 2023 bot sie einer ausgewählten Gruppe von Studierenden ein Bootcamp an, um deren Frontend-Stack zu erlernen.",
+                  "courseTags":[
                      "HTML/CSS",
                      "React",
                      "TypeScript",
                      "Design Systeme"
                   ],
-                  "tags": [
+                  "tags":[
                      "Frontend",
                      "UI/UX"
                   ]
                },
                {
-                  "courseImage": "/imgs/experience/googleSelf.jpg",
-                  "courseTitle": "Google - Grundlagen der Cybersicherheit",
-                  "courseDescription": "Google bietet einen umfassenden Kurs zur Cybersicherheit und DevOps an, einschließlich Linux, Netzwerke und Kryptographie.",
-                  "courseTags": [
+                  "courseImage":"/imgs/experience/googleSelf.jpg",
+                  "courseTitle":"Google - Grundlagen der Cybersicherheit",
+                  "courseDescription":"Google bietet einen umfassenden Kurs zur Cybersicherheit und DevOps an, einschließlich Linux, Netzwerke und Kryptographie.",
+                  "courseTags":[
                      "Python",
                      "Cybersicherheit",
                      "SQL",
@@ -269,28 +454,28 @@
                      "Linux",
                      "Kryptographie"
                   ],
-                  "tags": [
+                  "tags":[
                      "DevOps"
                   ]
                },
                {
-                  "courseImage": "/imgs/experience/algorithmsSelf.jpg",
-                  "courseTitle": "Algorithmen und Datenstrukturen für Anfänger",
-                  "courseDescription": "NeetCode lehrt die Grundlagen von Algorithmen und Datenstrukturen, einschließlich Big O Notation, Sortieralgorithmen und mehr.",
-                  "courseTags": [
+                  "courseImage":"/imgs/experience/algorithmsSelf.jpg",
+                  "courseTitle":"Algorithmen und Datenstrukturen für Anfänger",
+                  "courseDescription":"NeetCode lehrt die Grundlagen von Algorithmen und Datenstrukturen, einschließlich Big O Notation, Sortieralgorithmen und mehr.",
+                  "courseTags":[
                      "Algorithmen",
                      "Datenstrukturen",
                      "Big O Notation"
                   ],
-                  "tags": [
+                  "tags":[
                      "Informatik"
                   ]
                },
                {
-                  "courseImage": "/imgs/experience/systemDesignSelf.jpg",
-                  "courseTitle": "Systemdesign für Anfänger",
-                  "courseDescription": "NeetCode-Kurse lehren die Grundlagen des Systemdesigns, einschließlich Skalierbarkeit, Systemfluss, Wartungsfreundlichkeit, Benutzererfahrung und mehr.",
-                  "courseTags": [
+                  "courseImage":"/imgs/experience/systemDesignSelf.jpg",
+                  "courseTitle":"Systemdesign für Anfänger",
+                  "courseDescription":"NeetCode-Kurse lehren die Grundlagen des Systemdesigns, einschließlich Skalierbarkeit, Systemfluss, Wartungsfreundlichkeit, Benutzererfahrung und mehr.",
+                  "courseTags":[
                      "Systemdesign",
                      "Speicherung",
                      "Proxys",
@@ -299,16 +484,16 @@
                      "APIs",
                      "Big Data"
                   ],
-                  "tags": [
+                  "tags":[
                      "Backend",
                      "DevOps"
                   ]
                },
                {
-                  "courseImage": "/imgs/experience/ibmBackend.jpg",
-                  "courseTitle": "Anwendungsentwicklung mit Microservices und Serverless",
-                  "courseDescription": "IBM bietet einen umfassenden Kurs zu Microservices und Serverless, Best Practices und Architektur an.",
-                  "courseTags": [
+                  "courseImage":"/imgs/experience/ibmBackend.jpg",
+                  "courseTitle":"Anwendungsentwicklung mit Microservices und Serverless",
+                  "courseDescription":"IBM bietet einen umfassenden Kurs zu Microservices und Serverless, Best Practices und Architektur an.",
+                  "courseTags":[
                      "Microservices",
                      "Serverless",
                      "APIs",
@@ -316,22 +501,22 @@
                      "Kubernetes",
                      "Cloud Computing"
                   ],
-                  "tags": [
+                  "tags":[
                      "Backend",
                      "DevOps"
                   ]
                },
                {
-                  "courseImage": "/imgs/experience/cloudSelf.jpg",
-                  "courseTitle": "AWS Certified - Practitioner",
-                  "courseDescription": "Die Amazon AWS Practitioner-Zertifizierung bestätigt die Grundkenntnisse der wichtigsten AWS-Dienste, -Anwendungen und bewährten Architekturpraktiken von AWS.",
-                  "courseTags": [
+                  "courseImage":"/imgs/experience/cloudSelf.jpg",
+                  "courseTitle":"AWS Certified - Practitioner",
+                  "courseDescription":"Die Amazon AWS Practitioner-Zertifizierung bestätigt die Grundkenntnisse der wichtigsten AWS-Dienste, -Anwendungen und bewährten Architekturpraktiken von AWS.",
+                  "courseTags":[
                      "AWS",
                      "Cloud Computing",
                      "Netzwerke",
                      "Sicherheit"
                   ],
-                  "tags": [
+                  "tags":[
                      "DevOps"
                   ]
                }
@@ -339,14 +524,14 @@
          }
       }
    },
-   "projects": {
-      "parallaxCollumn": {
-         "hero": {
-            "title": "Entdecken Sie alle Projekte, die ich bisher erstellt habe",
-            "github": "GitHub-Link",
-            "githubLink": "https://github.com/GabrielEger2",
-            "japanesePhrase": "塵も積もれば山となる",
-            "japaneseTranslation": "-Auch Staub wird zu einem Berg, wenn er sich anhäuft"
+   "projects":{
+      "parallaxCollumn":{
+         "hero":{
+            "title":"Entdecken Sie alle Projekte, die ich bisher erstellt habe",
+            "github":"GitHub-Link",
+            "githubLink":"https://github.com/GabrielEger2",
+            "japanesePhrase":"塵も積もれば山となる",
+            "japaneseTranslation":"-Auch Staub wird zu einem Berg, wenn er sich anhäuft"
          }
       }
    }

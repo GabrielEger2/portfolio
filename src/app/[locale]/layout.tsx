@@ -26,11 +26,11 @@ export default async function LocaleLayout({
   return (
     <html data-theme={theme?.value || 'default'} lang={locale}>
       <body>
-        <Navbar />
         <NextIntlClientProvider messages={messages}>
+          <Navbar />
           {children}
+          <Footer />
         </NextIntlClientProvider>
-        <Footer />
       </body>
     </html>
   )

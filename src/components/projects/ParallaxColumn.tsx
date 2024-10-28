@@ -39,10 +39,10 @@ const ParallaxColumn: React.FC<ParallaxColumnProps> = ({ projects, y }) => {
                     )
                   })}
                 </div>
-                <button className="btn btn-primary btn-outline mt-4">
+                <button className="btn btn-secondary btn-outline mt-4">
                   Github Link
                 </button>
-                <button className="btn btn-primary btn-outline mt-2">
+                <button className="btn btn-secondary btn-outline mt-2">
                   Live Preview
                 </button>
               </div>
