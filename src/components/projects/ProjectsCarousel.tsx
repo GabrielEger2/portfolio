@@ -1,5 +1,6 @@
 'use client'
 
+import { movies } from '@/content/projects/ProjectsCarousel'
 import {
   motion,
   useMotionValueEvent,
@@ -8,7 +9,6 @@ import {
 } from 'framer-motion'
 import { useMemo, useRef, useState } from 'react'
 import { useWindowSize } from 'react-use'
-import { movies } from '../../content/projects/ProjectsCarousel'
 import Self from '../experience/Self'
 
 export const ProjectsCarousel = () => {
@@ -35,6 +35,7 @@ export const ProjectsCarousel = () => {
   const [carouselVariant, setCarouselVariant] = useState<'inactive' | 'active'>(
     'inactive',
   )
+
   useMotionValueEvent(scrollYProgress, 'change', (progress) => {
     if (progress >= 0.31) {
       setCarouselVariant('active')
@@ -43,7 +44,8 @@ export const ProjectsCarousel = () => {
     }
   })
 
-  const x = useTransform(scrollYProgress, [0.31, 0.8], ['66%', '-66%'])
+  const xOffset = useMemo(() => `${Math.min(width * 0.68, 1300)}px`, [width])
+  const x = useTransform(scrollYProgress, [0.31, 0.8], [xOffset, `-${xOffset}`])
 
   return (
     <>

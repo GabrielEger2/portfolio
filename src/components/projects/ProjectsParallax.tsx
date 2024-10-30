@@ -1,7 +1,7 @@
 'use client'
 
-import { projects } from '@/content/projects/ParallaxColumn'
 import { MotionValue, useTransform } from 'framer-motion'
+import { useTranslations } from 'next-intl'
 import { useEffect, useState } from 'react'
 import ParallaxColumn from './ParallaxColumn'
 
@@ -12,6 +12,8 @@ interface ProjectsParallaxProps {
 const ProjectsParallax: React.FC<ProjectsParallaxProps> = ({
   scrollYProgress,
 }) => {
+  const t = useTranslations('projects.parallaxCollumn')
+  const projects = t.raw('projectsParallax')
   const [dimension, setDimension] = useState({ width: 0, height: 0 })
 
   const { height } = dimension
