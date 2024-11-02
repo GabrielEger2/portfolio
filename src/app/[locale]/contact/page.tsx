@@ -1,3 +1,4 @@
+import EmailForm from '@/components/contact/EmailForm'
 import { useTranslations } from 'next-intl'
 import { BiLogoGithub, BiLogoLinkedin, BiMailSend } from 'react-icons/bi'
 
@@ -41,67 +42,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="w-1/2">
-          <div className="card bg-base-100 w-full h-full border border-base-200 shadow-lg">
-            <form className="card-body">
-              <div className="flex gap-4 w-full">
-                <div className="form-control w-full">
-                  <label className="label">
-                    <span className="label-text">
-                      {t.raw('contactForm.name.label')}
-                    </span>
-                  </label>
-                  <input
-                    type="text"
-                    placeholder={t.raw('contactForm.name.placeholder')}
-                    className="input input-bordered"
-                    required
-                  />
-                </div>
-                <div className="form-control w-full">
-                  <label className="label">
-                    <span className="label-text">
-                      {t.raw('contactForm.surname.label')}
-                    </span>
-                  </label>
-                  <input
-                    type="text"
-                    placeholder={t.raw('contactForm.surname.placeholder')}
-                    className="input input-bordered"
-                    required
-                  />
-                </div>
-              </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">
-                    {t.raw('contactForm.email.label')}
-                  </span>
-                </label>
-                <input
-                  type="email"
-                  placeholder={t.raw('contactForm.email.placeholder')}
-                  className="input input-bordered"
-                  required
-                />
-              </div>
-              <label className="form-control">
-                <div className="label">
-                  <span className="label-text">
-                    {t.raw('contactForm.message.label')}
-                  </span>
-                </div>
-                <textarea
-                  className="textarea textarea-bordered h-36"
-                  placeholder={t.raw('contactForm.message.placeholder')}
-                />
-              </label>
-              <div className="form-control mt-6">
-                <button className="btn btn-primary">
-                  {t('contactForm.submit')}
-                </button>
-              </div>
-            </form>
-          </div>
+          <EmailForm />
         </div>
       </div>
     </div>
