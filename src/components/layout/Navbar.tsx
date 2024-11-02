@@ -1,8 +1,8 @@
 import { useTranslations } from 'next-intl'
 import Link from 'next/link'
-import LanguageController from '../layout/LanguageController'
-import NavLink from '../layout/NavLink'
-import ThemeController from '../layout/ThemeController'
+import LanguageController from './LanguageController'
+import NavLink from './NavLink'
+import ThemeController from './ThemeController'
 
 const Navbar = () => {
   const t = useTranslations('core.header')
