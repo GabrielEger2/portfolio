@@ -4,6 +4,7 @@ import { getMessages } from 'next-intl/server'
 import { cookies } from 'next/headers'
 import { notFound } from 'next/navigation'
 
+import CookiesConsent from '@/components/layout/CookiesConsent'
 import Footer from '@/components/layout/Footer'
 import Navbar from '@/components/layout/Navbar'
 
@@ -29,6 +30,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           <Navbar />
           {children}
+          <CookiesConsent />
           <Footer />
         </NextIntlClientProvider>
       </body>

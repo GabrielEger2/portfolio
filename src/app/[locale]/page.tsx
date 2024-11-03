@@ -1,4 +1,5 @@
 import ExperiencesBlock from '@/components/home/ExperiencesBlock'
+import FrontEnd from '@/components/home/FrontEnd'
 import Hero from '@/components/home/Hero'
 import {
   MapBlock,
@@ -23,6 +24,7 @@ const Page = () => {
           <ProjectsBlock />
           <SquarePhoto />
           <MapBlock />
+          <FrontEnd />
         </div>
       </div>
     </div>
