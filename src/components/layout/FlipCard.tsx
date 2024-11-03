@@ -41,7 +41,7 @@ const FlipCard: React.FC<FlipCardProps> = ({
         onAnimationComplete={() => setIsAnimating(false)}
       >
         <span
-          className="badge badge-primary text-primary-content z-10 absolute right-1 top-1 items-center"
+          className="badge badge-accent text-accent-content z-10 absolute right-1 top-1 items-center"
           style={{ backfaceVisibility: 'hidden' }}
         >
           Click Me! <MdOutlineAdsClick size={20} className="inline-block" />

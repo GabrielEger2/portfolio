@@ -40,17 +40,17 @@ const EmailForm = () => {
         setStatus('error')
         console.error(result.error)
       }
+
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        text: '',
+      })
     } catch (error) {
       setStatus('error')
       console.error(error)
     }
-
-    setFormData({
-      firstName: '',
-      lastName: '',
-      email: '',
-      text: '',
-    })
 
     setTimeout(() => {
       setStatus(null)
@@ -58,9 +58,9 @@ const EmailForm = () => {
   }
 
   const variants = {
-    hidden: { opacity: 0, y: 20 }, // Fade down and out on exit
-    visible: { opacity: 1, y: 0 }, // Stay in position while visible
-    enter: { opacity: 0, y: -20 }, // Fade in from above
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+    enter: { opacity: 0, y: -20 },
   }
 
   return (

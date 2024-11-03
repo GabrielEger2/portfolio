@@ -27,7 +27,7 @@ const Contact = () => {
                 const IconComponent = iconComponents[social.icon]
                 return (
                   <div key={index}>
-                    <span className="inline-block p-3 text-primary-content rounded-full bg-primary">
+                    <span className="inline-block p-3 text-secondary-content rounded-full bg-secondary">
                       {IconComponent && <IconComponent />}
                     </span>
                     <h2 className="mt-4 font-medium">{social.title}</h2>
