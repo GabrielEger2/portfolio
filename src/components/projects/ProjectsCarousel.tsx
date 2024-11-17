@@ -1,12 +1,13 @@
 'use client'
 
-import { movies } from '@/content/projects/ProjectsCarousel'
 import {
   motion,
   useMotionValueEvent,
   useScroll,
   useTransform,
 } from 'framer-motion'
+import { useTranslations } from 'next-intl'
+import Image from 'next/image'
 import { useMemo, useRef, useState } from 'react'
 import { useWindowSize } from 'react-use'
 import Self from '../experience/Self'
@@ -46,6 +47,8 @@ export const ProjectsCarousel = () => {
 
   const xOffset = useMemo(() => `${Math.min(width * 0.68, 1300)}px`, [width])
   const x = useTransform(scrollYProgress, [0.31, 0.8], [xOffset, `-${xOffset}`])
+  const t = useTranslations('projects')
+  const projects = t.raw('projectsCarousel')
 
   return (
     <>
@@ -57,26 +60,32 @@ export const ProjectsCarousel = () => {
                 style={{ x }}
                 className="relative flex w-full justify-center gap-4"
               >
-                {movies.map((movie, index) => {
+                {projects.map((project, index) => {
                   return (
                     <motion.div
                       key={index}
                       className="relative aspect-[9/16] shrink-0 overflow-clip md:aspect-video w-full max-w-7xl"
                     >
-                      <img
+                      <Image
                         className="h-full w-full object-cover card"
-                        src={movie.poster}
-                        alt={movie.name}
+                        src={project.image}
+                        alt={project.title}
+                        width={1920}
+                        height={1080}
                       />
                       <motion.div
                         variants={{
                           active: { opacity: 1 },
                           inactive: { opacity: 0 },
                         }}
-                        className="absolute bottom-0 left-0 flex w-full flex-col items-center gap-4 p-5 text-lg text-white md:flex-row md:justify-between md:gap-0"
+                        className="absolute bottom-0 left-0 flex w-full flex-col items-center gap-4 p-3 md:flex-row md:justify-between md:gap-0"
                       >
-                        <p>Best video title ever</p>
-                        <button className="btn btn-primary">TERSDTE</button>
+                        <div className="badge badge-primary text-lg p-3">
+                          {project.title}
+                        </div>
+                        <button className="btn btn-primary">
+                          {project.github}
+                        </button>
                       </motion.div>
                     </motion.div>
                   )
@@ -90,21 +99,13 @@ export const ProjectsCarousel = () => {
                   style={{ scale }}
                   className="relative aspect-[9/16] shrink-0 overflow-clip md:aspect-video w-full max-w-7xl px-2"
                 >
-                  <img
+                  <Image
                     className="h-full w-full object-cover card"
-                    src={movies[0].poster}
-                    alt={movies[0].name}
+                    src={projects[0].image}
+                    alt={projects[0].title}
+                    width={1920}
+                    height={1080}
                   />
-                  <motion.div
-                    variants={{
-                      active: { opacity: 1 },
-                      inactive: { opacity: 0 },
-                    }}
-                    className="absolute bottom-0 left-0 flex w-full flex-col items-center gap-4 p-5 text-lg text-white md:flex-row md:justify-between md:gap-0"
-                  >
-                    <p>Best video title ever</p>
-                    <button className="btn btn-primary">TERSDTE</button>
-                  </motion.div>
                 </motion.div>
               </div>
             </div>

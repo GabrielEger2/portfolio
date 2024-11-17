@@ -269,7 +269,8 @@
             "title":"Hi, I'm",
             "name":"Gabriel Eger",
             "text":"Software Developer. Native in portuguese, fluent in english, struggling with french, learning 日本語. I like to read old Sci-fi books, watch random obscure films, do stupid roleplay things in D&D, watch the seasonal animes, learn 漢字 or grind on an MMO.",
-            "contactMe":"Contact Me"
+            "contactMe":"Contact Me",
+            "contactLink":"/contact"
          },
          "aboutBlock":"As a passionate full-stack software engineer, I thrive on tackling new challenges across front-end, back-end, and DevOps. I’m driven by the excitement of constantly learning and exploring new technologies to build efficient, scalable solutions."
       },
@@ -310,21 +311,48 @@
             "link":"/experience"
          }
       },
+      "projectsBlock":{
+         "projects":[
+            {
+               "title":"project1",
+               "image":"/imgs/experience/educationWallpaper.jpg"
+            },
+            {
+               "title":"project2",
+               "image":"/imgs/experience/educationWallpaper.jpg"
+            },
+            {
+               "title":"project3",
+               "image":"/imgs/experience/educationWallpaper.jpg"
+            }
+         ],
+         "link":"/projects",
+         "title":"Find More Projects"
+      },
+      "pageBlock":{
+         "navbar":"bring your ideas to life in any way you want",
+         "title":"Your Amazing Website!",
+         "text":"When Mr. Bilbo Baggins of Bag End announced that he would shortly be celebrating his eleventy-first birthday with a party of special magnificence, there was much talk and excitement in Hobbiton. Bilbo was very rich and very peculiar, and had been the wonder of the Shire for sixty years, ever since his remarkable disappearance and unexpected return.",
+         "link":"/contact",
+         "linkText":"Get Started"
+      },
       "frontEndBlock":{
-         "frontEndList":{
-            "title":"Front-End Technologies:",
-            "list":{
-               "frameworks":[
+         "title":"Front-End Technologies:",
+         "frontEndList":[
+            {
+               "Frameworks":[
                   "Angular",
+                  "NextJS",
                   {
                      "React":[
                         "Redux",
                         "Framer-Motion",
                         "Jest"
                      ]
-                  },
-                  "NextJS"
-               ],
+                  }
+               ]
+            },
+            {
                "CSS":[
                   "Bootstrap",
                   "Material-UI",
@@ -336,65 +364,84 @@
                   }
                ]
             }
-         }
+         ]
       },
-      "backEndBlock": {
-         "backEndList": {
-            "title": "Back-End Technologies:",
-            "list": {
-               "languages": [
+      "backEndBlock":{
+         "title":"Back-End Technologies:",
+         "backEndList":[
+            {
+               "Languages":[
                   "JavaScript",
                   "Python",
                   "Java",
                   "Go",
                   "C++"
-               ],
-               "frameworks": [
+               ]
+            },
+            {
+               "Frameworks":[
                   "NestJS",
                   "Express",
                   "Django",
                   "Flask",
                   "FastAPI",
                   "Gin"
-               ],
-               "databases": [
+               ]
+            },
+            {
+               "Databases":[
                   "SQL",
-                  "REDIS",
+                  "Redis",
                   "MongoDB",
                   "DynamoDB"
-               ],
-               "testing": []
-            }
-         }
+               ]
+            },
+            "Testing"
+         ]
       },
-      "devOpsBlock": {
-         "devOpsList": {
-            "title": "DevOps Technologies:",
-            "list": {
-               "Operating Systems": [
-                  "Fedora",
+      "devOpsBlock":{
+         "title":"DevOps Technologies:",
+         "devOpsList":[
+            {
+               "Operating Systems":[
+                  "Ubuntu / Debian",
                   "Ubuntu Server",
+                  "Fedora",
                   "Windows"
-               ],
-               "Git": [],
-               "Containers": [
+               ]
+            },
+            "Git",
+            {
+               "Containers":[
                   "Docker",
-                  "Docker-compose",
-                  "Kubernetes",
-                  "EKS"
-               ],
-               "CI/CD": [
-                  "GitHub Actions / CI",
+                  "Docker-Compose",
+                  "Kubernetes"
+               ]
+            },
+            {
+               "CI / CD":[
+                  "Github Actions / CI",
                   "Jenkins"
-               ],
-               "Cloud": [
+               ]
+            },
+            {
+               "Cloud":[
                   "AWS",
                   "Serverless"
                ]
+            },
+            {
+               "Monitoring":[
+                  "Prometheus",
+                  "Grafana"
+               ]
             }
-         }
+         ]
       },
-      "endBlock": "The End."
+      "contactBlock":{
+         "title":"Contact Me:",
+         "end":"The End."
+      }
    },
    "experience":{
       "work":{
@@ -725,7 +772,27 @@
                "LivePreview":""
             }
          ]
-      }
+      },
+      "projectsCarousel":[
+         {
+            "title":"project1",
+            "image":"/imgs/experience/educationWallpaper.jpg",
+            "githubLink":"",
+            "github":"GitHub Link"
+         },
+         {
+            "title":"project2",
+            "image":"/imgs/experience/educationWallpaper.jpg",
+            "githubLink":"",
+            "github":"GitHub Link"
+         },
+         {
+            "title":"project3",
+            "image":"/imgs/experience/educationWallpaper.jpg",
+            "githubLink":"",
+            "github":"GitHub Link"
+         }
+      ]
    },
    "contact":{
       "contactHeader":"Contact Me",

@@ -8,6 +8,7 @@ import {
   SquarePhoto,
   VerticalImage,
 } from '@/components/home/ImageBlocks'
+import PageBlock from '@/components/home/PageBlock'
 import ProjectsBlock from '@/components/home/ProjectsBlock'
 import SocialsBlock from '@/components/home/SocialsBlock'
 import { AboutBlock, HeaderBlock } from '@/components/home/TextBlocks'
@@ -27,6 +28,7 @@ const Page = () => {
           <SquarePhoto />
           <MapBlock />
           <FrontEndBlock />
+          <PageBlock />
           <BackDevOpsBlock />
           <ContactBlock />
         </div>

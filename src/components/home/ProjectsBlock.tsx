@@ -1,22 +1,18 @@
 'use client'
 
+import { Link } from '@/i18n/routing'
 import { AnimatePresence, motion } from 'framer-motion'
+import { useTranslations } from 'next-intl'
+import Image from 'next/image'
 import { useState } from 'react'
 import { BiArrowFromRight, BiArrowToRight } from 'react-icons/bi'
+import { FiArrowUpRight } from 'react-icons/fi'
 import Block from './Block'
-
-const projects = [
-  { id: 1, title: 'Project One', description: 'Description of project one' },
-  { id: 2, title: 'Project Two', description: 'Description of project two' },
-  {
-    id: 3,
-    title: 'Project Three',
-    description: 'Description of project three',
-  },
-]
 
 const ProjectsBlock = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
+  const t = useTranslations('home.projectsBlock')
+  const projects = t.raw('projects')
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % projects.length)
@@ -38,26 +34,29 @@ const ProjectsBlock = () => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -100 }}
             transition={{ duration: 0.5 }}
-            className="absolute w-full h-full flex items-center justify-center bg-base-300"
+            className="absolute w-full h-full flex justify-between gap-4 p-4 items-end bg-base-300"
           >
-            <div className="text-center">
-              <h3 className="text-2xl font-semibold">
-                {projects[currentIndex].title}
-              </h3>
-              <p className="mt-2">{projects[currentIndex].description}</p>
-            </div>
+            <Image
+              src={projects[currentIndex].image}
+              alt={projects[currentIndex].title}
+              layout="fill"
+              className="z-0"
+            />
+            <h1 className="text-white z-10">{projects[currentIndex].title}</h1>
+            <Link href={t('link')} className="btn btn-accent z-10">
+              {t('title')} <FiArrowUpRight />
+            </Link>
           </motion.div>
         </AnimatePresence>
-
         <button
           onClick={handlePrev}
-          className="btn btn-primary absolute left-4 top-1/2 -translate-y-1/2"
+          className="btn btn-primary absolute left-4 top-1/2"
         >
           <BiArrowFromRight size={24} />
         </button>
         <button
           onClick={handleNext}
-          className="btn btn-primary absolute right-4 top-1/2 -translate-y-1/2"
+          className="btn btn-primary absolute right-4 top-1/2"
         >
           <BiArrowToRight size={24} />
         </button>

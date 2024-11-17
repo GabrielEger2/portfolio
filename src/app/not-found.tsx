@@ -1,12 +1,5 @@
 'use client'
 
-import {
-  HomeLink,
-  NotFoundButton,
-  NotFoundText,
-  NotFoundTitle,
-  noiseImage,
-} from '@/content/notFound/NotFound'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 
@@ -19,16 +12,12 @@ const NotFound = () => {
         <div className="relative overflow-hidden">
           <div className="min-h-screen flex justify-center items-center bg-base-300 py-20 px-4">
             <div className="w-full max-w-7xl flex flex-col items-center">
-              <h1 className="text-center text-6xl font-bold">
-                {NotFoundTitle}
-              </h1>
+              <h1 className="text-center text-6xl font-bold">404 Not Found</h1>
               <p className="text-center mt-4 text-xl font-semibold">
-                {NotFoundText}
+                The page you are looking for, unfortunately, does not exist
               </p>
-              <Link href={HomeLink}>
-                <button className="btn btn-secondary mt-6">
-                  {NotFoundButton}
-                </button>
+              <Link href="/">
+                <button className="btn btn-secondary mt-6">Go Back Home</button>
               </Link>
             </div>
           </div>
@@ -44,7 +33,7 @@ const NotFound = () => {
               repeatType: 'mirror',
             }}
             style={{
-              backgroundImage: `url(${noiseImage})`,
+              backgroundImage: 'url(/imgs/notFound/noise.jpg)',
             }}
             className="pointer-events-none absolute -inset-[100%] opacity-[8%]"
           />
