@@ -258,10 +258,143 @@
          "headerSurname":"Eger",
          "headerTitles":[
             "Full Stack Developer",
-            "Computer Science Student",
-            "Self-Learner"
+            "Self-Learner",
+            "Tech Enthusiast",
+            "Problem Solver",
+            "Team Player"
          ]
-      }
+      },
+      "textBlocks":{
+         "headerBlock":{
+            "title":"Hi, I'm",
+            "name":"Gabriel Eger",
+            "text":"Software Developer. Native in portuguese, fluent in english, struggling with french, learning 日本語. I like to read old Sci-fi books, watch random obscure films, do stupid roleplay things in D&D, watch the seasonal animes, learn 漢字 or grind on an MMO.",
+            "contactMe":"Contact Me"
+         },
+         "aboutBlock":"As a passionate full-stack software engineer, I thrive on tackling new challenges across front-end, back-end, and DevOps. I’m driven by the excitement of constantly learning and exploring new technologies to build efficient, scalable solutions."
+      },
+      "imageBlocks":{
+         "verticalImage":{
+            "image":"/imgs/home/verticalPhoto.jpg",
+            "title":"Gabriel Vertical Photo"
+         },
+         "mapBlock":{
+            "image":"/imgs/home/globeImage.jpg",
+            "title":"World Map",
+            "text":"Available to work from all around the world"
+         },
+         "squarePhoto":{
+            "image":"/imgs/home/squarePhoto.jpg",
+            "title":"Gabriel Square Photo"
+         }
+      },
+      "socialBlocks":{
+         "githubLink":"https://github.com/GabrielEger2",
+         "linkedinLink":"https://www.linkedin.com/in/gabrieleger/",
+         "leetCodeLink":"https://leetcode.com/GabrielEger2"
+      },
+      "experiencesBlock":{
+         "work":{
+            "title":"Work Experience",
+            "description":"with more than 2 years of experience in the industry, I've worked with a variety of technologies and frameworks, from React to Angular, from Node to Django, from Docker to Kubernetes, from on-site webservers to serverless cloud",
+            "link":"/experience"
+         },
+         "formal":{
+            "title":"Formal Education",
+            "description":"As much as I love to learn by doing, I also belive in the importance of formal education. I'm currently pursuing a degree in Information Systems at the PUC Minas University. I also graduated in IFSC in a high school technical course",
+            "link":"/experience"
+         },
+         "self":{
+            "title":"Self-Learning",
+            "description":"I'm always learning something new, be it a new language, a new framework, a new tool, or a new concept. I'm currently pursuing a second AWS certification, learning about Kubernetes and Docker, and improving my Japanese",
+            "link":"/experience"
+         }
+      },
+      "frontEndBlock":{
+         "frontEndList":{
+            "title":"Front-End Technologies:",
+            "list":{
+               "frameworks":[
+                  "Angular",
+                  {
+                     "React":[
+                        "Redux",
+                        "Framer-Motion",
+                        "Jest"
+                     ]
+                  },
+                  "NextJS"
+               ],
+               "CSS":[
+                  "Bootstrap",
+                  "Material-UI",
+                  "Sass",
+                  {
+                     "TailwindCSS":[
+                        "DaisyUI"
+                     ]
+                  }
+               ]
+            }
+         }
+      },
+      "backEndBlock": {
+         "backEndList": {
+            "title": "Back-End Technologies:",
+            "list": {
+               "languages": [
+                  "JavaScript",
+                  "Python",
+                  "Java",
+                  "Go",
+                  "C++"
+               ],
+               "frameworks": [
+                  "NestJS",
+                  "Express",
+                  "Django",
+                  "Flask",
+                  "FastAPI",
+                  "Gin"
+               ],
+               "databases": [
+                  "SQL",
+                  "REDIS",
+                  "MongoDB",
+                  "DynamoDB"
+               ],
+               "testing": []
+            }
+         }
+      },
+      "devOpsBlock": {
+         "devOpsList": {
+            "title": "DevOps Technologies:",
+            "list": {
+               "Operating Systems": [
+                  "Fedora",
+                  "Ubuntu Server",
+                  "Windows"
+               ],
+               "Git": [],
+               "Containers": [
+                  "Docker",
+                  "Docker-compose",
+                  "Kubernetes",
+                  "EKS"
+               ],
+               "CI/CD": [
+                  "GitHub Actions / CI",
+                  "Jenkins"
+               ],
+               "Cloud": [
+                  "AWS",
+                  "Serverless"
+               ]
+            }
+         }
+      },
+      "endBlock": "The End."
    },
    "experience":{
       "work":{

@@ -42,7 +42,9 @@ const Contact = () => {
           </div>
         </div>
         <div className="w-1/2">
-          <EmailForm />
+          <div className="card bg-base-100 w-full h-full border border-base-200 shadow-lg">
+            <EmailForm />
+          </div>
         </div>
       </div>
     </div>

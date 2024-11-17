@@ -1,5 +1,7 @@
+import BackDevOpsBlock from '@/components/home/BackDevOpsBlock'
+import ContactBlock from '@/components/home/ContactBlock'
 import ExperiencesBlock from '@/components/home/ExperiencesBlock'
-import FrontEnd from '@/components/home/FrontEnd'
+import FrontEndBlock from '@/components/home/FrontEndBlock'
 import Hero from '@/components/home/Hero'
 import {
   MapBlock,
@@ -15,7 +17,7 @@ const Page = () => {
     <div>
       <Hero />
       <div className="min-h-screen px-4 py-12">
-        <div className="mx-auto grid max-w-7xl grid-cols-12 gap-4 ">
+        <div className="mx-auto grid max-w-7xl grid-cols-12 gap-4 mt-10">
           <VerticalImage />
           <HeaderBlock />
           <SocialsBlock />
@@ -24,7 +26,9 @@ const Page = () => {
           <ProjectsBlock />
           <SquarePhoto />
           <MapBlock />
-          <FrontEnd />
+          <FrontEndBlock />
+          <BackDevOpsBlock />
+          <ContactBlock />
         </div>
       </div>
     </div>

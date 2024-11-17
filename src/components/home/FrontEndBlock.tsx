@@ -1,6 +1,6 @@
 import Block from './Block'
 
-const FrontEnd = () => {
+const FrontEndBlock = () => {
   return (
     <>
       <Block className="col-span-3 row-span-3 p-6">
@@ -23,6 +23,9 @@ const FrontEnd = () => {
                   </li>
                   <li>
                     <a>Framer Motion</a>
+                  </li>
+                  <li>
+                    <a>Jest</a>
                   </li>
                 </ul>
               </li>
@@ -50,12 +53,9 @@ const FrontEnd = () => {
           </li>
         </ul>
       </Block>
-      <Block className="col-span-3 row-span-1">23</Block>
-      <Block className="col-span-6 row-span-3">23</Block>
-      <Block className="col-span-3 row-span-1">23</Block>
-      <Block className="col-span-3 row-span-1">23</Block>
+      <Block className="col-span-9 row-span-3 bg-base-300" />
     </>
   )
 }
 
-export default FrontEnd
+export default FrontEndBlock

@@ -4,13 +4,11 @@ import Block from './Block'
 
 const AboutBlock = () => (
   <Block className="col-span-3 row-span-2 p-6">
-    <p className="font-semibold text-2xl">
-      As a passionate full-stack software engineer,
-      <span className="font-normal text-2xl">
-        I thrive on tackling new challenges across front-end, back-end, and
-        DevOps. I’m driven by the excitement of constantly learning and
-        exploring new technologies to build efficient, scalable solutions.
-      </span>
+    <p className="text-2xl">
+      As a passionate full-stack software engineer, I thrive on tackling new
+      challenges across front-end, back-end, and DevOps. I’m driven by the
+      excitement of constantly learning and exploring new technologies to build
+      efficient, scalable solutions.
     </p>
   </Block>
 )
