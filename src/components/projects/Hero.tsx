@@ -8,7 +8,7 @@ import { BiLink } from 'react-icons/bi'
 import ProjectsParallax from './ProjectsParallax'
 
 const Hero = () => {
-  const t = useTranslations('projects.parallaxCollumn.hero')
+  const t = useTranslations('projects.hero')
 
   const targetRef = useRef(null)
   const { scrollYProgress } = useScroll({

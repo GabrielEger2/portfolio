@@ -12,8 +12,8 @@ interface ProjectsParallaxProps {
 const ProjectsParallax: React.FC<ProjectsParallaxProps> = ({
   scrollYProgress,
 }) => {
-  const t = useTranslations('projects.parallaxCollumn')
-  const projects = t.raw('projectsParallax')
+  const t = useTranslations('projects')
+  const projects = t.raw('projects')
   const [dimension, setDimension] = useState({ width: 0, height: 0 })
 
   const { height } = dimension
@@ -43,34 +43,34 @@ const ProjectsParallax: React.FC<ProjectsParallaxProps> = ({
       <div className="flex gap-2 p-2 relative -translate-y-96">
         <ParallaxColumn
           projects={[
-            projects[0],
             projects[1],
             projects[2],
+            projects[5],
+            projects[6],
+            projects[4],
             projects[3],
-            projects[0],
-            projects[1],
           ]}
           y={y}
         />
         <ParallaxColumn
           projects={[
-            projects[0],
+            projects[2],
+            projects[5],
+            projects[6],
             projects[3],
-            projects[2],
             projects[1],
-            projects[2],
             projects[0],
           ]}
           y={y2}
         />
         <ParallaxColumn
           projects={[
-            projects[0],
-            projects[1],
             projects[3],
-            projects[0],
+            projects[5],
             projects[2],
-            projects[3],
+            projects[6],
+            projects[0],
+            projects[4],
           ]}
           y={y3}
         />

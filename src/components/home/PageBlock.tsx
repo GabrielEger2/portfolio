@@ -6,7 +6,7 @@ import { useState } from 'react'
 import Block from './Block'
 
 const PageBlock = () => {
-  const [theme, setTheme] = useState('light')
+  const [theme, setTheme] = useState('lemonade')
   const t = useTranslations('')
   const themes = t.raw('layout.themes')
 

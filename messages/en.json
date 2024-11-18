@@ -705,74 +705,120 @@
       }
    },
    "projects":{
-      "parallaxCollumn":{
-         "hero":{
-            "title":"Explore All the Projects I've Built so Far",
-            "github":"GitHub Link",
-            "githubLink":"https://github.com/GabrielEger2",
-            "japanesePhrase":"塵も積もれば山となる",
-            "japaneseTranslation":"-Even dust, when piled up, becomes a mountain"
-         },
-         "projectsParallax":[
-            {
-               "title":"GOBanq",
-               "description":"Gobanq is a banking project built with a modern microservice architecture, the platform allows users to create and manage multiple accounts in different currencies, offering a flexible banking solution that supports international financial operations.",
-               "technologies":[
-                  "Golang",
-                  "AWS RDS",
-                  "Kubernetes",
-                  "gRPC",
-                  "Gin",
-                  "SQLC",
-                  "AWS EKS",
-                  "Docker",
-                  "Docker-compose"
-               ],
-               "githubLink":"https://github.com/GabrielEger2/gobanq",
-               "LivePreview":""
-            },
-            {
-               "title":"Emerald Tools Mod",
-               "description":"Simple Minecraft mod I created. It introduces a set of emerald tools to the game, including an emerald paxel, a multi-purpose tool. All items can be crafted in-game and come with unique custom specifications.",
-               "technologies":[
-                  "Java",
-                  "Minecraft FORGE"
-               ],
-               "githubLink":"https://github.com/GabrielEger2/emerald-tools",
-               "LivePreview":""
-            },
-            {
-               "title":"Portfolio Website",
-               "description":"A personal portfolio project showcasing my work and skills, utilizing best practices in cloud and server-side front-end development for optimal scalability and performance.",
-               "technologies":[
-                  "NextJS",
-                  "TailwindCSS",
-                  "DaisyUI",
-                  "Framer-motion",
-                  "React-icons",
-                  "AWS",
-                  "OpenNext"
-               ],
-               "githubLink":"https://github.com/GabrielEger2/portfolio",
-               "LivePreview":"http://localhost:3000"
-            },
-            {
-               "title":"Django Staff",
-               "description":"An HR management project where users can create companies, manage employees, documents, overtime records, and departments. Designed to streamline HR processes for small to medium-sized businesses.",
-               "technologies":[
-                  "Django",
-                  "HTML",
-                  "Bootstrap",
-                  "Django ORM",
-                  "EC2",
-                  "RDS",
-                  "Docker"
-               ],
-               "githubLink":"https://github.com/GabrielEger2/django-staff",
-               "LivePreview":""
-            }
-         ]
+      "hero":{
+         "title":"Explore All the Projects I've Built so Far",
+         "github":"GitHub Link",
+         "githubLink":"https://github.com/GabrielEger2",
+         "japanesePhrase":"塵も積もれば山となる",
+         "japaneseTranslation":"-Even dust, when piled up, becomes a mountain"
       },
+      "languagesTags":[
+         "JavaScript",
+         "Python",
+         "Java",
+         "Go",
+         "TypeScript"
+      ],
+      "projects":[
+         {
+            "title":"GOBanq",
+            "description":"Gobanq is a banking project built with a modern microservice architecture, the platform allows users to create and manage multiple accounts in different currencies, offering a flexible banking solution that supports international financial operations.",
+            "technologies":[
+               "Golang",
+               "AWS RDS",
+               "Kubernetes",
+               "gRPC",
+               "Gin",
+               "SQLC",
+               "AWS EKS",
+               "Docker",
+               "Docker-compose"
+            ],
+            "githubLink":"https://github.com/GabrielEger2/gobanq",
+            "languages": ["GO"]
+         },
+         {
+            "title":"Emerald Tools Mod",
+            "description":"Simple Minecraft mod I created. It introduces a set of emerald tools to the game, including an emerald paxel, a multi-purpose tool. All items can be crafted in-game and come with unique custom specifications.",
+            "technologies":[
+               "Java",
+               "Minecraft FORGE"
+            ],
+            "githubLink":"https://github.com/GabrielEger2/emerald-tools",
+            "languages": ["Java"]
+         },
+         {
+            "title":"Portfolio Website",
+            "description":"A personal portfolio project showcasing my work and skills, utilizing best practices in cloud and server-side front-end development for optimal scalability and performance.",
+            "technologies":[
+               "NextJS",
+               "TailwindCSS",
+               "DaisyUI",
+               "Framer-motion",
+               "React-icons",
+               "AWS",
+               "OpenNext"
+            ],
+            "githubLink":"https://github.com/GabrielEger2/portfolio",
+            "languages": ["JavaScript"]
+         },
+         {
+            "title":"Papa's Pizza",
+            "description":"Mock pizza delivery website project built with React and TailwindCSS. Users can view the menu, place orders, and track their delivery status. The platform also includes an admin panel for managing orders and updating the menu.",
+            "technologies":[
+               "React",
+               "TailwindCSS",
+               "JavaScript"
+            ],
+            "githubLink":"https://github.com/GabrielEger2/papas-pizza",
+            "languages": ["JavaScript"]
+         },
+         {
+            "title":"Django Staff",
+            "description":"An HR management project where users can create companies, manage employees, documents, overtime records, and departments. Designed to streamline HR processes for small to medium-sized businesses.",
+            "technologies":[
+               "Django",
+               "HTML",
+               "Bootstrap",
+               "Django ORM",
+               "EC2",
+               "RDS",
+               "Docker"
+            ],
+            "githubLink":"https://github.com/GabrielEger2/django-staff",
+            "languages": ["Python"]
+         },
+         {
+            "title": "NestNet",
+            "description": "A social network project built with NestJS and MongoDB. Users can create posts, like, comment, and share content with friends. The platform also includes a chat feature for real-time communication.",
+            "technologies": [
+               "NestJS",
+               "MongoDB",
+               "TypeScript",
+               "Websockets",
+               "Microservices",
+               "Docker",
+               "Appolo",
+               "GraphQL"
+            ],
+            "githubLink": "https://github.com/GabrielEger2/nest-net",
+            "languages": ["JavaScript"]
+         },
+         {
+            "title": "日本-Classics",
+            "description": "MERN old Japanese cars marketplace project. Users can create accounts, post cars for sale, and browse listings. The platform includes a search feature, user authentication, and a responsive design.",
+            "technologies": [
+               "React",
+               "MongoDB",
+               "TypeScript",
+               "Express",
+               "React-Router",
+               "Express"
+            ],
+            "githubLink": "https://github.com/GabrielEger2/nihon-classics",
+            "languages": ["JavaScript"]
+         }
+      ],
       "projectsCarousel":[
          {
             "title":"project1",

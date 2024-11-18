@@ -18,7 +18,7 @@ const ParallaxColumn: React.FC<ParallaxColumnProps> = ({ projects, y }) => {
         return (
           <div
             key={index}
-            className="card h-[600px] p-10 border border-base-300 shadow-lg"
+            className="card h-[470px] p-10 border border-base-300 shadow-lg"
           >
             <div className="h-full flex flex-col justify-between">
               <div>
@@ -41,9 +41,6 @@ const ParallaxColumn: React.FC<ParallaxColumnProps> = ({ projects, y }) => {
                 </div>
                 <button className="btn btn-secondary btn-outline mt-4">
                   Github Link
-                </button>
-                <button className="btn btn-secondary btn-outline mt-2">
-                  Live Preview
                 </button>
               </div>
             </div>

@@ -10,7 +10,7 @@ import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import { useMemo, useRef, useState } from 'react'
 import { useWindowSize } from 'react-use'
-import Self from '../experience/Self'
+import Projects from './Projects'
 
 export const ProjectsCarousel = () => {
   const { width, height } = useWindowSize()
@@ -113,7 +113,7 @@ export const ProjectsCarousel = () => {
         </div>
       </motion.div>
       <div className="translate-y-6 md:-translate-y-52 lg:-translate-y-24">
-        <Self />
+        <Projects />
       </div>
     </>
   )
