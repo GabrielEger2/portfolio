@@ -1,8 +1,8 @@
 'use client'
 
-import Cookies from 'js-cookie'
-import { useTranslations } from 'next-intl'
-import { SetStateAction } from 'react'
+import { useLocale, useTranslations } from 'next-intl'
+import { useRouter } from 'next/navigation'
+import { SetStateAction, useTransition } from 'react'
 import { FaArrowDown } from 'react-icons/fa'
 import { IoLanguage } from 'react-icons/io5'
 
@@ -13,12 +13,17 @@ interface Language {
 
 const LanguageController = () => {
   const t = useTranslations('layout')
+  const [isPending, startTransition] = useTransition()
+  const router = useRouter()
+  const localActive = useLocale()
+
   const handleLanguageChange = (event: {
     target: { value: SetStateAction<string> }
   }) => {
-    if (Cookies.get('cookieConsent') === 'accepted') {
-      Cookies.set('NEXT_LOCALE', event.target.value as string)
-    }
+    const locale = event.target.value as string
+    startTransition(() => {
+      router.replace(`/${locale}`)
+    })
   }
 
   return (
@@ -39,6 +44,8 @@ const LanguageController = () => {
               className="btn btn-sm btn-block btn-ghost justify-start"
               aria-label={language.name}
               value={language.value}
+              defaultValue={localActive}
+              disabled={isPending}
               onChange={handleLanguageChange}
             />
           </li>

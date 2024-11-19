@@ -37,11 +37,11 @@ const PageBlock = () => {
         </div>
         <div className="h-full flex justify-center items-center">
           <div className="flex flex-row hero-content bg-base-200 card m-6">
-            <div
-              className="w-96 h-64 bg-primary card"
-            />
-            <div className='p-6'>
-              <h1 className="text-5xl font-bold">{t('home.pageBlock.title')}</h1>
+            <div className="w-96 h-64 bg-primary card" />
+            <div className="p-6">
+              <h1 className="text-5xl font-bold">
+                {t('home.pageBlock.title')}
+              </h1>
               <p className="py-6">{t('home.pageBlock.text')}</p>
               <Link href={t('home.pageBlock.link')} className="btn btn-primary">
                 {t('home.pageBlock.linkText')}
