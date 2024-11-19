@@ -75,30 +75,30 @@
                   "id":"home",
                   "title":"Home",
                   "href":"/",
-                  "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit varius ipsum",
+                  "description":"Home page with a brief introduction to my skills, experiences, and projects.",
                   "topics":[
                      {
-                        "title":"Topics 1",
+                        "title":"About Me",
                         "items":[
-                           "Topic 1",
-                           "Topic 2",
-                           "Topic 3"
+                           "Info",
+                           "Interests",
+                           "Social"
                         ]
                      },
                      {
-                        "title":"Topics 2",
+                        "title":"Experience and Projects",
                         "items":[
-                           "Topic 1",
-                           "Topic 2",
-                           "Topic 3"
+                           "Experiences",
+                           "Info",
+                           "Projects"
                         ]
                      },
                      {
-                        "title":"Topics 3",
+                        "title":"Technologies I Use",
                         "items":[
-                           "Topic 1",
-                           "Topic 2",
-                           "Topic 3"
+                           "Front-End",
+                           "Back-End",
+                           "DevOps"
                         ]
                      }
                   ]
@@ -440,7 +440,8 @@
       },
       "contactBlock":{
          "title":"Contact Me:",
-         "end":"The End."
+         "end":"Check More",
+         "link":"/experience"
       }
    },
    "experience":{
@@ -716,7 +717,7 @@
          "JavaScript",
          "Python",
          "Java",
-         "Go",
+         "GO",
          "TypeScript"
       ],
       "projects":[

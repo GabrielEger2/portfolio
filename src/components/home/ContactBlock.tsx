@@ -1,4 +1,6 @@
+import { Link } from '@/i18n/routing'
 import { useTranslations } from 'next-intl'
+import { FiArrowUpRight } from 'react-icons/fi'
 import EmailForm from '../contact/EmailForm'
 import Block from './Block'
 
@@ -16,9 +18,14 @@ const ContactBlock = () => {
         </div>
       </Block>
       <Block className="col-span-6 row-span-2 ">
-        <div className="flex justify-center items-center h-full">
+        <Link
+          href={t('link')}
+          className="flex justify-center items-center h-full"
+        >
           <h1 className="text-2xl font-semibold">{t('end')}</h1>
-        </div>
+          {'  '}
+          <FiArrowUpRight size={24} />
+        </Link>
       </Block>
     </>
   )
