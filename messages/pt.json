@@ -2,31 +2,31 @@
    "core":{
       "footer":{
          "title":"Gabriel Eger",
-         "description":"© 2024 MIT License.",
+         "description":"© 2024 Licença MIT.",
          "footerLinks":[
             {
-               "title":"Website Sections",
+               "title":"Seções do Site",
                "links":[
                   {
-                     "title":"Home",
+                     "title":"Início",
                      "href":"/"
                   },
                   {
-                     "title":"Experience",
+                     "title":"Experiência",
                      "href":"/experience"
                   },
                   {
-                     "title":"Projects",
+                     "title":"Projetos",
                      "href":"/projects"
                   },
                   {
-                     "title":"Contact Me",
+                     "title":"Contato",
                      "href":"/contact"
                   }
                ]
             },
             {
-               "title":"Technologies Used",
+               "title":"Tecnologias Utilizadas",
                "links":[
                   {
                      "title":"Next.js",
@@ -47,10 +47,10 @@
                ]
             },
             {
-               "title":"Social Accounts",
+               "title":"Contas Sociais",
                "links":[
                   {
-                     "title":"Linkedin",
+                     "title":"LinkedIn",
                      "href":"https://www.linkedin.com/in/gabrieleger/"
                   },
                   {
@@ -69,32 +69,32 @@
          "NavbarTitle":"GEDev",
          "NavbarTitleLink":"/",
          "NavbarLinks":{
-            "linkText":"Find out more",
+            "linkText":"Saiba mais",
             "content":[
                {
                   "id":"home",
-                  "title":"Home",
+                  "title":"Início",
                   "href":"/",
-                  "description":"Home page with a brief introduction to my skills, experiences, and projects.",
+                  "description":"Página inicial com uma breve introdução às minhas habilidades, experiências e projetos.",
                   "topics":[
                      {
-                        "title":"About Me",
+                        "title":"Sobre Mim",
                         "items":[
-                           "Info",
-                           "Interests",
-                           "Social"
+                           "Informações",
+                           "Interesses",
+                           "Sociais"
                         ]
                      },
                      {
-                        "title":"Experience and Projects",
+                        "title":"Experiência e Projetos",
                         "items":[
-                           "Experiences",
-                           "Info",
-                           "Projects"
+                           "Experiências",
+                           "Informações",
+                           "Projetos"
                         ]
                      },
                      {
-                        "title":"Technologies I Use",
+                        "title":"Tecnologias que Uso",
                         "items":[
                            "Front-End",
                            "Back-End",
@@ -105,30 +105,30 @@
                },
                {
                   "id":"experience",
-                  "title":"Experience",
+                  "title":"Experiência",
                   "href":"/experience",
-                  "description":"Explore my career, education, and self-learning experiences in this comprehensive overview",
+                  "description":"Explore minha carreira, educação e experiências de aprendizado autodidata neste panorama abrangente.",
                   "topics":[
                      {
-                        "title":"Work Experience",
+                        "title":"Experiência Profissional",
                         "items":[
-                           "FreeLance",
+                           "Freelance",
                            "ClearViction",
                            "MundialMix"
                         ]
                      },
                      {
-                        "title":"Formal Education",
+                        "title":"Educação Formal",
                         "items":[
-                           "Technical School",
-                           "Bsc CS"
+                           "Escola Técnica",
+                           "Faculdade"
                         ]
                      },
                      {
-                        "title":"Self-Learning",
+                        "title":"Autodidatismo",
                         "items":[
-                           "Courses",
-                           "Certificates",
+                           "Cursos",
+                           "Certificados",
                            "Bootcamps"
                         ]
                      }
@@ -136,36 +136,36 @@
                },
                {
                   "id":"projects",
-                  "title":"Projects",
+                  "title":"Projetos",
                   "href":"/projects",
-                  "description":"Discover a curated selection of my projects, showcasing my skills in software development.",
+                  "description":"Descubra uma seleção dos meus projetos, destacando minhas habilidades em desenvolvimento de software.",
                   "topics":[
                      {
-                        "title":"Projects List",
+                        "title":"Lista de Projetos",
                         "items":[
-                           "GitHub Link",
-                           "Projects Display"
+                           "Link do GitHub",
+                           "Exibição de Projetos"
                         ]
                      },
                      {
-                        "title":"Top Projects",
+                        "title":"Principais Projetos",
                         "items":[
-                           "Projects Carousel",
-                           "Showcase"
+                           "Carrossel de Projetos",
+                           "Destaques"
                         ]
                      },
                      {
-                        "title":"All Projects",
+                        "title":"Todos os Projetos",
                         "items":[
-                           "Stack Filter",
-                           "Language Filter"
+                           "Filtro por Stack",
+                           "Filtro por Linguagem"
                         ]
                      }
                   ]
                },
                {
                   "id":"contactMe",
-                  "title":"Contact Me",
+                  "title":"Contato",
                   "href":"/contact"
                }
             ]
@@ -173,18 +173,18 @@
       }
    },
    "layout":{
-      "themesTitle":"Theme",
+      "themesTitle":"Tema",
       "themes":[
          {
-            "name":"Light",
+            "name":"Claro",
             "value":"light"
          },
          {
-            "name":"Dark",
+            "name":"Escuro",
             "value":"dark"
          },
          {
-            "name":"Corporate",
+            "name":"Corporativo",
             "value":"corporate"
          },
          {
@@ -200,35 +200,35 @@
             "value":"cyberpunk"
          },
          {
-            "name":"Forest",
+            "name":"Floresta",
             "value":"forest"
          },
          {
-            "name":"Winter",
+            "name":"Inverno",
             "value":"winter"
          },
          {
-            "name":"Sunset",
+            "name":"Pôr do Sol",
             "value":"sunset"
          },
          {
-            "name":"Wire Frame",
+            "name":"Desenho",
             "value":"wireframe"
          },
          {
-            "name":"Retro",
+            "name":"Retrô",
             "value":"retro"
          },
          {
-            "name":"Lemonade",
+            "name":"Limonada",
             "value":"lemonade"
          },
          {
-            "name":"Luxury",
+            "name":"Luxo",
             "value":"luxury"
          },
          {
-            "name":"Pitch Black",
+            "name":"Preto Total",
             "value":"black"
          }
       ],
@@ -253,40 +253,39 @@
    },
    "home":{
       "hero":{
-         "headerBeginning":"Hello World! I'm",
+         "headerBeginning":"Hello World! Eu sou",
          "headerName":"Gabriel",
          "headerSurname":"Eger",
          "headerTitles":[
-            "Full Stack Developer",
-            "Self-Learner",
-            "Tech Enthusiast",
-            "Problem Solver",
-            "Team Player"
+            "Desenvolvedor Full Stack",
+            "Autodidata",
+            "Entusiasta de Tecnologia",
+            "Apaixonado por Aprender"
          ]
       },
       "textBlocks":{
          "headerBlock":{
-            "title":"Hi, I'm",
+            "title":"Oi, eu sou",
             "name":"Gabriel Eger",
-            "text":"Software Developer. Native in portuguese, fluent in english, struggling with french, learning 日本語. I like to read old Sci-fi books, watch random films, watch the seasonal animes, learn 漢字 or diving into the latest RPG.",
-            "contactMe":"Contact Me",
+            "text":"Desenvolvedor de Software. Nativo em português, fluente em inglês, arranhando um francês, aprendendo 日本語. Gosto de ler livros antigos de ficção científica, assistir filmes aleatórios, acompanhar animes sazonais, aprender 漢字 ou mergulhar no mais recente RPG.",
+            "contactMe":"Entre em Contato",
             "contactLink":"/contact"
          },
-         "aboutBlock":"As a passionate full-stack software engineer, I thrive on tackling new challenges across front-end, back-end, and DevOps. I’m driven by the excitement of constantly learning and exploring new technologies to build efficient, scalable solutions."
+         "aboutBlock":"Como um apaixonado engenheiro de software full-stack, eu prospero enfrentando novos desafios em front-end, back-end e DevOps. Sou movido pela emoção de aprender continuamente e explorar novas tecnologias para construir soluções eficientes e escaláveis."
       },
       "imageBlocks":{
          "verticalImage":{
             "image":"/imgs/home/verticalPhoto.jpg",
-            "title":"Gabriel Vertical Photo"
+            "title":"Foto Vertical do Gabriel"
          },
          "mapBlock":{
             "image":"/imgs/home/globeImage.jpg",
-            "title":"World Map",
-            "text":"Available to work from all around the world"
+            "title":"Mapa do Mundo",
+            "text":"Disponível para trabalhar de qualquer lugar do mundo"
          },
          "squarePhoto":{
             "image":"/imgs/home/squarePhoto.jpg",
-            "title":"Gabriel Square Photo"
+            "title":"Foto Quadrada do Gabriel"
          }
       },
       "socialBlocks":{
@@ -296,48 +295,48 @@
       },
       "experiencesBlock":{
          "work":{
-            "title":"Work Experience",
-            "description":"with more than 2 years of experience in the industry, I've worked with a variety of technologies and frameworks, from React to Angular, from Node to Django, from Docker to Kubernetes, from on-site webservers to serverless cloud",
+            "title":"Experiência Profissional",
+            "description":"Com mais de 2 anos de experiência na indústria, trabalhei com uma variedade de tecnologias e frameworks, desde React a Angular, de Node a Django, de Docker a Kubernetes, de servidores web locais a soluções sem servidor em nuvem",
             "link":"/experience"
          },
          "formal":{
-            "title":"Formal Education",
-            "description":"As much as I love to learn by doing, I also belive in the importance of formal education. I'm currently pursuing a degree in Information Systems at the PUC Minas University. I also graduated in IFSC in a high school technical course",
+            "title":"Educação Formal",
+            "description":"Por mais que eu ame aprender na prática, também acredito na importância da educação formal. Atualmente, estou cursando Sistemas de Informação na PUC Minas. Também me formei no IFSC em um curso técnico de ensino médio",
             "link":"/experience"
          },
          "self":{
-            "title":"Self-Learning",
-            "description":"I'm always learning something new, be it a new language, a new framework, a new tool, or a new concept. I'm currently pursuing a second AWS certification, learning about Kubernetes and Docker, and improving my Japanese",
+            "title":"Autodidatismo",
+            "description":"Estou sempre aprendendo algo novo, seja um novo idioma, um novo framework, uma nova ferramenta ou um novo conceito. Atualmente, estou buscando uma segunda certificação AWS, aprendendo sobre Kubernetes e Docker, e aprimorando meu japonês",
             "link":"/experience"
          }
       },
       "projectsBlock":{
          "projects":[
             {
-               "title":"project1",
+               "title":"projeto1",
                "image":"/imgs/experience/educationWallpaper.jpg"
             },
             {
-               "title":"project2",
+               "title":"projeto2",
                "image":"/imgs/experience/educationWallpaper.jpg"
             },
             {
-               "title":"project3",
+               "title":"projeto3",
                "image":"/imgs/experience/educationWallpaper.jpg"
             }
          ],
          "link":"/projects",
-         "title":"Find More Projects"
+         "title":"Descubra Mais Projetos"
       },
       "pageBlock":{
-         "navbar":"bring your ideas to life in any way you want",
-         "title":"Your Amazing Website!",
-         "text":"When Mr. Bilbo Baggins of Bag End announced that he would shortly be celebrating his eleventy-first birthday with a party of special magnificence, there was much talk and excitement in Hobbiton. Bilbo was very rich and very peculiar, and had been the wonder of the Shire for sixty years, ever since his remarkable disappearance and unexpected return.",
+         "navbar":"traga suas ideias à vida de qualquer forma que você quiser",
+         "title":"Seu Website Incrível!",
+         "text":"Quando o Sr. Bilbo Bolseiro de Bolsão anunciou que logo celebraria seu centésimo décimo primeiro aniversário com uma festa de magnificência especial, houve muita conversa e empolgação em Hobbiton. Bilbo era muito rico e muito peculiar, e era a maravilha do Condado por sessenta anos, desde seu notável desaparecimento e retorno inesperado.",
          "link":"/contact",
-         "linkText":"Get Started"
+         "linkText":"Comece Agora"
       },
       "frontEndBlock":{
-         "title":"Front-End Technologies:",
+         "title":"Tecnologias de Front-End:",
          "frontEndList":[
             {
                "Frameworks":[
@@ -367,7 +366,7 @@
          ]
       },
       "backEndBlock":{
-         "title":"Back-End Technologies:",
+         "title":"Tecnologias de Back-End:",
          "backEndList":[
             {
                "Languages":[
@@ -396,11 +395,11 @@
                   "DynamoDB"
                ]
             },
-            "Testing"
+            "Testes"
          ]
       },
       "devOpsBlock":{
-         "title":"DevOps Technologies:",
+         "title":"Tecnologias de DevOps:",
          "devOpsList":[
             {
                "Operating Systems":[
@@ -439,24 +438,24 @@
          ]
       },
       "contactBlock":{
-         "title":"Contact Me:",
-         "end":"Check More",
+         "title":"Entre em Contato:",
+         "end":"Veja Mais",
          "link":"/experience"
       }
    },
    "experience":{
       "work":{
-         "subTitle":"My Professional Background",
-         "title":"Work Experience",
+         "subTitle":"Meu Histórico Profissional",
+         "title":"Experiência Profissional",
          "image":"/imgs/experience/workingWallpaper.jpg",
          "child":"Work",
          "experiences":[
             {
                "image":"/imgs/experience/freeLanceWork.jpg",
-               "title":"FreeLance Work",
-               "time":"2023 - On going",
-               "local":"Remote",
-               "description":"I have been working as a freelancer for the past 2 years...",
+               "title":"Trabalho Freelancer",
+               "time":"2023 - Atualmente",
+               "local":"Remoto",
+               "description":"Tenho trabalhado como freelancer nos últimos 2 anos...",
                "technologies":[
                   "React",
                   "Next.js",
@@ -468,11 +467,11 @@
             {
                "image":"/imgs/experience/clearVictionWork.jpg",
                "title":"ClearViction",
-               "time":"2023 - 2024 (10 months)",
-               "local":"Remote, Washington, USA",
-               "description":"Clearviction was a startup dedicated to helping individuals...",
+               "time":"2023 - 2024 (10 meses)",
+               "local":"Remoto, Washington, EUA",
+               "description":"Clearviction era uma startup dedicada a ajudar indivíduos...",
                "technologies":[
-                  "Agile",
+                  "Ágil",
                   "Next.js",
                   "TypeScript",
                   "Material-UI"
@@ -481,9 +480,9 @@
             {
                "image":"/imgs/experience/mundialMixWork.jpg",
                "title":"MundialMix",
-               "time":"2023 - On going",
-               "local":"Santa Catarina, Brazil",
-               "description":"MundialMix is a holding company that owns several businesses...",
+               "time":"2023 - Atualmente",
+               "local":"Santa Catarina, Brasil",
+               "description":"MundialMix é uma holding que possui diversos negócios...",
                "technologies":[
                   "React",
                   "TypeScript",
@@ -496,81 +495,81 @@
          ],
          "workTimeLine":[
             {
-               "title":"FreeLance Work",
-               "time":"2023 - On going",
-               "local":"Remote",
-               "position":"Full Stack Developer"
+               "title":"Trabalho Freelancer",
+               "time":"2023 - Atualmente",
+               "local":"Remoto",
+               "position":"Desenvolvedor Full Stack"
             },
             {
                "title":"ClearViction",
-               "time":"2023 - 2024 (10 months)",
-               "local":"Remote, Washington, USA",
-               "position":"Frontend Developer"
+               "time":"2023 - 2024 (10 meses)",
+               "local":"Remoto, Washington, EUA",
+               "position":"Desenvolvedor Frontend"
             },
             {
                "title":"MundialMix",
-               "time":"2023 - On going",
-               "local":"Santa Catarina, Brazil",
-               "position":"Junior Full Stack Developer"
+               "time":"2023 - Atualmente",
+               "local":"Santa Catarina, Brasil",
+               "position":"Desenvolvedor Full Stack Júnior"
             }
          ]
       },
       "formal":{
-         "subTitle":"My Theoretical Background",
-         "title":"Formal Education",
+         "subTitle":"Minha Formação Teórica",
+         "title":"Educação Formal",
          "image":"/imgs/experience/educationWallpaper.jpg",
          "child":"Formal",
          "experiences":[
             {
                "image":"/imgs/experience/technicalSchoolEducation.jpg",
-               "title":"Technical High School",
+               "title":"Ensino Médio Técnico",
                "time":"2017 - 2021",
-               "local":"IFSC (Federal Institute of Santa Catarina)",
-               "description":"IFSC is a public federal institution that offers free technical high school courses, considered one of the best educational centers in Brazil."
+               "local":"IFSC (Instituto Federal de Santa Catarina)",
+               "description":"O IFSC é uma instituição pública federal que oferece cursos técnicos gratuitos de ensino médio, considerado um dos melhores centros educacionais do Brasil."
             },
             {
                "image":"/imgs/experience/universityEducation.jpg",
-               "title":"Bsc Information Systems",
-               "time":"2023 - 2026 (Probably)",
+               "title":"Bacharelado em Sistemas de Informação",
+               "time":"2023 - 2026 (Provavelmente)",
                "local":"PUC - Minas Gerais",
-               "description":"PUC is one of the oldest and most traditional universities in Brazil, with a strong focus on research and innovation. The Information Systems course is one of the most sought after in the country."
+               "description":"A PUC é uma das universidades mais antigas e tradicionais do Brasil, com forte foco em pesquisa e inovação. O curso de Sistemas de Informação é um dos mais procurados do país."
             }
          ],
          "formalTimeLine":[
             {
-               "title":"Technical High School",
+               "title":"Ensino Médio Técnico",
                "time":"2017 - 2021",
-               "local":"IFSC (Federal Institute of Santa Catarina)",
-               "position":"GPA: 8.9 - 10"
+               "local":"IFSC (Instituto Federal de Santa Catarina)",
+               "position":"Média: 8.9 - 10"
             },
             {
-               "title":"Bsc Computer Science",
-               "time":"2023 - 2026 (Probably)",
+               "title":"Bacharelado em Ciência da Computação",
+               "time":"2023 - 2026 (Provavelmente)",
                "local":"PUC - Minas Gerais",
-               "position":"GPA: ????"
+               "position":"Média: ????"
             },
             {
-               "title":"Master in Computer Science",
-               "time":"2027 - 2028 (Probably)",
+               "title":"Mestrado em Ciência da Computação",
+               "time":"2027 - 2028 (Provavelmente)",
                "local":"????",
-               "position":"GPA: ????"
+               "position":"Média: ????"
             },
             {
-               "title":"Phd Computer Science",
-               "time":"2029 - 2031 (Probably)",
+               "title":"Doutorado em Ciência da Computação",
+               "time":"2029 - 2031 (Provavelmente)",
                "local":"????",
-               "position":"GPA: ????"
+               "position":"Média: ????"
             }
          ]
       },
       "self":{
-         "subTitle":"My Self-Taught Journey",
-         "title":"Self-Learning Education",
+         "subTitle":"Minha Jornada Autodidata",
+         "title":"Educação Autodidata",
          "image":"/imgs/experience/selfWallpaper.jpg",
          "child":"Self",
          "courses":{
             "courseTags":[
-               "Computer Science",
+               "Ciência da Computação",
                "Backend",
                "Frontend",
                "UI/UX",
@@ -579,39 +578,39 @@
             "courses":[
                {
                   "courseImage":"/imgs/experience/CS50Self.jpg",
-                  "courseTitle":"CS50 - Introduction to Computer Science",
-                  "courseDescription":"CS50 is Harvard University’s introduction to the intellectual enterprises of Computer Science and the Art of Programming.",
+                  "courseTitle":"CS50 - Introdução à Ciência da Computação",
+                  "courseDescription":"O CS50 é a introdução da Universidade de Harvard às empresas intelectuais de Ciência da Computação e à Arte da Programação.",
                   "courseTags":[
-                     "Computer Science",
-                     "Algorithms",
-                     "Data Structures",
+                     "Ciência da Computação",
+                     "Algoritmos",
+                     "Estruturas de Dados",
                      "C",
                      "Python"
                   ],
                   "tags":[
-                     "Computer Science",
+                     "Ciência da Computação",
                      "Backend"
                   ]
                },
                {
                   "courseImage":"/imgs/experience/daysOfCode100Self.jpg",
-                  "courseTitle":"100 Days of Code - The Complete Python Bootcamp",
-                  "courseDescription":"Angela Yu teaches Python, including Data Science, Web Development, and Machine Learning.",
+                  "courseTitle":"100 Dias de Código - Bootcamp Completo de Python",
+                  "courseDescription":"Angela Yu ensina Python, incluindo Ciência de Dados, Desenvolvimento Web e Aprendizado de Máquina.",
                   "courseTags":[
                      "Python",
-                     "Computer Science",
-                     "Programming Logic",
-                     "Data Science"
+                     "Ciência da Computação",
+                     "Lógica de Programação",
+                     "Ciência de Dados"
                   ],
                   "tags":[
-                     "Computer Science",
+                     "Ciência da Computação",
                      "Backend"
                   ]
                },
                {
                   "courseImage":"/imgs/experience/nubankSelf.jpg",
-                  "courseTitle":"Nubank Frontend Bootcamp",
-                  "courseDescription":"Nubank is the fourth largest bank in Latin America, in 2023 they offered to a select group of students a bootcamp to learn about their Frontend Stack.",
+                  "courseTitle":"Bootcamp de Frontend Nubank",
+                  "courseDescription":"O Nubank é o quarto maior banco da América Latina. Em 2023, ofereceram a um grupo seleto de estudantes um bootcamp para aprender sobre sua Stack de Frontend.",
                   "courseTags":[
                      "HTML/CSS",
                      "React",
@@ -625,15 +624,15 @@
                },
                {
                   "courseImage":"/imgs/experience/googleSelf.jpg",
-                  "courseTitle":"Google - Foundations of Cybersecurity",
-                  "courseDescription":"Google offers a complete course of Cybersecurity and DevOps, including Linux, Networking, and Cryptography.",
+                  "courseTitle":"Google - Fundamentos de Segurança Cibernética",
+                  "courseDescription":"O Google oferece um curso completo de Segurança Cibernética e DevOps, incluindo Linux, Redes e Criptografia.",
                   "courseTags":[
                      "Python",
-                     "Cybersecurity",
+                     "Segurança Cibernética",
                      "SQL",
-                     "Cloud Computing",
+                     "Computação em Nuvem",
                      "Linux",
-                     "Cryptography"
+                     "Criptografia"
                   ],
                   "tags":[
                      "DevOps"
@@ -641,27 +640,27 @@
                },
                {
                   "courseImage":"/imgs/experience/algorithmsSelf.jpg",
-                  "courseTitle":"Algorithms and Data Structures for Beginners",
-                  "courseDescription":"NeetCode teaches the basics of Algorithms and Data Structures, including Big O Notation, Sorting Algorithms, and more.",
+                  "courseTitle":"Algoritmos e Estruturas de Dados para Iniciantes",
+                  "courseDescription":"NeetCode ensina os conceitos básicos de Algoritmos e Estruturas de Dados, incluindo Notação Big O, Algoritmos de Ordenação e mais.",
                   "courseTags":[
-                     "Algorithms",
-                     "Data Structures",
-                     "Big O Notation"
+                     "Algoritmos",
+                     "Estruturas de Dados",
+                     "Notação Big O"
                   ],
                   "tags":[
-                     "Computer Science"
+                     "Ciência da Computação"
                   ]
                },
                {
                   "courseImage":"/imgs/experience/systemDesignSelf.jpg",
-                  "courseTitle":"System Design for Beginners",
-                  "courseDescription":"NeetCode courses teach the basics of System Design, including Scalability, System Flow, Maintainability, User Experience and more.",
+                  "courseTitle":"Design de Sistemas para Iniciantes",
+                  "courseDescription":"Os cursos NeetCode ensinam o básico de Design de Sistemas, incluindo Escalabilidade, Fluxo de Sistemas, Manutenibilidade, Experiência do Usuário e mais.",
                   "courseTags":[
-                     "System Design",
-                     "Storage",
+                     "Design de Sistemas",
+                     "Armazenamento",
                      "Proxies",
-                     "Caching",
-                     "Networking",
+                     "Cache",
+                     "Redes",
                      "APIs",
                      "Big Data"
                   ],
@@ -672,15 +671,15 @@
                },
                {
                   "courseImage":"/imgs/experience/ibmBackend.jpg",
-                  "courseTitle":"Application Development using Microservices and Serverless",
-                  "courseDescription":"IBM offers a complete course of Microservices and Serverless, best practices and architecture.",
+                  "courseTitle":"Desenvolvimento de Aplicações usando Microsserviços e Serverless",
+                  "courseDescription":"A IBM oferece um curso completo sobre Microsserviços e Serverless, incluindo melhores práticas e arquitetura.",
                   "courseTags":[
-                     "Microservices",
+                     "Microsserviços",
                      "Serverless",
                      "APIs",
                      "Docker",
                      "Kubernetes",
-                     "Cloud Computing"
+                     "Computação em Nuvem"
                   ],
                   "tags":[
                      "Backend",
@@ -690,12 +689,12 @@
                {
                   "courseImage":"/imgs/experience/cloudSelf.jpg",
                   "courseTitle":"AWS Certified - Practitioner",
-                  "courseDescription":"Amazon AWS Practitioner certification validates fluency in the core AWS services, uses, and basic AWS architecture best practices.",
+                  "courseDescription":"A certificação Amazon AWS Practitioner valida fluência nos serviços principais da AWS, usos e melhores práticas básicas de arquitetura AWS.",
                   "courseTags":[
                      "AWS",
-                     "Cloud Computing",
-                     "Networking",
-                     "Security"
+                     "Computação em Nuvem",
+                     "Redes",
+                     "Segurança"
                   ],
                   "tags":[
                      "DevOps"
@@ -707,11 +706,11 @@
    },
    "projects":{
       "hero":{
-         "title":"Explore All the Projects I've Built so Far",
-         "github":"GitHub Link",
+         "title":"Explore Todos os Projetos que Eu Construí Até Agora",
+         "github":"Link do GitHub",
          "githubLink":"https://github.com/GabrielEger2",
          "japanesePhrase":"塵も積もれば山となる",
-         "japaneseTranslation":"-Even dust, when piled up, becomes a mountain"
+         "japaneseTranslation":"-Mesmo poeira, quando acumulada, se torna uma montanha"
       },
       "languagesTags":[
          "JavaScript",
@@ -723,7 +722,7 @@
       "projects":[
          {
             "title":"GOBanq",
-            "description":"Gobanq is a banking project built with a modern microservice architecture, the platform allows users to create and manage multiple accounts in different currencies, offering a flexible banking solution that supports international financial operations.",
+            "description":"Gobanq é um projeto bancário construído com uma arquitetura moderna de microsserviços. A plataforma permite que os usuários criem e gerenciem várias contas em diferentes moedas, oferecendo uma solução bancária flexível que suporta operações financeiras internacionais.",
             "technologies":[
                "Golang",
                "AWS RDS",
@@ -736,21 +735,25 @@
                "Docker-compose"
             ],
             "githubLink":"https://github.com/GabrielEger2/gobanq",
-            "languages": ["GO"]
+            "languages":[
+               "GO"
+            ]
          },
          {
             "title":"Emerald Tools Mod",
-            "description":"Simple Minecraft mod I created. It introduces a set of emerald tools to the game, including an emerald paxel, a multi-purpose tool. All items can be crafted in-game and come with unique custom specifications.",
+            "description":"Um mod simples para Minecraft que criei. Ele introduz um conjunto de ferramentas de esmeralda no jogo, incluindo uma paxel de esmeralda, uma ferramenta multiuso. Todos os itens podem ser fabricados no jogo e possuem especificações personalizadas únicas.",
             "technologies":[
                "Java",
                "Minecraft FORGE"
             ],
             "githubLink":"https://github.com/GabrielEger2/emerald-tools",
-            "languages": ["Java"]
+            "languages":[
+               "Java"
+            ]
          },
          {
-            "title":"Portfolio Website",
-            "description":"A personal portfolio project showcasing my work and skills, utilizing best practices in cloud and server-side front-end development for optimal scalability and performance.",
+            "title":"Website de Portfólio",
+            "description":"Um projeto de portfólio pessoal que exibe meu trabalho e habilidades, utilizando as melhores práticas em nuvem e desenvolvimento front-end do lado do servidor para escalabilidade e desempenho ideais.",
             "technologies":[
                "NextJS",
                "TailwindCSS",
@@ -761,22 +764,26 @@
                "OpenNext"
             ],
             "githubLink":"https://github.com/GabrielEger2/portfolio",
-            "languages": ["JavaScript"]
+            "languages":[
+               "JavaScript"
+            ]
          },
          {
             "title":"Papa's Pizza",
-            "description":"Mock pizza delivery website project built with React and TailwindCSS. Users can view the menu, place orders, and track their delivery status. The platform also includes an admin panel for managing orders and updating the menu.",
+            "description":"Projeto fictício de site de entrega de pizzas construído com React e TailwindCSS. Os usuários podem visualizar o menu, fazer pedidos e acompanhar o status da entrega. A plataforma também inclui um painel de administração para gerenciar pedidos e atualizar o menu.",
             "technologies":[
                "React",
                "TailwindCSS",
                "JavaScript"
             ],
             "githubLink":"https://github.com/GabrielEger2/papas-pizza",
-            "languages": ["JavaScript"]
+            "languages":[
+               "JavaScript"
+            ]
          },
          {
             "title":"Django Staff",
-            "description":"An HR management project where users can create companies, manage employees, documents, overtime records, and departments. Designed to streamline HR processes for small to medium-sized businesses.",
+            "description":"Um projeto de gestão de RH onde os usuários podem criar empresas, gerenciar funcionários, documentos, registros de horas extras e departamentos. Projetado para simplificar processos de RH para pequenas e médias empresas.",
             "technologies":[
                "Django",
                "HTML",
@@ -787,28 +794,32 @@
                "Docker"
             ],
             "githubLink":"https://github.com/GabrielEger2/django-staff",
-            "languages": ["Python"]
+            "languages":[
+               "Python"
+            ]
          },
          {
-            "title": "NestNet",
-            "description": "A social network project built with NestJS and MongoDB. Users can create posts, like, comment, and share content with friends. The platform also includes a chat feature for real-time communication.",
-            "technologies": [
+            "title":"NestNet",
+            "description":"Um projeto de rede social construído com NestJS e MongoDB. Os usuários podem criar postagens, curtir, comentar e compartilhar conteúdos com amigos. A plataforma também inclui um recurso de chat para comunicação em tempo real.",
+            "technologies":[
                "NestJS",
                "MongoDB",
                "TypeScript",
                "Websockets",
                "Microservices",
                "Docker",
-               "Appolo",
+               "Apollo",
                "GraphQL"
             ],
-            "githubLink": "https://github.com/GabrielEger2/nest-net",
-            "languages": ["JavaScript"]
+            "githubLink":"https://github.com/GabrielEger2/nest-net",
+            "languages":[
+               "JavaScript"
+            ]
          },
          {
-            "title": "日本-Classics",
-            "description": "MERN old Japanese cars marketplace project. Users can create accounts, post cars for sale, and browse listings. The platform includes a search feature, user authentication, and a responsive design.",
-            "technologies": [
+            "title":"日本-Classics",
+            "description":"Projeto de marketplace de carros antigos japoneses em MERN. Os usuários podem criar contas, postar carros à venda e navegar por anúncios. A plataforma inclui uma funcionalidade de busca, autenticação de usuário e um design responsivo.",
+            "technologies":[
                "React",
                "MongoDB",
                "TypeScript",
@@ -816,73 +827,75 @@
                "React-Router",
                "Express"
             ],
-            "githubLink": "https://github.com/GabrielEger2/nihon-classics",
-            "languages": ["JavaScript"]
+            "githubLink":"https://github.com/GabrielEger2/nihon-classics",
+            "languages":[
+               "JavaScript"
+            ]
          }
       ],
       "projectsCarousel":[
          {
-            "title":"project1",
+            "title":"projeto1",
             "image":"/imgs/experience/educationWallpaper.jpg",
             "githubLink":"",
-            "github":"GitHub Link"
+            "github":"Link do GitHub"
          },
          {
-            "title":"project2",
+            "title":"projeto2",
             "image":"/imgs/experience/educationWallpaper.jpg",
             "githubLink":"",
-            "github":"GitHub Link"
+            "github":"Link do GitHub"
          },
          {
-            "title":"project3",
+            "title":"projeto3",
             "image":"/imgs/experience/educationWallpaper.jpg",
             "githubLink":"",
-            "github":"GitHub Link"
+            "github":"Link do GitHub"
          }
       ]
    },
    "contact":{
-      "contactHeader":"Contact Me",
-      "contactTitle":"Don't be shy, say hello!",
-      "contactText":"I would love to hear from you! Please fill out the form or connect with me on social media.",
+      "contactHeader":"Entre em Contato",
+      "contactTitle":"Não seja tímido, diga olá!",
+      "contactText":"Eu adoraria ouvir de você! Por favor, preencha o formulário ou conecte-se comigo nas redes sociais.",
       "socialLinks":[
          {
             "icon":"BiMailSend",
             "title":"Email",
-            "text":"Personal and professional inquiries",
+            "text":"Consultas pessoais e profissionais",
             "link":"gabriel_eger01@hotmail.com"
          },
          {
             "icon":"BiLogoLinkedin",
             "title":"LinkedIn",
-            "text":"Professional networking",
+            "text":"Rede profissional",
             "link":"https://www.linkedin.com/in/gabrieleger/"
          },
          {
             "icon":"BiLogoGithub",
             "title":"GitHub",
-            "text":"Open-source projects and contributions",
+            "text":"Projetos open-source e contribuições",
             "link":"https://github.com/GabrielEger2"
          }
       ],
       "contactForm":{
          "name":{
-            "label":"Name",
-            "placeholder":"Your Name"
+            "label":"Nome",
+            "placeholder":"Seu Nome"
          },
          "surname":{
-            "label":"Surname",
-            "placeholder":"Your Surname"
+            "label":"Sobrenome",
+            "placeholder":"Seu Sobrenome"
          },
          "email":{
             "label":"Email",
-            "placeholder":"Your Email"
+            "placeholder":"Seu Email"
          },
          "message":{
-            "label":"Message",
-            "placeholder":"I would like to know more about..."
+            "label":"Mensagem",
+            "placeholder":"Gostaria de saber mais sobre..."
          },
-         "submit":"Send Message"
+         "submit":"Enviar Mensagem"
       }
    }
 }
