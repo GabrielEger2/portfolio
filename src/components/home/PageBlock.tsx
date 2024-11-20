@@ -5,6 +5,11 @@ import { useTranslations } from 'next-intl'
 import { useState } from 'react'
 import Block from './Block'
 
+interface Theme {
+  name: string
+  value: string
+}
+
 const PageBlock = () => {
   const [theme, setTheme] = useState('lemonade')
   const t = useTranslations('')
@@ -27,7 +32,7 @@ const PageBlock = () => {
               <option disabled selected>
                 {t('layout.themesTitle')}
               </option>
-              {themes.map((theme) => (
+              {themes.map((theme: Theme) => (
                 <option key={theme.value} value={theme.value}>
                   {theme.name}
                 </option>
@@ -43,7 +48,10 @@ const PageBlock = () => {
                 {t('home.pageBlock.title')}
               </h1>
               <p className="py-6">{t('home.pageBlock.text')}</p>
-              <Link href={t('home.pageBlock.link')} className="btn btn-primary">
+              <Link
+                href={t('home.pageBlock.link') as '/contact'}
+                className="btn btn-primary"
+              >
                 {t('home.pageBlock.linkText')}
               </Link>
             </div>

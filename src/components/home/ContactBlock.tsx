@@ -19,7 +19,7 @@ const ContactBlock = () => {
       </Block>
       <Block className="col-span-6 row-span-2 ">
         <Link
-          href={t('link')}
+          href={t('link') as '/contact'}
           className="flex justify-center items-center h-full"
         >
           <h1 className="text-2xl font-semibold">{t('end')}</h1>

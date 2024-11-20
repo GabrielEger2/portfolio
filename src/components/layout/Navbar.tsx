@@ -4,6 +4,15 @@ import LanguageController from './LanguageController'
 import NavLink from './NavLink'
 import ThemeController from './ThemeController'
 
+interface Link {
+  id: string
+  link: string
+  text: string
+  title: string
+  description: string
+  href: '/' | '/experience' | '/projects' | '/contact'
+}
+
 const Navbar = () => {
   const t = useTranslations('core.header')
 
@@ -14,7 +23,7 @@ const Navbar = () => {
           {t('NavbarTitle')}
         </Link>
         <div className="flex items-center space-x-2 translate-x-10">
-          {t.raw('NavbarLinks').content.map((link) => (
+          {t.raw('NavbarLinks').content.map((link: Link) => (
             <NavLink
               key={link.id}
               content={link}

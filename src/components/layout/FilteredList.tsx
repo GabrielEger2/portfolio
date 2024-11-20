@@ -25,7 +25,9 @@ function FilteredList<T>({
   const [searchTerm, setSearchTerm] = useState('')
   const [searchTag, setSearchTag] = useState('')
 
-  const filteredItems = items.filter((item) => filterFunction(item, searchTerm, searchTag))
+  const filteredItems = items.filter((item) =>
+    filterFunction(item, searchTerm, searchTag),
+  )
 
   return (
     <div className="max-w-7xl w-full min-h-screen mx-auto justify-center px-2 mb-10 md:mb-0">

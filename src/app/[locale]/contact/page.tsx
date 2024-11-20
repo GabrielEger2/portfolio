@@ -8,6 +8,13 @@ const iconComponents = {
   BiLogoGithub,
 }
 
+interface SocialLink {
+  title: string
+  text: string
+  link: string
+  icon: keyof typeof iconComponents
+}
+
 const Contact = () => {
   const t = useTranslations('contact')
   const socialLinks = t.raw('socialLinks')
@@ -23,7 +30,7 @@ const Contact = () => {
           <p className="mt-3">{t('contactText')}</p>
           <div className="mt-12">
             <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
-              {socialLinks.map((social, index) => {
+              {socialLinks.map((social: SocialLink, index: number) => {
                 const IconComponent = iconComponents[social.icon]
                 return (
                   <div key={index}>

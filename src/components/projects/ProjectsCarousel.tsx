@@ -12,6 +12,12 @@ import { useMemo, useRef, useState } from 'react'
 import { useWindowSize } from 'react-use'
 import Projects from './Projects'
 
+interface Project {
+  title: string
+  github: string
+  image: string
+}
+
 export const ProjectsCarousel = () => {
   const { width, height } = useWindowSize()
   const carouselWrapperRef = useRef<HTMLDivElement>(null)
@@ -60,7 +66,7 @@ export const ProjectsCarousel = () => {
                 style={{ x }}
                 className="relative flex w-full justify-center gap-4"
               >
-                {projects.map((project, index) => {
+                {projects.map((project: Project, index: number) => {
                   return (
                     <motion.div
                       key={index}

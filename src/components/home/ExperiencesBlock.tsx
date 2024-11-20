@@ -10,7 +10,7 @@ const ExperiencesBlock = () => {
   return (
     <>
       <Block className="col-span-3 row-span-1 flex flex-col justify-between p-6">
-        <Link href={t('work.link')}>
+        <Link href={t('work.link') as '/experience'}>
           <div className="flex flex-col items-center">
             <BiSolidBriefcase size={30} />
             <h1 className="text-center text-lg font-semibold">
@@ -21,7 +21,7 @@ const ExperiencesBlock = () => {
         </Link>
       </Block>
       <Block className="col-span-3 row-span-1 flex flex-col justify-between p-6">
-        <Link href={t('formal.link')}>
+        <Link href={t('formal.link') as '/experience'}>
           <div className="flex flex-col items-center">
             <FaUniversity size={30} />
             <h1 className="text-center text-lg font-semibold">
@@ -32,7 +32,7 @@ const ExperiencesBlock = () => {
         </Link>
       </Block>
       <Block className="col-span-3 row-span-1 flex flex-col justify-between p-6">
-        <Link href={t('self.link')}>
+        <Link href={t('self.link') as '/experience'}>
           <div className="flex flex-col items-center">
             <PiCertificateFill size={30} />
             <h1 className="text-center text-lg font-semibold">

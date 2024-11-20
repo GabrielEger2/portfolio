@@ -8,7 +8,7 @@ import { FiArrowUpRight } from 'react-icons/fi'
 interface content {
   title: string
   description: string
-  href: string
+  href: '/' | '/experience' | '/projects' | '/contact'
   topics?: { title: string; items: string[] }[]
 }
 

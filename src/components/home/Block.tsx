@@ -3,7 +3,12 @@
 import { motion, useAnimation, useInView } from 'framer-motion'
 import { useEffect, useRef } from 'react'
 
-const Block = ({ className, ...rest }) => {
+interface BlockProps {
+  className?: string
+  [key: string]: unknown
+}
+
+const Block = ({ className, ...rest }: BlockProps) => {
   const ref = useRef(null)
   const isInView = useInView(ref, { amount: 0.5 })
   const controls = useAnimation()

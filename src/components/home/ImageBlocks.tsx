@@ -60,4 +60,3 @@ const SquarePhoto = () => (
 )
 
 export { MapBlock, SquarePhoto, VerticalImage }
-

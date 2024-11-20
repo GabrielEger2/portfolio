@@ -18,7 +18,11 @@ const Projects = () => {
   const projects: Project[] = t.raw('projects')
   const projectsTags = t.raw('languagesTags')
 
-  const filterFunction = (project: Project, searchTerm: string, searchTag: string) =>
+  const filterFunction = (
+    project: Project,
+    searchTerm: string,
+    searchTag: string,
+  ) =>
     project.title.toLowerCase().includes(searchTerm.toLowerCase()) &&
     (searchTag === '' || project.languages.includes(searchTag))
 

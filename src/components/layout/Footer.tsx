@@ -1,13 +1,13 @@
-import { Link } from '@/i18n/routing';
-import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing'
+import { useTranslations } from 'next-intl'
 
 interface FooterLink {
-  title: string;
-  links: { title: string; href: string }[];
+  title: string
+  links: { title: string; href: string }[]
 }
 
 const Footer = () => {
-  const t = useTranslations('core.footer');
+  const t = useTranslations('core.footer')
 
   return (
     <div className="w-full flex justify-center bg-base-200">
@@ -28,7 +28,7 @@ const Footer = () => {
                 className="link link-hover"
                 target="_blank"
                 rel="noopener noreferrer"
-                href={linkItem.href as any}
+                href={linkItem.href as '/'}
               >
                 {linkItem.title}
               </Link>
@@ -37,7 +37,7 @@ const Footer = () => {
         ))}
       </footer>
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

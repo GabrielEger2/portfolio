@@ -25,7 +25,7 @@ const HeaderBlock = () => {
       </h1>
       <p className="text-xl">{t('text')}</p>
       <Link
-        href={t('contactLink')}
+        href={t('contactLink') as '/contact'}
         className="flex items-center gap-1 text-blue-500 hover:underline mt-4"
       >
         {t('contactMe')} <FiArrowUpRight />
@@ -35,4 +35,3 @@ const HeaderBlock = () => {
 }
 
 export { AboutBlock, HeaderBlock }
-

@@ -15,14 +15,38 @@ const EmailForm = () => {
     text: '',
   })
 
-  const [status, setStatus] = useState(null)
+  const [status, setStatus] = useState<'sending' | 'success' | 'error' | null>(
+    null,
+  )
 
-  const handleChange = (e) => {
-    const { name, value } = e.target
-    setFormData((prevData) => ({ ...prevData, [name]: value }))
+  interface FormData {
+    firstName: string
+    lastName: string
+    email: string
+    text: string
   }
 
-  const handleSubmit = async (e) => {
+  interface ChangeEvent {
+    target: {
+      name: string
+      value: string
+    }
+  }
+
+  const handleChange = (e: ChangeEvent) => {
+    const { name, value } = e.target
+    setFormData((prevData: FormData) => ({ ...prevData, [name]: value }))
+  }
+
+  interface SubmitEvent {
+    preventDefault: () => void
+  }
+
+  interface ResponseData {
+    error?: string
+  }
+
+  const handleSubmit = async (e: SubmitEvent) => {
     e.preventDefault()
     setStatus('sending')
 
@@ -33,7 +57,7 @@ const EmailForm = () => {
         body: JSON.stringify(formData),
       })
 
-      const result = await response.json()
+      const result: ResponseData = await response.json()
       if (response.ok) {
         setStatus('success')
       } else {

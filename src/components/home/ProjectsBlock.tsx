@@ -43,7 +43,10 @@ const ProjectsBlock = () => {
               className="z-0"
             />
             <h1 className="text-white z-10">{projects[currentIndex].title}</h1>
-            <Link href={t('link')} className="btn btn-accent z-10">
+            <Link
+              href={t('link') as '/projects'}
+              className="btn btn-accent z-10"
+            >
               {t('title')} <FiArrowUpRight />
             </Link>
           </motion.div>

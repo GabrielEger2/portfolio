@@ -1,5 +1,9 @@
 export function useRenderList() {
-  const renderList = (items) => {
+  interface RenderListProps {
+    items: (string | Record<string, unknown>)[]
+  }
+
+  const renderList = (items: RenderListProps['items']): JSX.Element => {
     return (
       <ul>
         {items.map((item, index) => {

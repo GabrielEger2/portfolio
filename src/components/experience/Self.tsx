@@ -18,7 +18,11 @@ const Self = () => {
   const courses: Course[] = t.raw('courses.courses')
   const coursesTags = t.raw('courses.courseTags')
 
-  const filterFunction = (course: Course, searchTerm: string, searchTag: string) =>
+  const filterFunction = (
+    course: Course,
+    searchTerm: string,
+    searchTag: string,
+  ) =>
     course.courseTitle.toLowerCase().includes(searchTerm.toLowerCase()) &&
     (searchTag === '' || course.tags.includes(searchTag))
 
