@@ -455,7 +455,7 @@
                "title":"Trabalho Freelancer",
                "time":"2023 - Atualmente",
                "local":"Remoto",
-               "description":"Tenho trabalhado como freelancer nos últimos 2 anos...",
+               "description":"Tenho trabalhado como freelancer nos últimos 2 anos, colaborando com clientes e outros desenvolvedores de todo o mundo",
                "technologies":[
                   "React",
                   "Next.js",
@@ -469,7 +469,7 @@
                "title":"ClearViction",
                "time":"2023 - 2024 (10 meses)",
                "local":"Remoto, Washington, EUA",
-               "description":"Clearviction era uma startup dedicada a ajudar indivíduos...",
+               "description":"A Clearviction era uma startup dedicada a ajudar indivíduos limpando seus registros em verificações de antecedentes",
                "technologies":[
                   "Ágil",
                   "Next.js",
@@ -482,7 +482,7 @@
                "title":"MundialMix",
                "time":"2023 - Atualmente",
                "local":"Santa Catarina, Brasil",
-               "description":"MundialMix é uma holding que possui diversos negócios...",
+               "description":"A MundialMix é uma holding que possui várias empresas em diferentes setores, incluindo varejo, bancos, rádio e mais",
                "technologies":[
                   "React",
                   "TypeScript",
@@ -761,7 +761,7 @@
                "Framer-motion",
                "React-icons",
                "AWS",
-               "OpenNext"
+               "i18n"
             ],
             "githubLink":"https://github.com/GabrielEger2/portfolio",
             "languages":[
