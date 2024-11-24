@@ -89,7 +89,7 @@ const EmailForm = () => {
 
   return (
     <form className="card-body" onSubmit={handleSubmit}>
-      <div className="flex gap-4 w-full">
+      <div className="flex lg:flex-row flex-col sm:flex-row md:flex-col gap-4 w-full">
         <div className="form-control w-full">
           <label className="label">
             <span className="label-text">

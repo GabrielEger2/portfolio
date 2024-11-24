@@ -48,7 +48,7 @@ const NavLink = ({ content, linkText }: NavLinkProps) => {
       <AnimatePresence>
         {hovered && (
           <motion.div
-            className="flex flex-col items-center absolute mt-8 pt-8 p-2"
+            className="hidden flex-col items-center absolute mt-8 pt-8 p-2 lg:flex"
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 15 }}

@@ -23,7 +23,7 @@ const Formal = () => {
       </div>
       <div className="w-full md:w-1/2">
         <div className="sticky top-12 z-10">
-          <div className="flex h-screen items-center justify-center md:text-end">
+          <div className="flex md:h-screen pb-12 md:pb-0 items-center justify-center md:text-end">
             <TimeLine experiences={t.raw('formalTimeLine')} />
           </div>
         </div>

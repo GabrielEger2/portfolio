@@ -20,16 +20,16 @@ const Contact = () => {
   const socialLinks = t.raw('socialLinks')
 
   return (
-    <div className="min-h-screen h-full pt-16 flex justify-center items-center">
-      <div className="max-w-7xl w-full h-full px-2 flex gap-12">
-        <div className="w-1/2">
+    <div className="min-h-screen h-full pt-20 pb-4 flex justify-center items-center">
+      <div className="max-w-7xl w-full h-full px-2 flex md:flex-row flex-col gap-12">
+        <div className="w-full md:w-1/2">
           <p className="font-medium text-primary">{t('contactHeader')}</p>
           <h1 className="mt-2 text-2xl font-semibold md:text-3xl">
             {t('contactTitle')}
           </h1>
           <p className="mt-3">{t('contactText')}</p>
           <div className="mt-12">
-            <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
+            <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 sm:grid-cols-2 md:grid-cols-1">
               {socialLinks.map((social: SocialLink, index: number) => {
                 const IconComponent = iconComponents[social.icon]
                 return (
@@ -48,7 +48,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/2">
+        <div className="w-full md:w-1/2">
           <div className="card bg-base-100 w-full h-full border border-base-200 shadow-lg">
             <EmailForm />
           </div>

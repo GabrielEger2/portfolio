@@ -18,7 +18,7 @@ const Work = () => {
     <div className="flex flex-col md:flex-row w-full min-h-screen justify-between">
       <div className="w-full md:w-1/2">
         <div className="sticky top-12 z-10">
-          <div className="flex md:h-screen items-center justify-center">
+          <div className="flex md:h-screen items-center justify-center pt-12 md:pt-0">
             <TimeLine experiences={t.raw('workTimeLine')} />
           </div>
         </div>
