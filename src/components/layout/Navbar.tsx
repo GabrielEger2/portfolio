@@ -26,7 +26,16 @@ const Navbar = () => {
     <>
       <div className="w-full flex justify-center fixed bg-base-100 shadow-lg z-50 top-0">
         <nav className="flex h-16 w-full justify-between max-w-[88rem] items-center mx-2">
-          <Link href={t('NavbarTitleLink')} className="btn btn-ghost text-xl">
+          <Link
+            href={
+              t('NavbarTitleLink') as
+                | '/'
+                | '/experience'
+                | '/projects'
+                | '/contact'
+            }
+            className="btn btn-ghost text-xl"
+          >
             {t('NavbarTitle')}
           </Link>
           <div className="hidden items-center space-x-2 lg:translate-x-10 xl:translate-x-0 md:flex">
@@ -112,7 +121,13 @@ const Navbar = () => {
               }}
             >
               <Link
-                href={t('NavbarTitleLink')}
+                href={
+                  t('NavbarTitleLink') as
+                    | '/'
+                    | '/experience'
+                    | '/projects'
+                    | '/contact'
+                }
                 className="btn btn-ghost text-xl"
               >
                 {t('NavbarTitle')}
