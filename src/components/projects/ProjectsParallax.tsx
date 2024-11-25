@@ -24,6 +24,10 @@ const ProjectsParallax: React.FC<ProjectsParallaxProps> = ({
 
   const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 0.3])
 
+  const y4 = useTransform(scrollYProgress, [0, 1], [0, height * -0.3])
+
+  const y5 = useTransform(scrollYProgress, [0, 1], [0, height * 0.6])
+
   useEffect(() => {
     const resize = () => {
       setDimension({ width: window.innerWidth, height: window.innerHeight })
@@ -73,6 +77,28 @@ const ProjectsParallax: React.FC<ProjectsParallaxProps> = ({
             projects[4],
           ]}
           y={y3}
+        />
+        <ParallaxColumn
+          projects={[
+            projects[1],
+            projects[3],
+            projects[4],
+            projects[5],
+            projects[2],
+            projects[0],
+          ]}
+          y={y4}
+        />
+        <ParallaxColumn
+          projects={[
+            projects[0],
+            projects[3],
+            projects[2],
+            projects[1],
+            projects[5],
+            projects[6],
+          ]}
+          y={y5}
         />
       </div>
     </div>

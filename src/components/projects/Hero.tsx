@@ -26,33 +26,35 @@ const Hero = () => {
 
   return (
     <div ref={targetRef} className="flex relative h-[200vh] mx-4">
-      <div className="w-[30%]">
+      <div className="w-full md:w-[30%]">
         <motion.div
           style={{ opacity: opacityFadeOut, y: yFadeOut }}
-          className="flex h-screen w-full flex-col items-start justify-end sticky top-0 pb-20"
+          className="flex h-screen w-full flex-col items-center justify-center md:items-start md:justify-end sticky top-0 pb-20"
         >
-          <p className="text-4xl font-bold md:text-7xl">{t('title')}</p>
+          <p className="font-bold text-7xl text-center md:text-5xl md:text-start lg:text-6xl xl:text-7xl">
+            {t('title')}
+          </p>
           <Link
             href={t('githubLink')}
             target="_blank"
-            className="btn btn-lg text-xl font-bold btn-primary mt-4"
+            className="btn btn-lg text-xl font-bold btn-primary mt-16 md:mt-4"
           >
             {t('github')} <BiLink className="inline-block" size={30} />
           </Link>
         </motion.div>
         <motion.div
           style={{ opacity: opacityFadeIn }}
-          className="flex h-screen w-full flex-col items-start justify-center sticky top-0 pb-4"
+          className="flex h-screen w-full flex-col items-center justify-center md:items-start sticky top-0 pb-4"
         >
-          <p className="text-4xl font-bold md:text-8xl">
+          <p className="font-bold text-7xl text-center md:text-5xl md:text-start lg:text-6xl xl:text-7xl">
             {t('japanesePhrase')}
           </p>
-          <p className="text-1xl font-semibold md:text-3xl mt-12">
+          <p className="text-3xl font-semibold md:text-3xl mt-20 md:mt-12">
             {t('japaneseTranslation')}
           </p>
         </motion.div>
       </div>
-      <div className="w-[70%]">
+      <div className="w-[70%] hidden md:block">
         <ProjectsParallax scrollYProgress={scrollYProgress} />
       </div>
     </div>

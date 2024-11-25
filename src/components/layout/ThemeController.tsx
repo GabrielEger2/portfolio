@@ -21,7 +21,7 @@ const ThemeController = () => {
   }
 
   return (
-    <div className="dropdown dropdown-end z-50">
+    <div className="dropdown dropdown-top md:dropdown-bottom md:dropdown-end z-40 bg-base-100">
       <div tabIndex={0} role="button" className="btn m-1 btn-ghost">
         {t('themesTitle')}
         <FaArrowDown size={10} />

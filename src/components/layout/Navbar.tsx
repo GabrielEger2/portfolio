@@ -20,8 +20,6 @@ const Navbar = () => {
   const t = useTranslations('core.header')
   const [mobileNav, toggleMobileNav] = useCycle(false, true)
 
-  console.log(t.raw('NavbarLinks'))
-
   return (
     <>
       <div className="w-full flex justify-center fixed bg-base-100 shadow-lg z-50 top-0">
@@ -152,7 +150,7 @@ const Navbar = () => {
                   opacity: 0,
                 },
               }}
-              className="flex flex-col"
+              className="flex h-full items-end justify-center w-full"
             >
               <ThemeController />
               <LanguageController />
