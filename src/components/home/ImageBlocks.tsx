@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Block from './Block'
 
 const VerticalImage = () => (
-  <Block className="col-span-4 row-span-6">
+  <Block className="col-span-6 row-span-6 row-start-1 col-start-1 lg:col-span-4">
     <Image
       src="/imgs/home/verticalPhoto.jpg"
       alt="Gabriel"
@@ -17,7 +17,7 @@ const VerticalImage = () => (
 )
 
 const MapBlock = () => (
-  <Block className="relative col-span-4 row-span-3 col-start-5 row-start-4">
+  <Block className="relative col-span-6 row-span-3 col-start-7 row-start-4 lg:col-start-5 lg:col-span-4">
     <motion.div
       className="relative w-full h-full"
       whileHover="hover"
@@ -48,7 +48,7 @@ const MapBlock = () => (
 )
 
 const SquarePhoto = () => (
-  <Block className="col-span-3 row-span-1 p-0">
+  <Block className="row-start-10 col-span-6 p-0 lg:col-span-3 lg:row-span-1">
     <Image
       src="/imgs/home/squarePhoto.jpg"
       alt="Gabriel"

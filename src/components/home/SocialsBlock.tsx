@@ -13,7 +13,7 @@ const SocialsBlock = () => {
           rotate: '1.5deg',
           scale: 1.05,
         }}
-        className="col-span-4 row-span-2 col-start-9 row-start-1 bg-accent"
+        className="col-span-4 row-span-2 bg-accent col-start-1 row-start-7 min-h-40 lg:min-h-0 lg:col-start-9 lg:row-start-1"
       >
         <Link
           href={t('githubLink')}
@@ -28,7 +28,7 @@ const SocialsBlock = () => {
           rotate: '-1.5deg',
           scale: 1.05,
         }}
-        className="col-span-4 row-span-2 col-start-9 row-start-3 bg-secondary"
+        className="col-span-4 row-span-2 bg-secondary col-start-5 row-start-7 lg:col-start-9 lg:row-start-3"
       >
         <Link
           href={t('leetCodeLink')}
@@ -43,7 +43,7 @@ const SocialsBlock = () => {
           rotate: '1.5deg',
           scale: 1.05,
         }}
-        className="col-span-4 row-span-2 col-start-9 row-start-5 bg-primary"
+        className="col-span-4 row-span-2 bg-primary col-start-9 row-start-7 lg:col-start-9 lg:row-start-5"
       >
         <Link
           href={t('linkedinLink')}

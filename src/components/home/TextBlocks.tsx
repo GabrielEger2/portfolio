@@ -6,7 +6,7 @@ import Block from './Block'
 const AboutBlock = () => {
   const t = useTranslations('home.textBlocks')
   return (
-    <Block className="col-span-3 row-span-2 p-6">
+    <Block className="col-span-6 p-6 lg:col-span-3 lg:row-span-2">
       <p className="text-2xl">{t('aboutBlock')}</p>
     </Block>
   )
@@ -15,7 +15,7 @@ const AboutBlock = () => {
 const HeaderBlock = () => {
   const t = useTranslations('home.textBlocks.headerBlock')
   return (
-    <Block className="col-span-4 row-span-3 col-start-5 row-start-1 p-6">
+    <Block className="col-span-6 p-6 row-span-3 col-start-7 row-start-1 lg:col-start-5 lg:col-span-4">
       <h1 className="mb-4 text-4xl">
         {t('title')}{' '}
         <span className="font-semibold underline text-primary">

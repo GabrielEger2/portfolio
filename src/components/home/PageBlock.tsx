@@ -16,11 +16,11 @@ const PageBlock = () => {
   const themes = t.raw('layout.themes')
 
   return (
-    <Block className="col-span-9 row-span-3">
+    <Block className="col-span-12 row-span-3 lg:col-span-9">
       <div data-theme={theme} className="h-full card">
         <div className="navbar bg-base-100 border border-base-200">
           <div className="flex-1">
-            <a className="btn btn-ghost text-xl">
+            <a className="p-2 font-semibold text-xl">
               {t('home.pageBlock.navbar')}
             </a>
           </div>
@@ -42,7 +42,7 @@ const PageBlock = () => {
         </div>
         <div className="h-full flex justify-center items-center">
           <div className="flex flex-row hero-content bg-base-200 card m-6">
-            <div className="w-96 h-64 bg-primary card" />
+            <div className="lg:w-96 h-64 bg-primary card" />
             <div className="p-6">
               <h1 className="text-5xl font-bold">
                 {t('home.pageBlock.title')}
