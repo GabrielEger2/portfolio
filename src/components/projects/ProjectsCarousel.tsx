@@ -51,7 +51,12 @@ export const ProjectsCarousel = () => {
     }
   })
 
-  const xOffset = useMemo(() => `${Math.min(width * 0.68, 1300)}px`, [width])
+  const xVariant =
+    width > 1300 ? 1900 / Math.min(1900, width) : width > 768 ? 1.47 : 1.52
+  const xOffset = useMemo(
+    () => `${Math.min(width * 0.68 * xVariant, 1310)}px`,
+    [width, xVariant],
+  )
   const x = useTransform(scrollYProgress, [0.31, 0.8], [xOffset, `-${xOffset}`])
   const t = useTranslations('projects')
   const projects = t.raw('projectsCarousel')
