@@ -3,7 +3,7 @@
 import { useLocale, useTranslations } from 'next-intl'
 import { useRouter } from 'next/navigation'
 import { SetStateAction, useTransition } from 'react'
-import { FaArrowDown } from 'react-icons/fa'
+import { FaArrowDown, FaArrowUp } from 'react-icons/fa'
 import { IoLanguage } from 'react-icons/io5'
 
 interface Language {
@@ -27,10 +27,11 @@ const LanguageController = () => {
   }
 
   return (
-    <div className="dropdown dropdown-end z-50">
+    <div className="dropdown dropdown-top md:dropdown-bottom md:dropdown-end z-50 bg-base-100">
       <div tabIndex={0} role="button" className="btn m-1 btn-ghost">
         <IoLanguage size={20} />
-        <FaArrowDown size={10} />
+        <FaArrowDown size={10} className="hidden sm:flex" />
+        <FaArrowUp size={10} className="flex sm:hidden" />
       </div>
       <ul
         tabIndex={0}

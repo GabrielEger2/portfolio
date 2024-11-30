@@ -3,7 +3,7 @@
 import Cookies from 'js-cookie'
 import { useTranslations } from 'next-intl'
 import { SetStateAction } from 'react'
-import { FaArrowDown } from 'react-icons/fa'
+import { FaArrowDown, FaArrowUp } from 'react-icons/fa'
 
 interface Theme {
   name: string
@@ -24,7 +24,8 @@ const ThemeController = () => {
     <div className="dropdown dropdown-top md:dropdown-bottom md:dropdown-end z-40 bg-base-100">
       <div tabIndex={0} role="button" className="btn m-1 btn-ghost">
         {t('themesTitle')}
-        <FaArrowDown size={10} />
+        <FaArrowDown size={10} className="hidden sm:flex" />
+        <FaArrowUp size={10} className="flex sm:hidden" />
       </div>
       <ul
         tabIndex={0}

@@ -25,7 +25,7 @@ const ProjectsBlock = () => {
   }
 
   return (
-    <Block className="col-span-12 min-h-96 lg:min-h-0 lg:col-span-9 lg:row-span-2">
+    <Block className="col-span-12 min-h-60 sm:min-h-96 lg:min-h-0 lg:col-span-9 lg:row-span-2">
       <div className="relative overflow-hidden w-full h-full card">
         <AnimatePresence>
           <motion.div

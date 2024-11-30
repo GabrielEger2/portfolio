@@ -79,84 +79,88 @@ const Navbar = () => {
         </nav>
       </div>
       <AnimatePresence>
-        {mobileNav && (
+        <motion.div
+          variants={{
+            open: {
+              x: '0%',
+              transition: {
+                when: 'beforeChildren',
+                type: 'spring',
+                bounce: 0.12,
+                duration: 0.3,
+              },
+            },
+            closed: {
+              x: '-100%',
+              transition: {
+                when: 'beforeChildren',
+                type: 'spring',
+                bounce: 0.12,
+                duration: 0.3,
+              },
+            },
+          }}
+          initial="closed"
+          animate="open"
+          exit="closed"
+          className={`fixed w-[70vw] inset-0 border-r border-base-300 z-50 p-2 bg-base-100 flex flex-col md:hidden sm:w-[50vw] ${mobileNav ? '' : 'hidden'}`}
+        >
           <motion.div
             variants={{
               open: {
-                x: '0%',
-                transition: {
-                  when: 'beforeChildren',
-                  type: 'spring',
-                  bounce: 0.12,
-                  duration: 0.3,
-                },
+                y: '0%',
+                opacity: 1,
               },
               closed: {
-                x: '-100%',
-                transition: {
-                  when: 'beforeChildren',
-                  type: 'spring',
-                  bounce: 0.12,
-                  duration: 0.3,
-                },
+                y: '12%',
+                opacity: 0,
               },
             }}
-            initial="closed"
-            animate="open"
-            exit="closed"
-            className="fixed w-[70vw] inset-0 border-r border-base-300 z-50 p-2 bg-base-100 flex flex-col md:hidden sm:w-[50vw]"
           >
-            <motion.div
-              variants={{
-                open: {
-                  y: '0%',
-                  opacity: 1,
-                },
-                closed: {
-                  y: '12%',
-                  opacity: 0,
-                },
-              }}
+            <Link
+              href={
+                t('NavbarTitleLink') as
+                  | '/'
+                  | '/experience'
+                  | '/projects'
+                  | '/contact'
+              }
+              className="btn btn-ghost text-xl"
             >
-              <Link
-                href={
-                  t('NavbarTitleLink') as
-                    | '/'
-                    | '/experience'
-                    | '/projects'
-                    | '/contact'
-                }
-                className="btn btn-ghost text-xl"
-              >
-                {t('NavbarTitle')}
-              </Link>
-              <ul className="space-y-2 flex flex-col items-start mt-4">
-                {t.raw('NavbarLinks.content')?.map((link: Link) => (
-                  <li className="btn btn-ghost text-xl" key={link.id}>
-                    <Link href={link.href}>{link.title}</Link>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-            <div className="divider" />
-            <motion.div
-              variants={{
-                open: {
-                  y: '0%',
-                  opacity: 1,
-                },
-                closed: {
-                  y: '-42%',
-                  opacity: 0,
-                },
-              }}
-              className="flex h-full items-end justify-center w-full"
-            >
+              {t('NavbarTitle')}
+            </Link>
+            <ul className="space-y-2 flex flex-col items-start mt-4">
+              {t.raw('NavbarLinks.content')?.map((link: Link) => (
+                <li
+                  onClick={() => toggleMobileNav()}
+                  className="btn btn-ghost text-xl"
+                  key={link.id}
+                >
+                  <Link href={link.href}>{link.title}</Link>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+          <div className="divider" />
+          <motion.div
+            variants={{
+              open: {
+                y: '0%',
+                opacity: 1,
+              },
+              closed: {
+                y: '-42%',
+                opacity: 0,
+              },
+            }}
+            className="flex h-full items-end justify-center w-full"
+          >
+            <div className="flex items-center space-x-2">
               <ThemeController />
               <LanguageController />
-            </motion.div>
+            </div>
           </motion.div>
-        )}
+        </motion.div>
       </AnimatePresence>
     </>
   )

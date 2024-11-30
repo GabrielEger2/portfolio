@@ -24,76 +24,86 @@ const Hero = () => {
   return (
     <div ref={ref} className="min-h-screen">
       <div className="flex flex-col h-[80vh] justify-end z-40">
-        <div className="w-full flex justify-center absolute top-12">
-          <div className="flex justify-between w-full max-w-7xl mx-4">
-            <div className="flex flex-col justify-center">
-              <h1 className="text-xl font-semibold">{t('headerBeginning')}</h1>
-              <h1 className="text-7xl my-4 -translate-x-2 font-semibold">
-                {t('headerName')}{' '}
-                <span className="text-primary">{t('headerSurname')}</span>
-              </h1>
-              <ReactTyped
-                className="lg:text-4xl sm:text-3xl text-2xl font-semibold"
-                strings={t.raw('headerTitles')}
-                typeSpeed={80}
-                backSpeed={100}
-                loop
-              />
+        <div className="relative">
+          <div className="w-full flex justify-center absolute top-12">
+            <div className="flex justify-between w-full max-w-7xl mx-4">
+              <div className="flex flex-col justify-center pl-3 md:pl-0">
+                <h1 className="text-xl sm:text-xl font-semibold">
+                  {t('headerBeginning')}
+                </h1>
+                <h1 className="text-5xl sm:text-7xl my-4 -translate-x-2 font-semibold">
+                  {t('headerName')}{' '}
+                  <span className="text-primary">{t('headerSurname')}</span>
+                </h1>
+                <ReactTyped
+                  className="lg:text-4xl sm:text-3xl text-xl font-semibold"
+                  strings={t.raw('headerTitles')}
+                  typeSpeed={80}
+                  backSpeed={100}
+                  loop
+                />
+              </div>
+              <motion.svg
+                width="500"
+                height="500"
+                viewBox="0 0 500 500"
+                xmlns="http://www.w3.org/2000/svg"
+                style={{ y: sunY }}
+              >
+                <defs>
+                  <linearGradient
+                    id="gradient"
+                    x1="0%"
+                    y1="0%"
+                    x2="0%"
+                    y2="100%"
+                  >
+                    <stop offset="0%" />
+                    <stop offset="100%" />
+                  </linearGradient>
+                </defs>
+                <rect width="500" height="500" fill="oklch(var(--b1))" />
+                <circle cx="250" cy="250" r="200" fill="oklch(var(--s))" />
+                <rect
+                  x="50"
+                  y="300"
+                  width="400"
+                  height="20"
+                  fill="oklch(var(--b1))"
+                />
+                <rect
+                  x="50"
+                  y="340"
+                  width="400"
+                  height="20"
+                  fill="oklch(var(--b1))"
+                />
+                <rect
+                  x="50"
+                  y="380"
+                  width="400"
+                  height="20"
+                  fill="oklch(var(--b1))"
+                />
+                <rect
+                  x="50"
+                  y="420"
+                  width="400"
+                  height="20"
+                  fill="oklch(var(--b1))"
+                />
+              </motion.svg>
             </div>
-            <motion.svg
-              width="500"
-              height="500"
-              viewBox="0 0 500 500"
-              xmlns="http://www.w3.org/2000/svg"
-              style={{ y: sunY }}
-            >
-              <defs>
-                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                  <stop offset="0%" />
-                  <stop offset="100%" />
-                </linearGradient>
-              </defs>
-              <rect width="500" height="500" fill="oklch(var(--b1))" />
-              <circle cx="250" cy="250" r="200" fill="oklch(var(--s))" />
-              <rect
-                x="50"
-                y="300"
-                width="400"
-                height="20"
-                fill="oklch(var(--b1))"
-              />
-              <rect
-                x="50"
-                y="340"
-                width="400"
-                height="20"
-                fill="oklch(var(--b1))"
-              />
-              <rect
-                x="50"
-                y="380"
-                width="400"
-                height="20"
-                fill="oklch(var(--b1))"
-              />
-              <rect
-                x="50"
-                y="420"
-                width="400"
-                height="20"
-                fill="oklch(var(--b1))"
-              />
-            </motion.svg>
           </div>
         </div>
-        <div className="w-full z-40">
+        <div className="w-full h-[100vh] overflow-hidden z-40">
           <svg
             id="visual"
+            className="w-full h-full"
             viewBox="0 0 1920 1080"
-            width="100%"
-            height="100%"
             xmlns="http://www.w3.org/2000/svg"
             version="1.1"
+            preserveAspectRatio="none"
           >
             <motion.path
               d="M0 829L213 881L427 780L640 884L853 809L1067 743L1280 745L1493 688L1707 763L1920 847L1920 1081L1707 1081L1493 1081L1280 1081L1067 1081L853 1081L640 1081L427 1081L213 1081L0 1081Z"

@@ -16,7 +16,7 @@ const Hero = () => {
     offset: ['start end', 'end start'],
   })
 
-  const yFadeOut = useTransform(scrollYProgress, [0, 0.34, 0.45], [0, 0, -300])
+  const yFadeOut = useTransform(scrollYProgress, [0, 0.32, 0.45], [0, 0, -300])
   const opacityFadeOut = useTransform(
     scrollYProgress,
     [0, 0.34, 0.45],

@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import { useState } from 'react'
 import { MdOutlineAdsClick } from 'react-icons/md'
@@ -21,6 +22,7 @@ const FlipCard: React.FC<FlipCardProps> = ({
 }) => {
   const [isFlipped, setIsFlipped] = useState(false)
   const [isAnimating, setIsAnimating] = useState(false)
+  const t = useTranslations('experience.self')
 
   function handleFlip() {
     if (!isAnimating) {
@@ -46,7 +48,8 @@ const FlipCard: React.FC<FlipCardProps> = ({
           className="badge badge-accent text-accent-content z-10 absolute right-1 top-1 items-center"
           style={{ backfaceVisibility: 'hidden' }}
         >
-          Click Me! <MdOutlineAdsClick size={20} className="inline-block" />
+          {t('clickMe')}{' '}
+          <MdOutlineAdsClick size={20} className="inline-block" />
         </span>
         <Image
           className="card absolute h-56"

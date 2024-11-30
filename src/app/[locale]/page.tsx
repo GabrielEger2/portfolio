@@ -15,9 +15,11 @@ import { AboutBlock, HeaderBlock } from '@/components/home/TextBlocks'
 
 const Page = () => {
   return (
-    <div>
-      <Hero />
-      <div className="min-h-screen px-4 py-12">
+    <>
+      <div className="relative overflow-hidden">
+        <Hero />
+      </div>
+      <div className="min-h-screen px-4 py-12 bg-base-100">
         <div className="mx-auto grid max-w-7xl grid-cols-12 gap-4 mt-10">
           <VerticalImage />
           <HeaderBlock />
@@ -33,7 +35,7 @@ const Page = () => {
           <ContactBlock />
         </div>
       </div>
-    </div>
+    </>
   )
 }
 
