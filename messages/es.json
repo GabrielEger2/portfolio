@@ -568,6 +568,7 @@
          "title":"Educación Autodidacta",
          "image":"/imgs/experience/selfWallpaper.jpg",
          "child":"Self",
+         "clickMe":"Haz clic en mí",
          "courses":{
             "courseTags":[
                "Ciencias de la Computación",

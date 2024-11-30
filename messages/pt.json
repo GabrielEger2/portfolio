@@ -567,6 +567,7 @@
          "title":"Educação Autodidata",
          "image":"/imgs/experience/selfWallpaper.jpg",
          "child":"Self",
+         "clickMe":"Click em mim!",
          "courses":{
             "courseTags":[
                "Ciência da Computação",

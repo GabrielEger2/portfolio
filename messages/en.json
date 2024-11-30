@@ -567,6 +567,7 @@
          "subTitle":"My Self-Taught Journey",
          "title":"Self-Learning Education",
          "image":"/imgs/experience/selfWallpaper.jpg",
+         "clickMe":"Click me",
          "child":"Self",
          "courses":{
             "courseTags":[

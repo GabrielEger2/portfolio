@@ -568,6 +568,7 @@
          "title":"自主学習",
          "image":"/imgs/experience/selfWallpaper.jpg",
          "child":"Self",
+         "clickMe":"クリックして詳細を見る",
          "courses":{
             "courseTags":[
                "コンピュータサイエンス",
