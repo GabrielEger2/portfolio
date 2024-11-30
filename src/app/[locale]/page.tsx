@@ -18,7 +18,7 @@ const Page = () => {
     <div>
       <Hero />
       <div className="min-h-screen px-4 py-12">
-        <div className="mx-auto grid max-w-7xl grid-cols-12 gap-1 sm:gap-4 mt-10">
+        <div className="mx-auto grid max-w-7xl grid-cols-12 gap-4 mt-10">
           <VerticalImage />
           <HeaderBlock />
           <SocialsBlock />

@@ -8,7 +8,7 @@ const FrontEndBlock = () => {
   const renderList = useRenderList()
 
   return (
-    <Block className="col-span-4 row-span-3 sm:p-6 lg:col-span-3">
+    <Block className="row-span-3 p-6 col-span-12 sm:col-span-4 lg:col-span-3">
       <h1 className="text-xl font-semibold">{t('title')}</h1>
       <ul className="menu">{renderList(list)}</ul>
     </Block>

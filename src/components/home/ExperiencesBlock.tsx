@@ -9,7 +9,7 @@ const ExperiencesBlock = () => {
   const t = useTranslations('home.experiencesBlock')
   return (
     <>
-      <Block className="col-span-4 flex flex-col justify-between p-6 lg:col-span-3 lg:row-span-1">
+      <Block className="col-span-12 flex flex-col justify-between p-6 sm:col-span-4 lg:col-span-3 lg:row-span-1">
         <Link href={t('work.link') as '/experience'}>
           <div className="flex flex-col items-center">
             <BiSolidBriefcase size={30} />
@@ -20,7 +20,7 @@ const ExperiencesBlock = () => {
           <p className="mt-4">{t('work.description')}</p>
         </Link>
       </Block>
-      <Block className="col-span-4 flex flex-col justify-between p-6 lg:col-span-3 lg:row-span-1">
+      <Block className="col-span-12 flex flex-col justify-between p-6 sm:col-span-4 lg:col-span-3 lg:row-span-1">
         <Link href={t('formal.link') as '/experience'}>
           <div className="flex flex-col items-center">
             <FaUniversity size={30} />
@@ -31,7 +31,7 @@ const ExperiencesBlock = () => {
           <p className="mt-4">{t('formal.description')}</p>
         </Link>
       </Block>
-      <Block className="col-span-4 flex flex-col justify-between p-6 lg:col-span-3 lg:row-span-1">
+      <Block className="col-span-12 flex flex-col justify-between p-6 sm:col-span-4 lg:col-span-3 lg:row-span-1">
         <Link href={t('self.link') as '/experience'}>
           <div className="flex flex-col items-center">
             <PiCertificateFill size={30} />

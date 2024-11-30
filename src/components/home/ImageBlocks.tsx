@@ -48,7 +48,7 @@ const MapBlock = () => (
 )
 
 const SquarePhoto = () => (
-  <Block className="row-start-10 col-span-6 p-0 lg:col-span-3 lg:row-span-1">
+  <Block className="col-span-12 p-0 sm:col-span-6 sm:row-start-10 lg:col-span-3 lg:row-span-1">
     <Image
       src="/imgs/home/squarePhoto.jpg"
       alt="Gabriel"
