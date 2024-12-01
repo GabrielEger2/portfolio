@@ -7,8 +7,28 @@ import { notFound } from 'next/navigation'
 import CookiesConsent from '@/components/layout/CookiesConsent'
 import Footer from '@/components/layout/Footer'
 import Navbar from '@/components/layout/Navbar'
+import {
+  englishMetadata,
+  japaneseMetadata,
+  portugueseMetadata,
+  spanishMetadata,
+} from '@/metadata/home'
 
 import '../globals.css'
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string }
+}) {
+  return params.locale === 'pt'
+    ? portugueseMetadata
+    : params.locale === 'es'
+      ? spanishMetadata
+      : params.locale === 'ja'
+        ? japaneseMetadata
+        : englishMetadata
+}
 
 export default async function LocaleLayout({
   children,
