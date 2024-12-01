@@ -1,5 +1,25 @@
 import Hero from '@/components/projects/Hero'
 import { ProjectsCarousel } from '@/components/projects/ProjectsCarousel'
+import {
+  englishMetadata,
+  japaneseMetadata,
+  portugueseMetadata,
+  spanishMetadata,
+} from '@/metadata/projects'
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string }
+}) {
+  return params.locale === 'pt'
+    ? portugueseMetadata
+    : params.locale === 'es'
+      ? spanishMetadata
+      : params.locale === 'ja'
+        ? japaneseMetadata
+        : englishMetadata
+}
 
 const projects = () => {
   return (

@@ -2,6 +2,12 @@ import Formal from '@/components/experience/Formal'
 import ParallaxImage from '@/components/experience/ParallaxImage'
 import Self from '@/components/experience/Self'
 import Work from '@/components/experience/Work'
+import {
+  englishMetadata,
+  japaneseMetadata,
+  portugueseMetadata,
+  spanishMetadata,
+} from '@/metadata/experience'
 import { useTranslations } from 'next-intl'
 
 interface ExperienceItem {
@@ -9,6 +15,20 @@ interface ExperienceItem {
   subTitle: string
   title: string
   child: 'Work' | 'Formal' | 'Self'
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string }
+}) {
+  return params.locale === 'pt'
+    ? portugueseMetadata
+    : params.locale === 'es'
+      ? spanishMetadata
+      : params.locale === 'ja'
+        ? japaneseMetadata
+        : englishMetadata
 }
 
 const Experience = () => {
