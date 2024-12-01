@@ -1,4 +1,10 @@
 import EmailForm from '@/components/contact/EmailForm'
+import {
+  englishMetadata,
+  japaneseMetadata,
+  portugueseMetadata,
+  spanishMetadata,
+} from '@/metadata/contact'
 import { useTranslations } from 'next-intl'
 import { BiLogoGithub, BiLogoLinkedin, BiMailSend } from 'react-icons/bi'
 
@@ -13,6 +19,20 @@ interface SocialLink {
   text: string
   link: string
   icon: keyof typeof iconComponents
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string }
+}) {
+  return params.locale === 'pt'
+    ? portugueseMetadata
+    : params.locale === 'es'
+      ? spanishMetadata
+      : params.locale === 'ja'
+        ? japaneseMetadata
+        : englishMetadata
 }
 
 const Contact = () => {

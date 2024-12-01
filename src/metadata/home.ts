@@ -21,13 +21,13 @@ export const englishMetadata = {
     title: 'Gabriel Eger | Software Engineer',
     description:
       "Eger's  Personal portfolio website, showcasing his work and skills",
-    url: 'https://portfolio.gabriel-eger.dev',
+    url: 'https://portfolio.gabriel-eger.dev/en',
     site_name: 'Gabriel Eger Portfolio',
     images: [
       {
         url: 'https://portfolio.gabriel-eger.dev/og-image.jpg',
-        width: 1200,
-        height: 630,
+        width: 470,
+        height: 470,
         alt: "Gabriel Eger's  Portfolio",
       },
     ],
@@ -68,8 +68,8 @@ export const portugueseMetadata = {
     images: [
       {
         url: 'https://portfolio.gabriel-eger.dev/og-image.jpg',
-        width: 1200,
-        height: 630,
+        width: 470,
+        height: 470,
         alt: 'Gabriel Eger Portfolio',
       },
     ],
@@ -109,8 +109,8 @@ export const japaneseMetadata = {
     images: [
       {
         url: 'https://portfolio.gabriel-eger.dev/og-image.jpg',
-        width: 1200,
-        height: 630,
+        width: 470,
+        height: 470,
         alt: 'Gabriel Eger Portfolio',
       },
     ],
@@ -151,8 +151,8 @@ export const spanishMetadata = {
     images: [
       {
         url: 'https://portfolio.gabriel-eger.dev/og-image.jpg',
-        width: 1200,
-        height: 630,
+        width: 470,
+        height: 470,
         alt: 'Gabriel Eger Portfolio',
       },
     ],
