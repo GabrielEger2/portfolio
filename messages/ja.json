@@ -249,7 +249,12 @@
             "name":"日本語",
             "value":"ja"
          }
-      ]
+      ],
+      "cookieConsent": {
+         "title": "あなたの体験が大切です！",
+         "text": "より良い体験のためにクッキーの使用を許可してください",
+         "button": "許可する"
+      }
    },
    "home":{
       "hero":{
@@ -718,9 +723,13 @@
          "JavaScript",
          "Python",
          "Java",
-         "GO",
-         "TypeScript"
+         "GO"
       ],
+      "projectsFilter": {
+         "title": "プロジェクトフィルター",
+         "inputPlaceholder": "プロジェクトを検索...",
+         "allOptions": "すべてのプロジェクト"
+      },
       "projects":[
          {
             "title":"GOBanq",

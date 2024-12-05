@@ -32,8 +32,9 @@ const Projects = () => {
       filterFunction={filterFunction}
       renderItem={(project) => <ProjectCard {...project} />}
       filterTags={projectsTags}
-      labelText="Projects Filter:"
-      placeholderText="Search for a project..."
+      labelText={t('projectsFilter.title')}
+      placeholderText={t('projectsFilter.inputPlaceholder')}
+      allOptions={t('projectsFilter.allOptions')}
       getKey={(project) => project.title}
     />
   )

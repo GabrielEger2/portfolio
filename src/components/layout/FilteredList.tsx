@@ -10,6 +10,7 @@ interface FilteredListProps<T> {
   filterTags: string[]
   labelText: string
   placeholderText: string
+  allOptions: string
   getKey: (item: T) => React.Key
 }
 
@@ -20,6 +21,7 @@ function FilteredList<T>({
   filterTags,
   labelText,
   placeholderText,
+  allOptions,
   getKey,
 }: FilteredListProps<T>) {
   const [searchTerm, setSearchTerm] = useState('')
@@ -48,7 +50,7 @@ function FilteredList<T>({
               className="select select-accent md:w-full md:max-w-xs rounded-l-none"
               defaultValue={''}
             >
-              <option value={''}>All Options</option>
+              <option value={''}>{allOptions}</option>
               {filterTags?.map((tag: string, index: number) => (
                 <option key={index} value={tag}>
                   {tag}

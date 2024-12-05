@@ -249,7 +249,12 @@
             "name":"日本語",
             "value":"ja"
          }
-      ]
+      ],
+      "cookieConsent":{
+         "title":"Your Experience Matters to Me!",
+         "text":"Accept the use of cookies for a better experience",
+         "button":"Accept"
+      }
    },
    "home":{
       "hero":{
@@ -718,9 +723,13 @@
          "JavaScript",
          "Python",
          "Java",
-         "GO",
-         "TypeScript"
+         "GO"
       ],
+      "projectsFilter":{
+         "title":"Projects Filter",
+         "inputPlaceholder":"Search for a project...",
+         "allOptions":"All Projects"
+      },
       "projects":[
          {
             "title":"GOBanq",

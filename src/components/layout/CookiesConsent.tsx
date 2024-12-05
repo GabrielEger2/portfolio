@@ -3,11 +3,13 @@
 import { AnimatePresence, motion } from 'framer-motion'
 
 import Cookies from 'js-cookie'
+import { useTranslations } from 'next-intl'
 import { useEffect, useState } from 'react'
 import { BiX } from 'react-icons/bi'
 
 const CookiesConsent = () => {
   const [showCookieBanner, setShowCookieBanner] = useState(false)
+  const t = useTranslations('layout.cookieConsent')
 
   useEffect(() => {
     const cookieConsent = Cookies.get('cookieConsent')
@@ -40,7 +42,7 @@ const CookiesConsent = () => {
           >
             <div>
               <div className="flex justify-between">
-                <h3 className="font-bold">Your Experience Matters to Me!</h3>
+                <h3 className="font-bold">{t('title')}</h3>
                 <BiX
                   className="cursor-pointer"
                   size={24}
@@ -48,14 +50,12 @@ const CookiesConsent = () => {
                 />
               </div>
               <div className="flex justify-between space-x-4 mt-4">
-                <p className="text-sm text-start">
-                  Accept the use of cookies for a better experience
-                </p>
+                <p className="text-sm text-start">{t('text')}</p>
                 <button
                   onClick={handleAccept}
                   className="btn btn-success text-base-100"
                 >
-                  Accept
+                  {t('button')}
                 </button>
               </div>
             </div>
