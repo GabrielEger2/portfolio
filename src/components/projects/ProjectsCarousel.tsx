@@ -8,6 +8,7 @@ import {
 } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useMemo, useRef, useState } from 'react'
 import { useWindowSize } from 'react-use'
 import Projects from './Projects'
@@ -15,7 +16,9 @@ import Projects from './Projects'
 interface Project {
   title: string
   github: string
+  githubLink: string
   image: string
+  description: string
 }
 
 export const ProjectsCarousel = () => {
@@ -91,12 +94,21 @@ export const ProjectsCarousel = () => {
                         }}
                         className="absolute bottom-0 left-0 flex w-full flex-col items-center gap-4 p-3 md:flex-row md:justify-between md:gap-0"
                       >
-                        <div className="badge badge-primary text-lg p-3">
-                          {project.title}
+                        <div className="z-10 bg-black bg-opacity-50 p-2 rounded-lg w-full md:w-3/4">
+                          <h1 className="text-white z-10 md:text-lg lg:text-xl font-bold">
+                            {project.title}
+                          </h1>
+                          <p className="text-white z-10 md:block">
+                            {project.description}
+                          </p>
                         </div>
-                        <button className="btn btn-primary">
+                        <Link
+                          href={project.githubLink}
+                          target="_blank"
+                          className="btn btn-primary"
+                        >
                           {project.github}
-                        </button>
+                        </Link>
                       </motion.div>
                     </motion.div>
                   )

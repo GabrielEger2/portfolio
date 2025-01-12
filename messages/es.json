@@ -316,19 +316,22 @@
             "link":"/experience"
          }
       },
-      "projectsBlock":{
-         "projects":[
+      "projectsBlock": {
+      "projects": [
             {
-               "title":"proyecto1",
-               "image":"/imgs/experience/educationWallpaper.jpg"
+               "title": "Rabbit Management",
+               "image": "/imgs/projects/rabbitManagement.jpg",
+               "description": "Una plataforma de gestión de viajes, reembolsos y gastos construida con FastAPI y una arquitectura de microservicios. El sistema gestiona viajes de usuarios, seguimiento de gastos y procesos de reembolso de manera eficiente, utilizando RabbitMQ para comunicación asíncrona y Kong como API Gateway."
             },
             {
-               "title":"proyecto2",
-               "image":"/imgs/experience/educationWallpaper.jpg"
+               "title": "NestNet",
+               "image": "/imgs/projects/nestNet.jpg",
+               "description": "Una plataforma de red social construida con NestJS, MongoDB y Apollo GraphQL. La plataforma permite a los usuarios crear y compartir publicaciones, explorar contenido de otros usuarios y conectar con amigos. Además, cuenta con un sistema de chat integrado y procesamiento de pagos mediante Stripe."
             },
             {
-               "title":"proyecto3",
-               "image":"/imgs/experience/educationWallpaper.jpg"
+               "title": "GOBanq",
+               "image": "/imgs/projects/gobanq.jpg",
+               "description": "Un servicio de transacciones financieras desarrollado con Go y SQL, utilizando una arquitectura de microservicios para escalabilidad y rendimiento. La plataforma gestiona el registro seguro y la administración de transacciones, implementada en AWS EKS para alta disponibilidad y orquestación eficiente de contenedores."
             }
          ],
          "link":"/projects",
@@ -572,6 +575,7 @@
          "subTitle":"Mi Camino Autodidacta",
          "title":"Educación Autodidacta",
          "image":"/imgs/experience/selfWallpaper.jpg",
+         "allOptions":"Todos los Cursos",
          "child":"Self",
          "clickMe":"Haz clic en mí",
          "courses":{
@@ -733,7 +737,7 @@
       "projects":[
          {
             "title":"GOBanq",
-            "description":"Gobanq es un proyecto bancario construido con una moderna arquitectura de microservicios. La plataforma permite a los usuarios crear y gestionar múltiples cuentas en diferentes monedas, ofreciendo una solución bancaria flexible que soporta operaciones financieras internacionales.",
+            "description":"Un servicio de transacciones financieras desarrollado con Go y SQL, utilizando una arquitectura de microservicios para escalabilidad y rendimiento. La plataforma gestiona el registro seguro y la administración de transacciones, implementada en AWS EKS para alta disponibilidad y orquestación eficiente de contenedores.",
             "technologies":[
                "Golang",
                "AWS RDS",
@@ -811,12 +815,11 @@
          },
          {
             "title":"NestNet",
-            "description":"Un proyecto de red social construido con NestJS y MongoDB. Los usuarios pueden crear publicaciones, dar 'me gusta', comentar y compartir contenido con amigos. La plataforma también incluye una función de chat para comunicación en tiempo real.",
+            "description":"Una plataforma de red social construida con NestJS, MongoDB y Apollo GraphQL. La plataforma permite a los usuarios crear y compartir publicaciones, explorar contenido de otros usuarios y conectar con amigos. Además, cuenta con un sistema de chat integrado y procesamiento de pagos mediante Stripe.",
             "technologies":[
                "NestJS",
                "MongoDB",
                "TypeScript",
-               "Websockets",
                "Microservices",
                "Docker",
                "Apollo",
@@ -842,26 +845,46 @@
             "languages":[
                "JavaScript"
             ]
+         },
+         {
+            "title":"Rabbit Management",
+            "description":"Una plataforma de gestión de viajes, reembolsos y gastos construida con FastAPI y una arquitectura de microservicios. El sistema gestiona viajes de usuarios, seguimiento de gastos y procesos de reembolso de manera eficiente, utilizando RabbitMQ para comunicación asíncrona y Kong como API Gateway.",
+            "technologies": [
+               "FastAPI",
+               "Python",
+               "SQLAlchemy",
+               "PostgreSQL",
+               "Docker",
+               "RabbitMQ",
+               "Kong",
+               "AWS",
+               "GO"
+            ],
+            "githubLink": "https://github.com/GabrielEger2/rabbit-management",
+            "languages": ["Python", "GO"]
          }
       ],
       "projectsCarousel":[
          {
-            "title":"proyecto1",
-            "image":"/imgs/experience/educationWallpaper.jpg",
-            "githubLink":"",
-            "github":"Enlace a GitHub"
+            "title":"Rabbit Management",
+            "image":"/imgs/projects/rabbitManagement.jpg",
+            "githubLink":"https://github.com/GabrielEger2/rabbit-management",
+            "github":"Enlace a GitHub",
+            "description": "Una plataforma de gestión de viajes, reembolsos y gastos construida con FastAPI y una arquitectura de microservicios. El sistema gestiona viajes de usuarios, seguimiento de gastos y procesos de reembolso de manera eficiente, utilizando RabbitMQ para comunicación asíncrona y Kong como API Gateway."
          },
          {
-            "title":"proyecto2",
-            "image":"/imgs/experience/educationWallpaper.jpg",
-            "githubLink":"",
-            "github":"Enlace a GitHub"
+            "title":"NestNet",
+            "image":"/imgs/projects/nestNet.jpg",
+            "githubLink":"https://github.com/GabrielEger2/nest-net",
+            "github":"Enlace a GitHub",
+            "description": "Una plataforma de red social construida con NestJS, MongoDB y Apollo GraphQL. La plataforma permite a los usuarios crear y compartir publicaciones, explorar contenido de otros usuarios y conectar con amigos. Además, cuenta con un sistema de chat integrado y procesamiento de pagos mediante Stripe."
          },
          {
-            "title":"proyecto3",
-            "image":"/imgs/experience/educationWallpaper.jpg",
-            "githubLink":"",
-            "github":"Enlace a GitHub"
+            "title":"GOBanq",
+            "image":"/imgs/projects/gobanq.jpg",
+            "githubLink":"https://github.com/GabrielEger2/gobanq",
+            "github":"Enlace a GitHub",
+            "description": "Un servicio de transacciones financieras desarrollado con Go y SQL, utilizando una arquitectura de microservicios para escalabilidad y rendimiento. La plataforma gestiona el registro seguro y la administración de transacciones, implementada en AWS EKS para alta disponibilidad y orquestación eficiente de contenedores."
          }
       ]
    },

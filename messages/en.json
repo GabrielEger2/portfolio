@@ -319,16 +319,19 @@
       "projectsBlock":{
          "projects":[
             {
-               "title":"project1",
-               "image":"/imgs/experience/educationWallpaper.jpg"
+               "title":"Rabbit Management",
+               "image":"/imgs/projects/rabbitManagement.jpg",
+               "description": "A trip, reimbursements, and expenses management platform built using FastAPI with a microservices architecture. The system handles user trips, expense tracking, and reimbursement processes efficiently, using RabbitMQ for asynchronous communication and Kong as an API Gateway"
             },
             {
-               "title":"project2",
-               "image":"/imgs/experience/educationWallpaper.jpg"
+               "title":"NestNet",
+               "image":"/imgs/projects/nestNet.jpg",
+               "description": "A social networking platform built with NestJS, MongoDB, and Apollo GraphQL. The platform allows users to create and share posts, explore content from others, and connect with friends. Additionally, it features an integrated chat system with Stripe payment processing."
             },
             {
-               "title":"project3",
-               "image":"/imgs/experience/educationWallpaper.jpg"
+               "title":"GOBanq",
+               "image":"/imgs/projects/gobanq.jpg",
+               "description": "A financial transactions service built with Go and SQL, using a microservices architecture for scalability and performance. The platform handles secure transaction logging and management, deployed on AWS EKS for high availability and efficient container orchestration."
             }
          ],
          "link":"/projects",
@@ -573,6 +576,7 @@
          "title":"Self-Learning Education",
          "image":"/imgs/experience/selfWallpaper.jpg",
          "clickMe":"Click me",
+         "allOptions":"All Courses",
          "child":"Self",
          "courses":{
             "courseTags":[
@@ -733,7 +737,7 @@
       "projects":[
          {
             "title":"GOBanq",
-            "description":"Gobanq is a banking project built with a modern microservice architecture, the platform allows users to create and manage multiple accounts in different currencies, offering a flexible banking solution that supports international financial operations.",
+            "description":"A financial transactions service built with Go and SQL, using a microservices architecture for scalability and performance. The platform handles secure transaction logging and management, deployed on AWS EKS for high availability and efficient container orchestration.",
             "technologies":[
                "Golang",
                "AWS RDS",
@@ -801,12 +805,11 @@
          },
          {
             "title": "NestNet",
-            "description": "A social network project built with NestJS and MongoDB. Users can create posts, like, comment, and share content with friends. The platform also includes a chat feature for real-time communication.",
+            "description": "A social networking platform built with NestJS, MongoDB, and Apollo GraphQL. The platform allows users to create and share posts, explore content from others, and connect with friends. Additionally, it features an integrated chat system with Stripe payment processing",
             "technologies": [
                "NestJS",
                "MongoDB",
                "TypeScript",
-               "Websockets",
                "Microservices",
                "Docker",
                "Appolo",
@@ -828,26 +831,47 @@
             ],
             "githubLink": "https://github.com/GabrielEger2/nihon-classics",
             "languages": ["JavaScript"]
+         },
+         {
+            "title": "Rabbit Management",
+            "description": "A trip, reimbursements, and expenses management platform built using FastAPI with a microservices architecture. The system handles user trips, expense tracking, and reimbursement processes efficiently, using RabbitMQ for asynchronous communication and Kong as an API Gateway",
+            "technologies": [
+               "FastAPI",
+               "Python",
+               "SQLAlchemy",
+               "PostgreSQL",
+               "Docker",
+               "RabbitMQ",
+               "Kong",
+               "AWS",
+               "GO"
+            ],
+            "githubLink": "https://github.com/GabrielEger2/rabbit-management",
+            "languages": ["Python", "GO"]
          }
       ],
       "projectsCarousel":[
+         
          {
-            "title":"project1",
-            "image":"/imgs/experience/educationWallpaper.jpg",
-            "githubLink":"",
-            "github":"GitHub Link"
+            "title":"Rabbit Management",
+            "image":"/imgs/projects/rabbitManagement.jpg",
+            "githubLink":"https://github.com/GabrielEger2/rabbit-management",
+            "github":"GitHub Link",
+            "description": "A trip, reimbursements, and expenses management platform built using FastAPI with a microservices architecture. The system handles user trips, expense tracking, and reimbursement processes efficiently, using RabbitMQ for asynchronous communication and Kong as an API Gateway"
          },
          {
-            "title":"project2",
-            "image":"/imgs/experience/educationWallpaper.jpg",
-            "githubLink":"",
-            "github":"GitHub Link"
+            "title":"Nest Net",
+            "image":"/imgs/projects/nestNet.jpg",
+            "githubLink":"https://github.com/GabrielEger2/nest-net",
+            "github":"GitHub Link",
+            "description": "A social networking platform built with NestJS, MongoDB, and Apollo GraphQL. The platform allows users to create and share posts, explore content from others, and connect with friends. Additionally, it features an integrated chat system with Stripe payment processing."
          },
          {
-            "title":"project3",
-            "image":"/imgs/experience/educationWallpaper.jpg",
-            "githubLink":"",
-            "github":"GitHub Link"
+            "title":"GOBanq",
+            "image":"/imgs/projects/gobanq.jpg",
+            "githubLink":"https://github.com/GabrielEger2/gobanq",
+            "github":"GitHub Link",
+            "description": "A financial transactions service built with Go and SQL, using a microservices architecture for scalability and performance. The platform handles secure transaction logging and management, deployed on AWS EKS for high availability and efficient container orchestration."
          }
       ]
    },

@@ -316,19 +316,22 @@
             "link":"/experience"
          }
       },
-      "projectsBlock":{
-         "projects":[
+      "projectsBlock": {
+         "projects": [
             {
-               "title":"プロジェクト1",
-               "image":"/imgs/experience/educationWallpaper.jpg"
+               "title": "Rabbit Management",
+               "image": "/imgs/projects/rabbitManagement.jpg",
+               "description": "FastAPIを使用したマイクロサービスアーキテクチャによる旅行、経費、及び精算管理プラットフォームです。このシステムは、ユーザーの旅行、経費の追跡、精算プロセスを効率的に処理し、RabbitMQを使用した非同期通信と、APIゲートウェイとしてKongを活用しています。"
             },
             {
-               "title":"プロジェクト2",
-               "image":"/imgs/experience/educationWallpaper.jpg"
+               "title": "NestNet",
+               "image": "/imgs/projects/nestNet.jpg",
+               "description": "NestJS、MongoDB、Apollo GraphQLを使用して構築されたソーシャルネットワーキングプラットフォームです。ユーザーは投稿を作成して共有し、他のユーザーのコンテンツを探索し、友達とつながることができます。また、Stripe決済処理が統合されたチャットシステムも備えています。"
             },
             {
-               "title":"プロジェクト3",
-               "image":"/imgs/experience/educationWallpaper.jpg"
+               "title": "GOBanq",
+               "image": "/imgs/projects/gobanq.jpg",
+               "description": "GoとSQLで構築された金融取引サービスで、スケーラビリティとパフォーマンスのためにマイクロサービスアーキテクチャを採用しています。このプラットフォームは、セキュアな取引ログと管理を行い、AWS EKS上でデプロイされ、高可用性と効率的なコンテナオーケストレーションを提供します。"
             }
          ],
          "link":"/projects",
@@ -572,6 +575,7 @@
          "subTitle":"私の独学の旅",
          "title":"自主学習",
          "image":"/imgs/experience/selfWallpaper.jpg",
+         "allOptions":"すべてのコース",
          "child":"Self",
          "clickMe":"クリックして詳細を見る",
          "courses":{
@@ -733,7 +737,7 @@
       "projects":[
          {
             "title":"GOBanq",
-            "description":"Gobanqは、モダンなマイクロサービスアーキテクチャで構築された銀行プロジェクトです。ユーザーは複数の通貨でアカウントを作成および管理でき、国際的な金融取引をサポートする柔軟な銀行ソリューションを提供します。",
+            "description":"GoとSQLで構築された金融取引サービスで、スケーラビリティとパフォーマンスのためにマイクロサービスアーキテクチャを採用しています。このプラットフォームは、セキュアな取引ログと管理を行い、AWS EKS上でデプロイされ、高可用性と効率的なコンテナオーケストレーションを提供します。",
             "technologies":[
                "Golang",
                "AWS RDS",
@@ -811,12 +815,11 @@
          },
          {
             "title":"NestNet",
-            "description":"NestJSとMongoDBで構築されたソーシャルネットワークプロジェクトです。ユーザーは投稿を作成し、いいね、コメント、共有ができ、友達とコンテンツを楽しむことができます。また、リアルタイム通信のためのチャット機能も含まれています。",
+            "description":"NestJS、MongoDB、Apollo GraphQLを使用して構築されたソーシャルネットワーキングプラットフォームです。ユーザーは投稿を作成して共有し、他のユーザーのコンテンツを探索し、友達とつながることができます。また、Stripe決済処理が統合されたチャットシステムも備えています。",
             "technologies":[
                "NestJS",
                "MongoDB",
                "TypeScript",
-               "Websockets",
                "Microservices",
                "Docker",
                "Appolo",
@@ -842,26 +845,46 @@
             "languages":[
                "JavaScript"
             ]
+         },
+         {
+            "title":"Rabbit Management",
+            "description":"FastAPIを使用したマイクロサービスアーキテクチャによる旅行、経費、及び精算管理プラットフォームです。このシステムは、ユーザーの旅行、経費の追跡、精算プロセスを効率的に処理し、RabbitMQを使用した非同期通信と、APIゲートウェイとしてKongを活用しています。",
+            "technologies": [
+               "FastAPI",
+               "Python",
+               "SQLAlchemy",
+               "PostgreSQL",
+               "Docker",
+               "RabbitMQ",
+               "Kong",
+               "AWS",
+               "GO"
+            ],
+            "githubLink": "https://github.com/GabrielEger2/rabbit-management",
+            "languages": ["Python", "GO"]
          }
       ],
       "projectsCarousel":[
          {
-            "title":"プロジェクト1",
-            "image":"/imgs/experience/educationWallpaper.jpg",
-            "githubLink":"",
-            "github":"GitHubリンク"
+            "title":"Rabbit Management",
+            "image":"/imgs/projects/rabbitManagement.jpg",
+            "githubLink":"https://github.com/GabrielEger2/rabbit-management",
+            "github":"GitHubリンク",
+            "description": "FastAPIを使用したマイクロサービスアーキテクチャによる旅行、経費、及び精算管理プラットフォームです。このシステムは、ユーザーの旅行、経費の追跡、精算プロセスを効率的に処理し、RabbitMQを使用した非同期通信と、APIゲートウェイとしてKongを活用しています。"
          },
          {
-            "title":"プロジェクト2",
-            "image":"/imgs/experience/educationWallpaper.jpg",
-            "githubLink":"",
-            "github":"GitHubリンク"
+            "title":"NestNet",
+            "image":"/imgs/projects/nestNet.jpg",
+            "githubLink":"https://github.com/GabrielEger2/nest-net",
+            "github":"GitHubリンク",
+            "description": "NestJS、MongoDB、Apollo GraphQLを使用して構築されたソーシャルネットワーキングプラットフォームです。ユーザーは投稿を作成して共有し、他のユーザーのコンテンツを探索し、友達とつながることができます。また、Stripe決済処理が統合されたチャットシステムも備えています。"
          },
          {
-            "title":"プロジェクト3",
-            "image":"/imgs/experience/educationWallpaper.jpg",
-            "githubLink":"",
-            "github":"GitHubリンク"
+            "title":"GOBanq",
+            "image":"/imgs/projects/gobanq.jpg",
+            "githubLink":"https://github.com/GabrielEger2/gobanq",
+            "github":"GitHubリンク",
+            "description": "GoとSQLで構築された金融取引サービスで、スケーラビリティとパフォーマンスのためにマイクロサービスアーキテクチャを採用しています。このプラットフォームは、セキュアな取引ログと管理を行い、AWS EKS上でデプロイされ、高可用性と効率的なコンテナオーケストレーションを提供します。"
          }
       ]
    },

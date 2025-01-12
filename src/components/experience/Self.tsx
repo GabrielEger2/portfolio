@@ -34,6 +34,7 @@ const Self = () => {
       filterTags={coursesTags}
       labelText="Courses and Certificates Filter:"
       placeholderText="Search for a course or certificate..."
+      allOptions={t('allOptions')}
       getKey={(course) => course.courseTitle}
     />
   )

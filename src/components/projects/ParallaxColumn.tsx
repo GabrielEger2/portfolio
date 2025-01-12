@@ -18,19 +18,19 @@ const ParallaxColumn: React.FC<ParallaxColumnProps> = ({ projects, y }) => {
         return (
           <div
             key={index}
-            className="card h-[470px] p-10 border border-base-300 shadow-lg"
+            className="card p-10 border border-base-300 shadow-lg"
           >
             <div className="h-full flex flex-col justify-between">
               <div>
                 <h1 className="text-2xl font-semibold underline">
                   {project.title}
                 </h1>
-                <p className="mt-7 text-lg">
+                <p className="mt-6 text-lg">
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{project.description}
                 </p>
               </div>
               <div className="flex flex-col">
-                <div className="space-x-1">
+                <div className="space-x-1 my-3">
                   {project.technologies.map((technology, index) => {
                     return (
                       <div key={index} className="badge badge-secondary">
@@ -39,7 +39,7 @@ const ParallaxColumn: React.FC<ParallaxColumnProps> = ({ projects, y }) => {
                     )
                   })}
                 </div>
-                <button className="btn btn-secondary btn-outline mt-4">
+                <button className="btn btn-secondary btn-outline">
                   Github Link
                 </button>
               </div>

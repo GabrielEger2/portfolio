@@ -53,6 +53,7 @@ const ProjectsParallax: React.FC<ProjectsParallaxProps> = ({
             projects[6],
             projects[4],
             projects[3],
+            projects[7],
           ]}
           y={y}
         />
@@ -60,6 +61,7 @@ const ProjectsParallax: React.FC<ProjectsParallaxProps> = ({
           projects={[
             projects[2],
             projects[5],
+            projects[7],
             projects[6],
             projects[3],
             projects[1],
@@ -73,6 +75,7 @@ const ProjectsParallax: React.FC<ProjectsParallaxProps> = ({
             projects[5],
             projects[2],
             projects[6],
+            projects[7],
             projects[0],
             projects[4],
           ]}
@@ -80,6 +83,7 @@ const ProjectsParallax: React.FC<ProjectsParallaxProps> = ({
         />
         <ParallaxColumn
           projects={[
+            projects[7],
             projects[1],
             projects[3],
             projects[4],
@@ -93,6 +97,7 @@ const ProjectsParallax: React.FC<ProjectsParallaxProps> = ({
           projects={[
             projects[0],
             projects[3],
+            projects[7],
             projects[2],
             projects[1],
             projects[5],

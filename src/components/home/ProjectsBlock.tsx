@@ -40,9 +40,16 @@ const ProjectsBlock = () => {
               src={projects[currentIndex].image}
               alt={projects[currentIndex].title}
               layout="fill"
-              className="z-0"
+              className="z-0 object-cover"
             />
-            <h1 className="text-white z-10">{projects[currentIndex].title}</h1>
+            <div className="z-10 bg-black bg-opacity-50 p-2 rounded-lg">
+              <h1 className="text-white z-10 md:text-lg lg:text-xl font-bold">
+                {projects[currentIndex].title}
+              </h1>
+              <p className="text-white z-10 hidden md:block">
+                {projects[currentIndex].description}
+              </p>
+            </div>
             <Link
               href={t('link') as '/projects'}
               className="btn btn-accent z-10"
@@ -53,13 +60,13 @@ const ProjectsBlock = () => {
         </AnimatePresence>
         <button
           onClick={handlePrev}
-          className="btn btn-primary absolute left-4 top-1/2"
+          className="btn btn-primary absolute left-4 top-1/2 -translate-y-6"
         >
           <BiArrowFromRight size={24} />
         </button>
         <button
           onClick={handleNext}
-          className="btn btn-primary absolute right-4 top-1/2"
+          className="btn btn-primary absolute right-4 top-1/2 -translate-y-6"
         >
           <BiArrowToRight size={24} />
         </button>
