@@ -1,9 +1,11 @@
 import { motion, MotionValue } from 'framer-motion'
+import Link from 'next/link'
 
 interface Project {
   title: string
   description: string
   technologies: string[]
+  githubLink: string
 }
 
 interface ParallaxColumnProps {
@@ -39,9 +41,13 @@ const ParallaxColumn: React.FC<ParallaxColumnProps> = ({ projects, y }) => {
                     )
                   })}
                 </div>
-                <button className="btn btn-secondary btn-outline">
+                <Link
+                  href={project.githubLink}
+                  target="_blank"
+                  className="btn btn-secondary btn-outline"
+                >
                   Github Link
-                </button>
+                </Link>
               </div>
             </div>
           </div>

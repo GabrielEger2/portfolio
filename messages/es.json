@@ -856,7 +856,6 @@
                "Docker",
                "RabbitMQ",
                "Kong",
-               "AWS",
                "GO"
             ],
             "githubLink": "https://github.com/GabrielEger2/rabbit-management",
