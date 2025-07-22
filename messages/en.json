@@ -114,7 +114,8 @@
                         "items":[
                            "FreeLance",
                            "ClearViction",
-                           "MundialMix"
+                           "MundialMix",
+                           "DUDA"
                         ]
                      },
                      {
@@ -489,7 +490,7 @@
             {
                "image":"/imgs/experience/mundialMixWork.jpg",
                "title":"MundialMix",
-               "time":"2023 - On going",
+               "time":"2023 - 2025",
                "local":"Santa Catarina, Brazil",
                "description":"MundialMix is a holding company that owns several businesses in different sectors. Including retail, banking, radio, and more",
                "technologies":[
@@ -499,6 +500,20 @@
                   "Flask",
                   "Django",
                   "Java"
+               ]
+            },
+            {
+               "image":"/imgs/experience/dudaWork.jpg",
+               "title":"DUDA",
+               "time":"2025 - On going",
+               "local":"Remote, Colorado, USA",
+               "description":"DUDA is a company that provides a platform for building websites and web applications. They are focused on providing a great user experience and performance",
+               "technologies":[
+                  "Next.js",
+                  "Node.js",
+                  "AWS",
+                  "Docker",
+                  "Cloud"
                ]
             }
          ],
@@ -517,9 +532,15 @@
             },
             {
                "title":"MundialMix",
-               "time":"2023 - On going",
+               "time":"2023 - 2025",
                "local":"Santa Catarina, Brazil",
-               "position":"Junior Full Stack Developer"
+               "position":"Mid Full Stack Developer"
+            },
+            {
+               "title":"DUDA",
+               "time":"2025 - On going",
+               "local":"Remote, Colorado, USA",
+               "position":"Full Stack Developer"
             }
          ]
       },

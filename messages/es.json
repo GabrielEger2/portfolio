@@ -114,7 +114,8 @@
                         "items":[
                            "Freelance",
                            "ClearViction",
-                           "MundialMix"
+                           "MundialMix",
+                           "DUDA"
                         ]
                      },
                      {
@@ -500,6 +501,20 @@
                   "Django",
                   "Java"
                ]
+            },
+            {
+               "image":"/imgs/experience/dudaWork.jpg",
+               "title":"DUDA",
+               "time":"2025 - Actualmente",
+               "local":"Remoto, Colorado, EE.UU.",
+               "description":"DUDA es una empresa de tecnología que ofrece una plataforma de creación de sitios web para agencias y empresas.",
+               "technologies":[
+                  "Next.js",
+                  "Node.js",
+                  "AWS",
+                  "Docker",
+                  "Cloud"
+               ]
             }
          ],
          "workTimeLine":[
@@ -517,9 +532,15 @@
             },
             {
                "title":"MundialMix",
-               "time":"2023 - Actualmente",
+               "time":"2023 - 2025",
                "local":"Santa Catarina, Brasil",
-               "position":"Desarrollador Full Stack Junior"
+               "position":"Desarrollador Full Stack Pleno"
+            },
+            {
+               "title":"DUDA",
+               "time":"2025 - Actualmente",
+               "local":"Remoto, Colorado, EE.UU.",
+               "position":"Desarrollador Full Stack"
             }
          ]
       },

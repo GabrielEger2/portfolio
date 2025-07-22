@@ -114,7 +114,8 @@
                         "items":[
                            "フリーランス",
                            "ClearViction",
-                           "MundialMix"
+                           "MundialMix",
+                           "DUDA"
                         ]
                      },
                      {
@@ -500,6 +501,20 @@
                   "Django",
                   "Java"
                ]
+            },
+            {
+               "image":"/imgs/experience/dudaWork.jpg",
+               "title":"DUDA",
+               "time":"2025年 - 現在",
+               "local":"リモート、コロラド州、アメリカ",
+               "description":"DUDAは、ウェブサイトの構築と管理を支援するためのプラットフォームを提供する企業です。私はフルスタック開発者として働いています",
+               "technologies":[
+                  "Next.js",
+                  "Node.js",
+                  "AWS",
+                  "Docker",
+                  "Cloud"
+               ]
             }
          ],
          "workTimeLine":[
@@ -517,9 +532,15 @@
             },
             {
                "title":"MundialMix",
-               "time":"2023年 - 現在",
+               "time":"2023年 - 2025年",
                "local":"サンタカタリーナ州、ブラジル",
                "position":"ジュニアフルスタック開発者"
+            },
+            {
+               "title":"DUDA",
+               "time":"2025年 - 現在",
+               "local":"リモート、コロラド州、アメリカ",
+               "position":"フルスタック開発者"
             }
          ]
       },

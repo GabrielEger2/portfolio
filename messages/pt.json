@@ -114,7 +114,8 @@
                         "items":[
                            "Freelance",
                            "ClearViction",
-                           "MundialMix"
+                           "MundialMix",
+                           "DUDA"
                         ]
                      },
                      {
@@ -488,7 +489,7 @@
             {
                "image":"/imgs/experience/mundialMixWork.jpg",
                "title":"MundialMix",
-               "time":"2023 - Atualmente",
+               "time":"2023 - 2025",
                "local":"Santa Catarina, Brasil",
                "description":"A MundialMix é uma holding que possui várias empresas em diferentes setores, incluindo varejo, bancos, rádio e mais",
                "technologies":[
@@ -498,6 +499,20 @@
                   "Flask",
                   "Django",
                   "Java"
+               ]
+            },
+            {
+               "image":"/imgs/experience/dudaWork.jpg",
+               "title":"DUDA",
+               "time":"2025 - Atualmente",
+               "local":"Remoto, Colorado, EUA",
+               "description":"A Duda é uma plataforma de criação de sites que permite que agências e empresas criem sites responsivos e otimizados para dispositivos móveis.",
+               "technologies":[
+                  "Next.js",
+                  "Node.js",
+                  "AWS",
+                  "Docker",
+                  "Cloud"
                ]
             }
          ],
@@ -516,9 +531,15 @@
             },
             {
                "title":"MundialMix",
-               "time":"2023 - Atualmente",
+               "time":"2023 - 2025",
                "local":"Santa Catarina, Brasil",
-               "position":"Desenvolvedor Full Stack Júnior"
+               "position":"Desenvolvedor Full Stack Pleno"
+            },
+            {
+               "title":"DUDA",
+               "time":"2025 - Atualmente",
+               "local":"Remoto, Colorado, EUA",
+               "position":"Desenvolvedor Full Stack"
             }
          ]
       },
